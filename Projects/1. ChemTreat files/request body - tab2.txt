@@ -1,0 +1,42 @@
+{condenserName: "main", facilityName: "Burbank Water and Power", systemName: "MPP Open Cooling~main",…}
+condenserName: "main"
+createdBy: "vivekanandanrk"
+facilityName: "Burbank Water and Power"
+historianMap: [{key: "gross_load", uom: "256", tagName: null, descriptor: null, uomName: "MW"},…]
+0: {key: "gross_load", uom: "256", tagName: null, descriptor: null, uomName: "MW"}
+1: {key: "condenser_back_pressure_1", uom: "393", tagName: null, descriptor: null, uomName: "inHg(a)"}
+2: {key: "boiler_steam_flow_1", uom: "398", tagName: null, descriptor: null, uomName: "kpph"}
+3: {key: "condenser_cw_in_temps_1", uom: "124", tagName: null, descriptor: null, uomName: "°F"}
+4: {key: "condenser_cw_out_temps_1", uom: "124", tagName: null, descriptor: null, uomName: "°F"}
+orgId: "1520"
+plantData: {}
+systemName: "MPP Open Cooling~main"
+tenantId: "1520"
+unitData: {plant_type: null, plant_fuel_source: null, plant_max_load: null, plant_capacity_factor: null,…}
+average_fuel_costs_per_mmbtus: null
+average_fuel_costs_per_unit: null
+condenser_effective_area: null
+design_cf: null
+design_cw_pressure_drop: null
+design_cw_temp_in: null
+design_duty: null
+design_steam_flow: null
+design_water_flow: null
+expected_co2_emmissions: null
+extraction_steam: null
+no_of_passes: null
+no_of_shells: null
+no_of_total_tubes: null
+no_of_unplugged_tubes: null
+number_of_pressure_sample_points: null
+plant_capacity_factor: null
+plant_fuel_source: null
+plant_max_load: null
+plant_type: null
+tube_effective_length: null
+tube_metallurgy: null
+tube_od: null
+tube_wall_gauge: null
+typical_heat_rate: null
+typical_heat_rate_penalty: null
+typical_mwhr_sale_pr

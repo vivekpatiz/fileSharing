@@ -1,0 +1,7 @@
+
+For Dev: http://34.216.125.13:8082/v1/AssetManagement/assets/2/condenser
+
+For Prod: http://52.12.232.240:8082/v1/AssetManagement/assets/2/condenser
+
+http://34.216.125.13:8083/v1/TimeSeries/charts?fromDate=2019/12/01&toDate=2020/01/01&tenantId=1207&assetId=7ecaa8e0-2868-41bc-a022-be8878b08720&assetParamName=03067496-fcbc-489f-bfe4-9b1882f740d8&isKpi=true&fromLoad=37&toLoad=100
+
