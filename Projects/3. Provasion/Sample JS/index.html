@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<script src="angular.min.js"></script>
+<script src="script.js"></script>
+
+<body>
+    <div ng-app="patientInformation" ng-controller="myCtrl">
+        <p>Input something in the input box:</p>
+        <p>Color: </p><input type="text" ng-model="name" >
+        <p ng-bind="name"></p>
+        <p>{{firstName}}</p>
+        <p>{{lastName}}</p>
+    </div>
+</body>
+
+</html>

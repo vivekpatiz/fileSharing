@@ -1,0 +1,12 @@
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <ul class="patient">
+                <li ng-repeat="patient in $ctrl.patientDetailsList">
+                    <a href="#" ng-click="$ctrl.selectPatient($index)"> <span>{{patient.name}} - {{patient.mrn}}</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,32 @@
+body, table {
+        overflow:auto;
+        font-family : Tahoma, Arial, Helvetica, sans-serif;
+        font-weight : normal;
+        font-style : normal;
+        font-size : 10pt;
+        text-decoration : none;
+        color : #333333;
+        background-color: #FFFFFF;
+}
+
+.main-login-table{
+	border: 1px solid #990000;
+	width: 430px;
+	height: 265px;
+	background-color: #EEEEEE;
+}
+
+.login-version{
+	text-align: right;
+	vertical-align: bottom;
+}
+
+.login-main-cell{
+	text-align: center;
+	vertical-align: middle;
+}
+
+.login-title-cell{
+	text-align: center;
+	vertical-align: middle;
+}

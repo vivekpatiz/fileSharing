@@ -1,0 +1,137 @@
+.x-treenode-red span {
+    color: #FF0000;
+}
+
+.x-treenode-green span {
+    color: #116600;
+}
+
+.x-treenode-amber span {
+    color: #FFBF00;
+}
+
+.x-treenode-blue span {
+    color: #0066CC;
+}
+
+.x-treenode-grey span {
+    color: slategrey;
+}
+
+.x-row-locked-current {
+    font-style: italic !important;
+}
+
+.x-row-locked-current .x-grid-cell-inner {
+    font-style: italic !important;
+}
+
+.x-row-locked-other .x-tree-node-icon {
+    /* TODO check if this style is used */
+    background-image: url("../images/star.png");
+}
+
+.x-row-locked-other-cell-first {
+    background-image: url("../images/star.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+}
+
+.x-row-locked-other-review {
+    background-color: lightGrey;
+}
+
+.x-row-locked-other-review.x-tree-selected {
+    background-color: #E5E5E5 !important;
+}
+
+.x-tree-view .x-no-assignment span {
+    color: red;
+}
+
+.x-tree-view .x-signed-off span {
+    font-weight: bold;
+}
+
+.x-tree-view .x-not-valid span {
+    color: #FFBF00;
+}
+
+
+.x-tree-view .x-assignment-valid span {
+    color: green;
+}
+
+.x-tree-view .x-valid span {
+    color: #0066CC;
+}
+
+.x-tree-view .x-not-writable span {
+    color: gray;
+}
+
+/*PCWM-443*/
+.x-props-grid .x-grid-td-name .x-grid-cell-inner {
+    background-image: none !important;
+}
+
+.x-grid-dirty-cell {
+    background-image: none;
+}
+
+/*PCWM-905*/
+.x-es-modify-tree .x-tree-node-leaf .x-tree-node-icon {
+    background-image:
+        url("../js/ext/resources/images/redWine/tree/folder.gif");
+}
+
+/*PCWM-746*/
+.x-window-tl .x-window-header .x-window-header-text {
+    display: block;
+    width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+.x-row-disabled {
+    color: gray;
+    cursor: default;
+    opacity: .6;
+    -moz-opacity: .6;
+    /*filter: alpha(opacity=60); - looks not good in IE6, text is vague */
+}
+
+.x-grid-body .x-grid-cell.marked-locked-as-run div {
+    padding-left: 20px;
+    background: url("../images/red_lock.gif") no-repeat scroll 2px 4px
+        transparent;
+}
+
+.x-window-dlg .x-dlg-icon .ext-mb-content {
+    max-height: 400px;
+    overflow: auto !important;
+}
+
+.x-link-in-summary:link {
+    text-decoration: underline;
+    color: #0000ff;
+}
+.x-link-in-summary:visited {
+    text-decoration: underline;
+    color: #800080;
+}
+
+.x-panel-body-default {
+    font: normal 11px tahoma, arial, verdana, sans-serif;
+}
+
+.dvp-tree-node-disabled .x-grid-cell {
+    -moz-opacity: 0.5;
+    opacity:.5;
+    filter: alpha(opacity=50);
+}
+
+.shred-selector .x-grid-cell-inner {
+    padding: 1px 6px 1px 6px;
+}

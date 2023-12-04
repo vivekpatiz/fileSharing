@@ -1,0 +1,216 @@
+/*Menus*/
+/*Entity Structure*/
+.chart_organisation {
+    background-image: url(icons/chart_organisation.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Lite Models*/
+.brick {
+    background-image: url(icons/brick.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Aggregation Rules*/
+.report {
+    background-image: url(icons/report.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Entity Sets*/
+.database {
+    background-image: url(icons/database.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Asset Portfolios*/
+.folder_image {
+    background-image: url(icons/folder_image.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Scenario Sets*/
+.lightning {
+    background-image: url(icons/lightning.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Assumption Sets*/
+.plugin {
+    background-image: url(icons/plugin.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*User Manager*/
+.group {
+    background-image: url(icons/group.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*System Administration*/
+.wrench {
+    background-image: url(icons/wrench.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Queue Balancer*/
+.arrow_switch {
+    background-image: url(icons/arrow_switch.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Sandbox Overview*/
+.photo {
+    background-image: url(icons/photo.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Master Audit*/
+.comments {
+    background-image: url(icons/comments.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Process Overview*/
+.computer {
+    background-image: url(icons/computer.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*System Configuration*/
+.system_config {
+    background-image: url(icons/cog.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*Tags*/
+.x-menu-item-icon.tags {
+    background-image: url(icons/tag_blue.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+/*System Administration*/
+.xml {
+    background-image: url(icons/xml.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.upload {
+    background-image: url(icons/export1.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.download {
+    background-image: url(icons/import2.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.approve {
+    background-image: url(icons/check.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.submitapproval {
+    background-image: url(icons/document_ok.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.reject {
+    background-image: url(icons/delete2.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.submitreject {
+    background-image: url(icons/document_delete.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.comment {
+    background-image: url(icons/message.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.expand {
+    background-image: url(icons/tree_control_expand.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.collapse {
+    background-image: url(icons/tree_control_collapse.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.information {
+    background-image: url(icons/information2.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.details {
+    background-image: url(icons/details.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.replication {
+    background-image: url(icons/page_white_go.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.merge {
+    background-image: url(icons/index_add.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.delete {
+    background-image: url(icons/delete.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.dashboard {
+    background-image: url(icons/environment.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.node_leaf_algo {
+    background-image: url(icons/document_chart.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.leaf_node_approved_portfolio {
+    background-image: url(icons/bullet_ball_green.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.leaf_node_no_approved_portfolio {
+    background-image: url(icons/bullet_ball_yellow.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.save {
+    background-image: url(icons/disk_blue.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.select-global-tags {
+    background-image: url(icons/tag_blue.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.refresh {
+    background-image: url(icons/refresh.png) !important;
+    background-repeat: no-repeat !important;
+}
+
+.valid {
+    color: green;
+    font-weight: bold !important;
+}
+
+.not-valid {
+    color: red;
+    font-weight: bold !important;
+}
+
+.clear-combo {
+    background-image: url(icons/clear-trigger.gif) !important;
+    background-repeat: no-repeat !important;
+}
