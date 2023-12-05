@@ -1,0 +1,17 @@
+{
+    "routes": [],
+    "theme": {
+        "base": "tab-default",
+        "themes": ["tab-default", "tab-custom"]
+    },
+    "features": {
+        "accounts": {
+            "accountList": true,
+            "accountDetails": false
+        },
+        "fund-transfer": {
+            "beneficairyList": true,
+            "beneficairyDetails": false
+        }
+    }
+}

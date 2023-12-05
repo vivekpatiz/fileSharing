@@ -1,0 +1,13 @@
+{
+    "tab": {
+        "basePath": "app/tab/",
+        "module": {
+            "login": {
+                "authentication": {
+                    "success": "dashboard",
+                    "error": "login"
+                }
+            }
+        }
+    }
+}

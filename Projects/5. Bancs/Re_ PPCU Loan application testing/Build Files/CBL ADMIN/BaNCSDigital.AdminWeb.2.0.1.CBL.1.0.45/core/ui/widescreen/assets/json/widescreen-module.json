@@ -1,0 +1,302 @@
+{
+    "modules": {
+        "GLOBAL": {
+            "NAVIGATION_ROUTES": {
+                "onUnknownError": "widescreen/login"
+            }
+        },
+        "LOGIN": {
+            "PAGE": {
+                "COMPONENT": {
+                    "LOGIN_COMPONENT": {
+                        "NAVIGATION_ROUTES": {
+                            "LANDING": "widescreen/login",
+                            "onLoginSuccess": "/widescreen/view",
+                            "onForgotPassword": "/widescreen/forgot-password/identify-yourself",
+                            "onIdentifyUser": "/widescreen/forgot-password/security-question",
+                            "goToResetPassword": "/widescreen/forgot-password/reset-password"
+                        }
+                    },
+                    "FIRSTTIME_LOGIN_COMPONENT": {
+                        "NAVIGATION_ROUTES": {
+                            "LANDING": "/widescreen/first-time-login"
+                        }
+                    },
+                    "ACTION_PENDING_COMPONENT": {
+                        "NAVIGATION_ROUTES": {
+                            "LANDING": "/widescreen/actions-pending"
+                        }
+                    }
+                }
+            }
+        },
+        "DASHBOARD": {
+            "PAGE": {
+                "COMPONENT": {
+                    "DASHBOARD": {
+                        "NAVIGATION_ROUTES": {
+                            "onSearch": "/widescreen/view/user-management/user-management-listing"
+                        }
+                    }
+                }
+            }
+        },
+        "USER_MANAGEMENT": {
+            "PAGE": {
+                "COMPONENT": {
+                    "USER_MANAGEMENT_LISTING": {
+                        "NAVIGATION_ROUTES": {
+                            "goToUserManagementDetails": "/widescreen/view/user-management/user-management-details"
+                        }
+                    },
+                    "USER_MANAGEMENT_DETAILS": {
+                        "NAVIGATION_ROUTES": {
+                            "goToUserManagementListing": "/widescreen/view/user-management/user-management-listing",
+                            "goToReports": "/widescreen/view/report/landing",
+                            "goToAdminReports": "/widescreen/view/report/admin/landing",
+                            "goToUserGroupListing": "/widescreen/view/user-management/user-management-details/user-groups"
+                        }
+                    },
+                    "USER_REGISTRATION": {
+                        "CREATE_USER": {
+                            "NAVIGATION_ROUTES": {
+                                "goToCreateUser": "widescreen/view/user-management/user-registration/create-user"
+                            }
+                        },
+                        "USER_GROUP_SELECT": {
+                            "NAVIGATION_ROUTES": {
+                                "goToUserGroupSelect": "widescreen/view/user-management/user-registration/user-group-select"
+                            }
+                        },
+                        "USER_REG_ACK": {
+                            "NAVIGATION_ROUTES": {
+                                "goToUserRegAck": "widescreen/view/user-management/user-registration/user-reg-ack"
+                            }
+                        },
+                        "CREATE_CUSTOMER_USER": {
+                            "NAVIGATION_ROUTES": {
+                                "goToCreateCustomerUser": "widescreen/view/user-management/user-registration/create-customer-user"
+                            }
+                        },
+                        "CUSTOMER_USER_GROUP_SELECT": {
+                            "NAVIGATION_ROUTES": {
+                                "goToCustomerUserGroupSelect": "widescreen/view/user-management/user-registration/customer-user-group-selection"
+                            }
+                        },
+                        "REG_CUSTOMER_USER": {
+                            "NAVIGATION_ROUTES": {
+                                "goToRegCustomerUser": "widescreen/view/user-management/user-registration/register-customer-user"
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "USER_GROUP": {
+            "PAGE": {
+                "COMPONENT": {
+                    "USER_GROUP_CREATE": {
+                        "NAVIGATION_ROUTES": {
+                            "goToCreateUserGroup": "/widescreen/view/user-group/user-group-create"
+                        }
+                    },
+                    "USER_GROUP_LISTING": {
+                        "NAVIGATION_ROUTES": {
+                            "goToUserGroupListing": "/widescreen/view/user-group/user-group-listing"
+                        }
+                    },
+                    "USER_GROUP_DETAILS": {
+                        "NAVIGATION_ROUTES": {
+                            "goToUserGroupDetails": "/widescreen/view/user-group/user-group-details"
+                        }
+                    }
+                }
+            }
+        },
+        "SETTINGS": {
+            "PAGE": {
+                "COMPONENT": {
+                    "NAVIGATION_ROUTES": {
+                        "LANDING": "app/core/widescreen/view/settings"
+                    }
+                }
+            }
+        },
+        "FAP": {
+            "PAGE": {
+                "COMPONENT": {
+                    "LISTING": {
+                        "NAVIGATION_ROUTES": {
+                            "goToFAPDetails": "/widescreen/view/fap/fap-details",
+                            "goToFAPCreate": "/widescreen/view/fap/fap-create"
+                        }
+                    },
+                    "DETAILS": {
+                        "NAVIGATION_ROUTES": {
+                            "goToFAPList": "/widescreen/view/fap/fap-listing"
+                        }
+                    }
+                }
+            }
+        },
+        "LOGOUT": {
+            "NAVIGATION_ROUTES": {
+                "onLogoutSuccess": "widescreen/login"
+            }
+        },
+        "LAYOUT": {
+            "PAGE": {
+                "COMPONENT": {
+                    "HEADER": {
+                        "fixedHeader": true
+                    },
+                    "NAVIGATION_ROUTES": {
+                        "onSuccess": "app/core/widescreen/view/dashboard",
+                        "onError": "app/core/widescreen/login"
+                    }
+                }
+            }
+        },
+        "HOME": {
+            "PAGE": {
+                "COMPONENT": {
+                    "ACCOUNT_LIST": {
+                        "ATTRIBUTE": {
+                            "AccountNumber": true,
+                            "AccountTitle": false
+                        },
+                        "NAVIGATION_TEMPLATE_MAPPING": {
+                            "SAVING_ACCOUNT": "SAVINGS_ACCOUNT",
+                            "DEMANDDEPOSITACCOUNT": "DEMAND_ACCOUNT",
+                            "LOAN_ACCOUNT": "LOAN_ACCOUNT"
+                        },
+                        "NAVIGATION_ROUTES": {
+                            "OnSubmitSuccess": "#/accounts",
+                            "SAVINGS_ACCOUNT": "app/core/widescreen/view/accounts/savings-account-details",
+                            "LOAN_ACCOUNT": "app/core/widescreen/view/accounts/loan-account-details",
+                            "DEMAND_ACCOUNT": "app/core/widescreen/view/accounts/demand-account-details"
+                        }
+                    },
+                    "CALENDAR": {},
+                    "FUTURE_TRANSACTION": {}
+                },
+                "NAVIGATION_ROUTES": {
+                    "OnSubmitSuccess": "#/accounts"
+                }
+            }
+        },
+        "OFFERS_AND_NEWS": {
+            "PAGE": {
+                "COMPONENT": {
+                    "OFFERS": {
+                        "NAVIGATION_ROUTES": {
+                            "goToOffers": "/widescreen/view/offers-and-news/offers-listing"
+                        }
+                    },
+                    "NEWS": {
+                        "NAVIGATION_ROUTES": {
+                            "goToNews": "/widescreen/view/offers-and-news/news-listing",
+                            "goToCreateNews": "/widescreen/view/offers-and-news/create-news",
+                            "goToOffers": "/widescreen/view/offers-and-news/offers-listing",
+                            "goToCreateOffers": "/widescreen/view/offers-and-news/create-offers"
+                        }
+                    }
+                }
+            }
+        },
+        "APPLICATION_MANAGEMENT": {
+            "PAGE": {
+                "COMPONENT": {
+                    "ACCOUNT_APPLICATIONS": {
+                        "NAVIGATION_ROUTES": {
+                            "goToAccountApplicationList": "/widescreen/view/application-management/account-applications-listing",
+                            "goToAccountApplicationDetails": "/widescreen/view/application-management/account-applications-details",
+                            "goToRevolvaAccountApplicationDetails": "/widescreen/view/application-management/revolva-loan-account-details"
+                        }
+                    },
+                    "REGULAR_DEDUCTIONS": {
+                        "NAVIGATION_ROUTES": {
+                            "goToRegularDeductionList": "/widescreen/view/application-management/regular-deductions-listing",
+                            "goToRegularDeductionDetails": "/widescreen/view/application-management/regular-deductions-details"
+                        }
+                    },
+                    "NOTICE_WITHDRAWALS": {
+                        "NAVIGATION_ROUTES": {
+                            "goToNoticeWithdrawalsList": "/widescreen/view/application-management/notice-withdrawals",
+                            "goToNoticeWithdrawalsDetails": "/widescreen/view/application-management/notice-withdrawals-details"
+                        }
+                    },
+                    "DIRECT_DEBIT_SETUP": {
+                        "NAVIGATION_ROUTES": {
+                            "goToDirectDebitSetupList": "/widescreen/view/application-management/direct-debit-listing",
+                            "goToDirectDebitSetupDetails": "/widescreen/view/application-management/direct-debit-details"
+                        }
+                    },
+                    "DEBIT_CARD_DEPOSIT_REQUEST": {
+                        "NAVIGATION_ROUTES": {
+                            "goToDebitCardDepositList": "/widescreen/view/application-management/debit-card-deposit-listing",
+                            "goToDebitCardDepositDetails": "/widescreen/view/application-management/debit-card-deposit-details"
+                        }
+                    },
+                    "ACCOUNT_INITIATION": {
+                        "NAVIGATION_ROUTES": {
+                            "goToAccountInitiationList": "/widescreen/view/application-management/account-initiation",
+                            "goToAccountInitiationDetails": "/widescreen/view/application-management/account-initiation-details"
+                        }
+                    },
+                    "RDC_VALIDATION": {
+                        "NAVIGATION_ROUTES": {
+                            "goToRDCValidationList": "/widescreen/view/application-management/rdc-validation-listing",
+                            "goToRDCValidationDetails": "/widescreen/view/application-management/rdc-validation-details"
+                        }
+                    },
+                    "AMEND_APPLICATIONS": {
+                        "NAVIGATION_ROUTES": {
+                            "goToAmendApplicationList": "/widescreen/view/application-management/amend-applications-listing",
+                            "goToAmendApplicationDetails": "/widescreen/view/application-management/amend-applications-details"
+                        }
+                    }
+                }
+            }
+        },
+        "SYSTEM_MESSAGES": {
+            "PAGE": {
+                "COMPONENT": {
+                    "NAVIGATION_ROUTES": {
+                        "goToSystemMessageList": "/widescreen/view/system-message/system-message-listing",
+                        "goToCreateBroadCastMessage": "/widescreen/view/system-message/create-broadcast-message",
+                        "goToCreateOutageMessage": "/widescreen/view/system-message/create-outage-message"
+                    }
+                }
+            }
+        },
+        "LOAN_AGREEMENT_ENQUIRY": {
+            "PAGE": {
+                "COMPONENT": {
+                    "NAVIGATION_ROUTES": {
+                        "goToLoanAgreementUpload": "/widescreen/view/loan-agreement/upload"
+                    }
+                }
+            }
+        },
+        "SECURE_MESSAGES": {
+            "PAGE": {
+                "COMPONENT": {
+                    "NAVIGATION_ROUTES": {
+                        "goToSecureMessageList": "/widescreen/view/secure-message/listing"
+                    }
+                }
+            }
+        },
+        "TERMS_AND_CONDITION": {
+            "PAGE": {
+                "COMPONENT": {
+                    "NAVIGATION_ROUTES": {
+                        "goToTNCList": "/widescreen/view/terms-and-conditions/terms-and-conditions-listing",
+                        "goToCreateTNC": "/widescreen/view/terms-and-conditions/create-terms-and-conditions"
+                    }
+                }
+            }
+        }
+    }
+}

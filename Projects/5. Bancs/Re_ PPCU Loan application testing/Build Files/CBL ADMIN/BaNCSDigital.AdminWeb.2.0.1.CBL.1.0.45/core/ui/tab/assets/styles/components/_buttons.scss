@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.btn {
+    @extend .ellipsis;
+    display: inline-block;
+    font-family: $roboto-regular;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    &:disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+    @include coretabthemify() {
+        color: getTheme('login-button-color');
+        background-color: getTheme('login-button-bg');
+    }
+}
+
+.btn-large {
+    @extend .btn;
+    font-size: $font-size-14;
+    padding: 15px 20px;
+}
+
+.btn-medium {
+    @extend .btn;
+    font-size: $font-size-14;
+    padding: 10px 15px;
+}

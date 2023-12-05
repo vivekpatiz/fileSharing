@@ -1,0 +1,9 @@
+{
+  "commitID": 7ff920fb3ac524df74b34214d96065c5d3acfc9c,
+  "version": "BaNCSDigital.AdminWeb.2.0.1.CBL.1.0.45",
+  "branch": "qa_cnstr",
+  "SecuritySolutionBuild" : "No",
+  "IB":"2.0.1.CBL.1.0.45",
+  "Date":"28 Nov 2023",
+  "Comment":"Accepted/Rejected scenario"
+} 

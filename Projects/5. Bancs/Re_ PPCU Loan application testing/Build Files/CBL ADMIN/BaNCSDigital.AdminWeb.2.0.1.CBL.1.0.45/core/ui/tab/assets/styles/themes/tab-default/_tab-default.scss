@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains default theme defenition
+// -----------------------------------------------------------------------------
+// default theme colors
+@import 'abstracts/color';
+$tab-default:(
+login-border-color: $color-watermelon, 
+login-button-bg: $color-watermelon, 
+login-button-color: $color-sky, 
+text-highlight: $color-sky,
+page-color: $color-carbon, 
+page-bg: $color-neutral
+ );
+$theme-name: "tab-default";
+$default:( $theme-name:$tab-default);

@@ -1,0 +1,46 @@
+@import "tab-default/tab-default";
+@import "tab-custom/tab-custom";
+
+$themesWs:map-merge($default, $custom);
+@function map-fetch($map, $keys) {
+  $key: nth($keys, 1);
+  $length: length($keys);
+  $value: map-get($map, $key);
+  @if $value !=null {
+    @if $length>1 {
+      $rest: ();
+      @for $i from 2 through $length {
+        $rest: append($rest, nth($keys, $i))
+      }
+      @return map-fetch($value, $rest);
+    }
+    @else {
+      @return $value;
+    }
+  }
+  @else {
+    @return false;
+  }
+}
+
+@function getTheme($key) {
+  @return map-get($theme-map, $key);
+}
+
+@mixin coretabthemify($themesWs: $themesWs) {
+  //   @include themify();
+  @each $theme,
+  $map in $themesWs {
+    .#{$theme} & {
+      // Define theme color
+      $theme-map: ( xxx: xxx) !global;
+      @each $key,
+      $submap in $map {
+        $value: map-fetch($themesWs, $theme '#{$key}');
+        $theme-map: map-merge($theme-map, ($key: $value)) !global;
+      }
+      @content; // reset theme color to null
+      $theme-map: null !global;
+    }
+  }
+}

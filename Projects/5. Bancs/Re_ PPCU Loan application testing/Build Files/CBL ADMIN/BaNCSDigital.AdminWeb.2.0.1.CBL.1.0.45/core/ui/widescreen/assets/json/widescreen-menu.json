@@ -1,0 +1,244 @@
+{
+    "menu": [{
+            "name": "Dashboard",
+            "languageKey": "Dashboard",
+            "enabled": true,
+            "display": false,
+            "imageIcon": "dashboard-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/dashboard"
+            },
+            "permissions": [
+                "BaNCSDigitalAdminHome"
+            ]
+        },
+        {
+            "name": "User Management",
+            "languageKey": "User Management",
+            "enabled": true,
+            "display": false,
+            "imageIcon": "usermangmt-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/user-management"
+            },
+            "permissions": [
+                "AdminUserManagement",
+                "CustomerUserManagement"
+            ]
+        },
+        {
+            "name": "Functional Access Profile",
+            "languageKey": "FAP",
+            "enabled": true,
+            "display": false,
+            "imageIcon": "fap-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/fap"
+            },
+            "permissions": [
+                "FunctionalAccessProfileManagement"
+            ]
+        },
+        {
+            "name": "User Group",
+            "languageKey": "User Group",
+            "enabled": true,
+            "display": false,
+            "imageIcon": "user-grp-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/user-group"
+            },
+            "permissions": [
+                "FunctionalAccessProfileManagement"
+            ]
+        },
+        {
+            "name": "Reports",
+            "languageKey": "Reports",
+            "enabled": true,
+            "display": false,
+            "imageIcon": "reports-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/report"
+            },
+            "permissions": [
+                "ReportsManagement"
+            ]
+        },
+        {
+            "name": "Secure Messages",
+            "languageKey": "Secure Messages",
+            "enabled": true,
+            "display": false,
+            "imageIcon": "secure-msg-img",
+            "showCount": true,
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/secure-message"
+            },
+            "permissions": [
+                "SecureMessageCommon"
+            ]
+        },
+        {
+            "name": "System Messages",
+            "languageKey": "System Messages",
+            "display": false,
+            "enabled": true,
+            "imageIcon": "sys-msg-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/system-message/system-message-listing"
+            },
+            "permissions": [
+                "PlatformMessageManagement"
+            ]
+        },
+        {
+            "name": "News",
+            "languageKey": "News",
+            "enabled": true,
+            "display": false,
+            "imageIcon": "news-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/offers-and-news/news-listing"
+            },
+            "permissions": [
+                "ManageNews"
+            ]
+        },
+        {
+            "name": "Offers",
+            "languageKey": "Offers",
+            "enabled": true,
+            "display": false,
+            "imageIcon": "offers-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/offers-and-news/offers-listing"
+            },
+            "permissions": [
+                "ManageOffers"
+            ]
+        },
+        {
+            "name": "Global Limits",
+            "languageKey": "Global Limits",
+            "enabled": true,
+            "display": false,
+            "imageIcon": "global-limit-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/global-limit"
+            },
+            "permissions": [
+                "ManageDigitalLimits"
+            ]
+        },
+        {
+            "name": "Application Management",
+            "languageKey": "Application Management",
+            "display": false,
+            "enabled": true,
+            "showCount": true,
+            "imageIcon": "app-mgmt-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/application-management"
+            },
+            "permissions": [
+                "ManageApplication"
+            ]
+        },
+        {
+            "name": "Direct Debit Setup",
+            "languageKey": "Direct Debit Setup",
+            "enabled": true,
+            "display": false,
+            "showCount": true,
+            "imageIcon": "app-mgmt-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "/widescreen/view/direct-debit/direct-debit-listing"
+            },
+            "permissions": [
+                
+            ]
+        },
+        {
+            "name": "Loan Agreement",
+            "languageKey": "Loan Agreement",
+            "enabled": true,
+            "display": true,
+            "showCount": true,
+            "imageIcon": "app-mgmt-img",
+            "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "#"
+            },"subMenu": {
+                "enabled": true,
+                "menuList": [{
+                    "name": "Upload Loan Agreement",
+                    "languageKey": "Upload Loan Agreement",
+                    "enabled": true,
+                    "tabEnabled": true,
+                    "mobileEnabled": true,
+                    "navigation": {
+                      "enabled": true,
+                      "internal": true,
+                      "link": "/widescreen/view/loan-agreement/upload"
+                    }
+                  }, {
+                    "name": "Loan Agreement Enquiry",
+                    "languageKey": "Loan Agreement Enquiry",
+                    "enabled": true,
+                    "tabEnabled": true,
+                    "mobileEnabled": true,
+                    "navigation": {
+                      "enabled": true,
+                      "internal": true,
+                      "link": "/widescreen/view/loan-agreement/enquiry"
+                    }
+                  }
+                ]
+              },
+            "permissions": [
+            ]
+        },
+        {
+            "name": "Terms & Conditions",
+            "languageKey": "Terms & Conditions",
+            "display": false,
+            "enabled": false,
+            "imageIcon": "tc-img",
+            "navigation": {
+                "enabled": false,
+                "internal": false,
+                "link": "/widescreen/view/terms-and-conditions"
+            },
+            "permissions": [
+                "DisclosureManagement",
+                "DisclosureInquiry"
+            ]
+        }
+    ]
+}

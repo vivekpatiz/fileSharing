@@ -1,0 +1,54 @@
+--------------------------------------------------------------------------------------------------------------------------
+BUILD FOR PPCU
+--------------------------------------------------------------------------------------------------------------------------
+
+gulp preparembbuild
+
+config.json
+
+"contextPath": "/CBL/BaNCSDigitalWeb/",
+"serviceContextPathCONISTER": "../../CBL/BaNCSDigitalApp/",
+
+conister-vendor.json =>
+
+ "CONSTANTS": {
+            "Country": {
+                "Code": "GBR"
+            },
+            "channelImplVersion": ".CONISTER.1.0.0" // CBL UAT
+        }
+		
+https://ukdg01uat.tcsbancs.com/CBLIOM/BaNCSDigitalWeb/version.txt - to check the last build
+version : BaNCSDigital.Web.2.0.1.CBLIOM.1.0.128;
+date  : 16-Nov-2023
+CommitID: a3bb40836ae10f6a7fa20b23d920d7e6ee0fe1bd
+Branch: Develop
+Comment: uiid change for forgot username
+
+
+
+--------------------------------------------------------------------------------------------------------------------------
+BUILD FOR CBL ADMIN
+--------------------------------------------------------------------------------------------------------------------------
+ng build --prod --project cnstr
+
+config.json
+ 
+"contextPath": "/BaNCSDigitalAdminWeb/",
+"serviceContextPathCNSTR": "../BaNCSDigitalAdminApp/",
+
+instead of vendor.json add the version in config.json => "channelVerion": "2.0.1.CBL.0.0.24"  -- add correct version
+
+http://10.180.40.112:8702/BaNCSDigitalAdminWeb/version.txt - to check the last build
+  "commitID": 7ff920fb3ac524df74b34214d96065c5d3acfc9c,
+  "version": "BaNCSDigital.AdminWeb.2.0.1.CBL.1.0.44",
+  "branch": "qa_cnstr",
+  "SecuritySolutionBuild" : "No",
+  "IB":"2.0.1.CBL.1.0.44",
+  "Date":"27 Nov 2023",
+  "Comment":"Accepted/Rejected scenario"
+
+
+
+
+

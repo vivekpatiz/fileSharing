@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains default theme defenition
+// -----------------------------------------------------------------------------
+// default theme colors
+@import 'abstracts/color';
+$tab-custom:(
+login-border-color: $color-celurean, 
+login-button-bg: $color-celurean, 
+login-button-color: $color-tangerine, 
+text-highlight: $color-tangerine,
+page-color: $color-yellow, 
+page-bg: $color-aluminium
+ );
+$theme-name: "tab-custom";
+$custom:( $theme-name:$tab-custom);

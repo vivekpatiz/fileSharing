@@ -1,0 +1,30 @@
+{
+    "product": {
+      "version": "BaNCSDigital.Web_1.3.45",
+      "gdm": "apiVer",
+      "statusCodes": "1.10.70",
+      "buildVersion": {
+        "iOS": "BaNCSDigitalApps.iOS_1.0.0.",
+        "android": "BaNCSDigitalApps.iOS_1.0.0."
+      }
+    },
+    "implementation": {
+      "web": {
+        "name": "Admin Internet Banking",
+        "version": "adm.1.0.0"
+      },
+      "mobile": {
+        "name": "Admin Mobile Banking",
+        "iOS": {
+          "version": ""
+        },
+        "android": {
+          "version": ""
+        }
+      }
+    },
+    "buildType": "QA Delivery",
+    "commitID": "",
+    "version": "",
+    "branch": "develop"
+  }

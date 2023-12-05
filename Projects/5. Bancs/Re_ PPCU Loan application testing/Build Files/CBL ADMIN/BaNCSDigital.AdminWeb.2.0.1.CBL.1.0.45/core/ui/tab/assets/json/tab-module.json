@@ -1,0 +1,21 @@
+{
+  "modules": {
+    "LOGIN": {
+      "PAGE": {
+        "COMPONENT": {
+          "LOGIN_COMPONENT": {
+            "NAVIGATION_ROUTES": {
+              "onLoginSuccess": "app/core/tab/view/dashboard"
+            }
+          }
+        }
+      }
+    },
+    "HOME": {
+      "PAGE": {
+        "COMPONENT": {
+        }
+      }
+    }
+  }
+}
