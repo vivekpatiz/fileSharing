@@ -1,0 +1,28 @@
+{
+    "routes": [],
+    "theme": {
+        "base": "phone-default",
+        "themes": ["phone-default", "phone-custom"]
+    },
+    "features": {
+        "accounts": {
+            "accountList": true,
+            "accountDetails": false
+        },
+        "fund-transfer": {
+            "beneficairyList": true,
+            "beneficairyDetails": false
+        }
+    },
+        "navigator":{
+        "basePath": "app/phone/",
+        "module": {
+            "login": {
+                "authentication": {
+                    "success": "dashboard",
+                    "error": "login"
+                }
+            }
+        }
+    }
+}

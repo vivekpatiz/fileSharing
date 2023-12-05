@@ -1,0 +1,363 @@
+{
+    "CONFIG_MERGE_KEY": "ENUMSIMPL",
+    "AccountType": {
+        "DEMANDDEPOSITACCOUNT": "DEP",
+        "SAVINGSDEPOSITACCOUNT": "1",
+        "CREDITCARDACCOUNT": "CREDITCARDACCOUNT",
+        "HOMELOAN": "HOMELOAN",
+        "INSTALLMENTLOAN": "INSTALLMENTLOAN",
+        "COMMERCIALLOAN": "COMMERCIALLOAN",
+        "TERMDEPOSIT": "TERMDEPOSIT",
+        "RECURRINGDEPOSIT": "RECURRINGDEPOSIT",
+        "LOCACCOUNT": "LOCACCOUNT",
+        "MORTGAGELOAN": "MORTGAGELOAN",
+        "MONEYMARKETACCOUNT": "MONEYMARKETACCOUNT",
+        "CASHMANAGEMENTACCOUNT": "CASHMANAGEMENTACCOUNT",
+        "INVESTMENTACCOUNT": "INVESTMENTACCOUNT",
+        "RETIREMENTACCOUNT": "RETIREMENTACCOUNT",
+        "PASSBOOKACCOUNT": "PASSBOOKACCOUNT",
+        "INVESTMENTREVOLVINGLOAN": "INVESTMENTREVOLVINGLOAN",
+        "PREPAIDACCOUNT": "PREPAIDACCOUNT",
+        "REWARDACCOUNT": "REWARDACCOUNT",
+        "LOANACCOUNT": "LOANACCT",
+        "POINTSACCOUNT": "POINTSACCOUNT",
+        "DEPOSIT": "DEPOSIT",
+        "CREDIT": "CREDIT",
+        "BANKGUARANTEE": "BANKGUARANTEE",
+        "ISA": "ISA",
+        "LEASEACCOUNT": "LEASEACCOUNT",
+        "GLACCOUNT": "GLACCOUNT",
+        "SUSPENSEACCOUNT": "SUSPENSEACCOUNT"
+    },
+    "AccessGroupStatusCode": {
+        "ACTIVE": 1,
+        "INACTIVE": 2,
+        "DELETED": 3
+    },
+    "ActionType": {
+        "INITIATE": "1",
+        "APPROVE": "2",
+        "MODIFY": "3",
+        "REJECT": "4",
+        "CANCEL": "5",
+        "DELETE": "6",
+        "STOP": "7",
+        "PROCESS": "8"
+    },
+    "AnswerStatusCode": {
+        "ACTIVE": 1,
+        "INACTIVE": 2
+    },
+    "CredentialScope": {
+        "LOGIN": "1",
+        "TRANSACTION": "2",
+        "REGISTRATION": "3"
+    },
+    "DeviceStatus": {
+        "ACTIVE": "1",
+        "BLOCKED": "2",
+        "STOLEN": "3",
+        "BANNED": "4",
+        "REMOVED": "5",
+        "INACTIVE": "6"
+    },
+    "VerificationDataStatus": {
+        "ACTIVE":"1",
+        "LOCKED":"2",
+        "INACTIVE":"3",
+        "BLOCKED":"4",
+        "RESET":"5",
+        "DELETED":"6",
+        "EXPIRED":"7"
+    },
+    "DigiConversationStatus": {
+        "ACTIVE": "8",
+        "INACTIVE": "9",
+        "CLOSED": "10"
+    },
+    "DigiCorrespondencePurpose": {
+        "ACCOUNTRELATED": "1",
+        "PRODUCTRELATED": "2"
+    },
+    "DigiCorrespondenceStatus": {
+        "NEW": "1",
+        "READ": "2",
+        "ARCHIVED": "3",
+        "DELETED": "4",
+        "EXPIRED": "5",
+        "UNREAD": "6",
+        "ASSIGNED": "7",
+        "TRASHED": "8"
+    },
+    "DisclosureStatusCode": {
+        "ACTIVE": "1",
+        "DELETED": "3",
+        "INACTIVE": "2"
+    },
+    "FapUserGroupRelStatus": {
+        "INACTIVE": "2",
+        "ACTIVE": "1"
+    },
+    "InteractionMode": {
+        " DIALOGBOX": "1",
+        "MODALWINDOW": "2",
+        "NEWPAGE": "3",
+        "NEWTAB": "4",
+        "INLINE": "5"
+    },
+    "InteractionType": {
+        "INFORMATIONAL": "1",
+        "MANDATORYACCEPT": "2",
+        "ACKNOWLEDGEABLE": "3",
+        "ACCEPT": "4",
+        "REJECT": "5",
+        "CANCEL": "6",
+        "DELETE": "7"
+    },
+    "Locale": {
+        "EN_US": "1",
+        "ms_MY": "2"
+    },
+    "MIMEType": {
+        "text/csv": "1",
+        "text/plain": "2"
+    },
+    "PerformerLevel": {
+        "LEVEL_A": "1",
+        "LEVEL_B": "2",
+        "LEVEL_C": "3",
+        "LEVEL_D": "4",
+        "LEVEL_E": "5"
+    },
+    "Priority": {
+        "LOW": "1",
+        "NORMAL": "2",
+        "HIGH": "3",
+        "URGENT": "4",
+        "CRITICAL": "5"
+    },
+    "QuestionStatusCode": {
+        "ACTIVE": "1",
+        "INACTIVE": "2",
+        "FROZEN": "3"
+    },
+    "QuestionType": {
+        "FREEFORM": "1",
+        "MULTIPLECHOICESINGLEANSWER": "2",
+        "MULTIPLECHOICEMULTIPLEANSWER": "3"
+    },
+    "SecretType": {
+        "LOGIN_PASSWORD": "1",
+        "TRANSACTION_PASSWORD": "2",
+        "OTP": "3",
+        "ANSWER": "4",
+        "CUSTOMER_ID": "5",
+        "DATE_OF_BIRTH": "6",
+        "EMPLOYEE_ID": "7"
+    },
+    "SystemMessageStatusCode": {
+        "DRAFT": "4",
+        "ENABLED": "5",
+        "DISABLED": "3",
+        "ACTIVE": "1",
+        "INACTIVE": "2",
+        "DELETED": "6",
+        "READ": "7",
+        "ACCEPTED": "8",
+        "REJECTED": "9",
+        "CANCELLED": "10"
+    },
+    "SystemOutageStatusCode": {
+        "PENDING": "4",
+        "CANCELLED": "3",
+        "INACTIVE": "2",
+        "ACTIVE": "1"
+    },
+    "TaskDataStatus": {
+        "SUCCESS": "1",
+        "FAILURE": "2"
+    },
+    "TaskRunMode": {
+        "SEQUENTIAL": "1",
+        "PARALLEL": "2"
+    },
+    "TaskState": {
+        "OPEN": "1",
+        "COMPLETED": "2",
+        "RUNNING": "3",
+        "SUSPENDED": "4",
+        "REJECTED": "5",
+        "ABORTED": "6",
+        "EXPIRED": "7",
+        "TERMINATED": "8"
+    },
+    "UserGroupStatusCode": {
+        "INACTIVE": "2",
+        "ACTIVE": "1",
+        "DELETED": "3"
+    },
+    "UserHostStatusCode": {
+        "ACTIVE": "1",
+        "INACTIVE": "2",
+        "DELETED": "3"
+    },
+    "UserServiceRelationshipStatusCode": {
+        "DEREGISTERED": "2",
+        "REGISTERED": "1",
+        "NEVERREGISTERED": "3",
+        "SUSPENDED": "4",
+        "PENDING": "5",
+        "ACKNOWLEDGEMENTPENDING": "6"
+    },
+    "UserStatus": {
+        "ACTIVE": "1",
+        "DORMANT": "2",
+        "BLOCKED": "3",
+        "TERMINATED": "4",
+        "DEREGISTERED": "5",
+        "INACTIVE": "6",
+        "LOCKED": "7",
+        "PENDING": "8"
+    },
+    "VerificationDataStatus": {
+        "ACTIVE": "1",
+        "LOCKED": "2",
+        "INACTIVE": "3",
+        "BLOCKED": "4",
+        "RESET": "5",
+        "DELETED": "6",
+        "EXPIRED": "7"
+    },
+    "VerificationIDStatus": {
+        "APPROVALPENDING": "1",
+        "REJECTED": "2",
+        "FIRSTLOGIN": "3",
+        "ACTIVE": "4",
+        "LOCKED": "5",
+        "DORMANT": "6",
+        "BLOCKED": "7",
+        "RESET": "8",
+        "TERMINATED": "9"
+    },
+    "UserGroupList": {
+        "SUPERADMIN": {
+            "ID": "91",
+            "NAME": "SuperAdmin",
+            "UserRole": "Super Admin",
+            "UserGrpName": "Super Admin Group"
+        },
+        "BANKADMIN": {
+            "ID": "90",
+            "NAME": "BankAdmin",
+            "UserRole": "Bank Admin",
+            "UserGrpName": "Bank Admin Group"
+        },
+        "EMPLOYEES": {
+            "ID": "89",
+            "NAME": "Employees",
+            "UserRole": "Retail Admin",
+            "UserGrpName": "Bank User Group"
+        },
+        "OUTSOURCEDADMIN": {
+            "ID": "92",
+            "NAME": "OutsourcedAdmin",
+            "UserRole": "Retail Admin",
+            "UserGrpName": "Internal Bank User Group"
+        },
+        "RETAILCUSTOMER": {
+            "ID": "35",
+            "NAME": "RetailCustomer",
+            "UserRole": "Customer IB",
+            "UserGrpName": "Retail Customer Group"
+        },
+        "SECUREMESSAGE": {
+            "ID": "94",
+            "NAME": "SecureMessageGroup",
+            "UserRole": "Customer",
+            "UserGrpName": "Secure Message Group"
+        }
+    },
+    "SystemMessageUserGroupList": {
+        "BANKADMIN": {
+            "ID": "90",
+            "NAME": "BankAdmin",
+            "UserRole": "Bank Admin",
+            "UserGrpName": "Bank Admin Group"
+        },
+        "RETAILCUSTOMER": {
+            "ID": "35",
+            "NAME": "RetailCustomer",
+            "UserRole": "Customer IB",
+            "UserGrpName": "Retail Customer Group"
+        }
+    },
+    "DisclosureType": {
+        "TERMSANDCONDITIONS": "1",
+        "PRIVACYNOTICE": "2",
+        "ACCOUNTAPPLICATIONDISCLOSURE": "ACCOUNTAPPLICATIONDISCLOSURE"
+    },
+    "KTIssuedIdentificationType": {
+        "PASSPORTTNB": {
+            "Code": "PASSPORTTNB",
+            "Description": "Passport Number"
+        },
+        "TENTERAID": {
+            "Code": "MILITARY",
+            "Description": "Tentera ID"
+        },
+        "ICNumber": {
+            "Code": "ICNumber",
+            "Description": "IC Number"
+        },
+        "CUSTOMERIDENTIFIER":{
+            "Code": "CUSTOMERIDENTIFIER",
+            "Description": "Membership ID"
+        }
+    },
+    "NBBIssuedIdentificationType": {
+        "GROUPCOUNTRYPASSPORTID": {
+            "Code": "GROUPCOUNTRYPASSPORTID",
+            "Description": "GCC Passport"
+        },
+        "GROUPCOUNTRYNATIONALID": {
+            "Code": "GROUPCOUNTRYNATIONALID",
+            "Description": "GCC National Identification Card"
+        },
+        "NATIONALID": {
+            "Code": "NATIONALID",
+            "Description": "Saudi National/\/National Identification Card"
+        },
+        "PASSPORTTNB":{
+            "Code": "PASSPORTTNB",
+            "Description": "Non-Saudi Passport"
+        }
+    },
+    "USSBIssuedIdentificationType": {
+        "PASSPORTTNB": {
+            "Code": "PASSPORTTNB",
+            "Description": "Passport Number"
+        },
+        "DRIVERSLICENCENUMBER": {
+            "Code": "DRIVERSLICENCENUMBER",
+            "Description": "Drivers Licence Number"
+        },
+        "SOCIALSECURITYNUMBER": {
+            "Code": "SOCIALSECURITYNUMBER",
+            "Description": "Social Security Number"
+        }
+    },
+    "JBLIssuedIdentificationType": {
+        "PASSPORTTNB": {
+            "Code": "PASSPORTTNB",
+            "Description": "Passport Number"
+        },
+        "NATIONALID": {
+            "Code": "NATIONALID",
+            "Description": "National ID"
+        }
+    },
+    "Segment": {
+        "SEGMENT1": "1",
+        "SEGMENT2": "2"
+    }
+}

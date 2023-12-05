@@ -1,0 +1,58 @@
+{
+    "CONFIG_MERGE_KEY": "COMMUNICATION",
+    "SERVICE": {
+        "CONTEXT_PATH": "/BaNCSDigitalApp",
+        "ENDPOINTS": {
+            "CUSTOMER": "customer",
+            "ACCOUNT": "account",
+            "TRANSFER": "xfer",
+            "LOGIN": "login",
+            "MODULE": "module",
+            "PAYEE": "payee",
+            "DIRECTDEBIT": "account",
+            "FUTURETRANSFER": "module",
+            "LOGOUT": "logout",
+            "REPORT": "report",
+            "PERSONCUSTOMER": "module",
+            "LOTTERY": "account",
+            "OPENACCT": "module",
+            "USERACTIVITY": "module",
+            "APPLICATIONMGMT": "module",
+            "BROADCASTMSG": "account",
+            "CREATEUSER": "module",
+            "MODIFYUSER": "module",
+            "MEMBERLIMITSUPDATEDBYINFO": "module",
+            "GLOBALTRANSACTIONLIMIT": "module",
+            "GLOBALLIMITMODIFY": "module",
+            "TRANSACTIONLIMITMODIFY": "module",            
+            "CUSTOMERLIMIT": "module",
+            "CUSTOMERLIMITMODIFYCONFIRM": "module",
+            "CUSTOMERLIMITMODIFY": "module",
+            "BANKUSER": "module",
+            "SYSTEMESSAGE": "account",
+            "UNITINFO": "module",
+            "FIRSTTIMELOGINPWDCHANGECNF": "module",
+            "FIRSTTIMELOGINPWDCHANGE": "module",
+            "ACTIONPENDINGFROMUSER": "module",
+            "ACTIVATEUSERCONFIRM": "module",
+            "ACTIVATEUSER": "module",
+            "CHANGESECQNCONFIRM": "module",
+            "CHANGESECQNUPD": "module",
+            "ACCEPTTERMSANDPRIVACYCONFIRM":"module",
+            "ACCEPTTERMSANDPRIVACY":"module",
+            "QnAnsSETSTATUS":"authn",
+            "AUTHN": "authn",
+            "CHANGELOGINPWDCONFIRM":"module",
+            "CHANGELOGINPWD":"module",
+            "DEVICEINFO": "module",
+            "LOCKADMIN": "module",
+            "LOCKADMINCONFIRM": "module"
+        },
+        "HTTP_HEADERS": {
+            "Content-Type": "application/json"
+        }
+    },
+    "PRESENTATION": {
+        "CONTEXT_PATH": "/BaNCSDigitalWeb"
+    }
+}

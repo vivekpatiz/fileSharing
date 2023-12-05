@@ -1,0 +1,881 @@
+{
+    "widescreen": {
+        "theme": {
+            "base": "widescreen-default"
+        }
+    },
+    "master": {
+        "PRESENTATION": {
+            "MODULE": {
+                "LOGIN": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LOGIN_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "new_user_registration": true,
+                                    "username": true,
+                                    "password": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "DASHBOARD": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "DASHBOARD_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "secure_message": true,
+                                    "broadcast_message": true,
+                                    "outage_message": true,
+                                    "news": false,
+                                    "offers": false,
+                                    "pending_applications": false,
+                                    "user_type_count": true,
+                                    "show_admin_count": true,
+                                    "ktIssuedId": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "FORGOT_PASSWORD": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "FORGOT_PASSWORD_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "username": true,
+                                    "email_id": true,
+                                    "security_answer": true,
+                                    "new_password": true,
+                                    "confirm_password": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "USER_MANAGEMENT": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LISTING_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "adminDeregister": true,
+                                    "customerDeregister": true,
+                                    "resetCustomerOTP": true,
+                                    "unLockCustomerQnA":true,
+                                    "resetCustomerQnA": true,
+                                    "preReg": true,
+                                    "resetLoginPwdAlone": true,
+                                    "resetAdminQnA": true,
+                                    "memebershipId": true,
+                                    "citizenshipStatus": true,
+                                    "adminLock": true,
+                                    "govtId": true,
+                                    "ktIssuedId": true,
+                                    "channelRegistrationStatus": false,
+                                    "userSearch": {
+                                        "customerUserId": true,
+                                        "customerName": true,
+                                        "customerCnctNo": true,
+                                        "customerGovtIdNo": true,
+                                        "customerMemberId": true,
+                                        "adminName": true,
+                                        "adminEmpId": true,
+                                        "adminUserId": true
+                                    }
+                                },
+                                "TABLE_ATTRIBUTES": {
+                                    "customerSearch": [
+                                        {
+                                            "label": "User ID",
+                                            "reverse": true,
+                                            "key": "memberName",
+                                            "iconClass" : "um-list-user-image",
+                                            "labelToolTip": "User ID",
+                                            "classes": "col-11",
+                                            "colWidth": 30,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Member Name",
+                                            "key": "fullName",
+                                            "labelToolTip": "Member Name",
+                                            "classes": "col-3",
+                                            "colWidth": 40,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Status",
+                                            "key": "statusDescription",
+                                            "labelToolTip": "Status",
+                                            "classes": "col-2",
+                                            "colWidth": 30,
+                                            "filter": "",
+                                            "enabled": true
+                                        }   
+                                    ],
+                                    "customerSearchContent": [
+                                        {
+                                            "label": "User ID",
+                                            "reverse": true,
+                                            "key": "memberName",
+                                            "labelToolTip": "User ID",
+                                            "classes": "col-11",
+                                            "colWidth": 26.5,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Member Name",
+                                            "key": "fullName",
+                                            "labelToolTip": "Member Name",
+                                            "classes": "col-3",
+                                            "colWidth": 40,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Status",
+                                            "key": "statusDescription",
+                                            "labelToolTip": "Status",
+                                            "classes": "col-2",
+                                            "colWidth": 30,
+                                            "filter": "",
+                                            "enabled": true
+                                        }   
+                                    ],
+                                    "adminSearch": [
+                                        {
+                                            "label": "User ID",
+                                            "reverse": true,
+                                            "key": "adminLoginId",
+                                            "iconClass" : "um-list-user-image",
+                                            "labelToolTip": "User ID",
+                                            "classes": "col-11",
+                                            "colWidth": 17,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Member Name",
+                                            "key": "fullName",
+                                            "labelToolTip": "Member Name",
+                                            "classes": "col-3",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "User Group",
+                                            "key": "userGroupName",
+                                            "labelToolTip": "User Group",
+                                            "classes": "col-3",
+                                            "colWidth": 40,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Status",
+                                            "key": "statusDescription",
+                                            "labelToolTip": "Status",
+                                            "classes": "col-2",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        }
+                                    ] ,
+                                    "adminSearchContent": [
+                                        {
+                                            "label": "User ID",
+                                            "reverse": true,
+                                            "key": "adminLoginId",
+                                            "labelToolTip": "User ID",
+                                            "classes": "col-11",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Member Name",
+                                            "key": "fullName",
+                                            "labelToolTip": "Member Name",
+                                            "classes": "col-3",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "User Group",
+                                            "key": "userGroupName",
+                                            "labelToolTip": "User Group",
+                                            "classes": "col-3",
+                                            "colWidth": 40,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Status",
+                                            "key": "statusDescription",
+                                            "labelToolTip": "Status",
+                                            "classes": "col-2",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "DETAILS_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "preferedName": true,
+                                    "admin_view_status_history": true,
+                                    "adminDeregister": true,
+                                    "customerDeregister": true,
+                                    "resetCustomerOTP": true,
+                                    "unLockCustomerQnA":true,
+                                    "resetCustomerQnA": true,
+                                    "preReg": true,
+                                    "resetAdminQnA": true,
+                                    "resetLoginPwdAlone": true,
+                                    "channelRegistrationStatus": false,
+                                    "customer_limit_management_modify": false,
+                                    "adminLock": true,
+                                    "govtId": true,
+                                    "tabs": {
+                                        "customer_limit_management": true,
+                                        "cust_account_info": true,
+                                        "cust_device_info": true,
+                                        "channel_reg_status": true
+                                        
+                                    }
+                                },
+                                "CUSTOMER_LIMITS": {
+                                    "UI_ATTRIBUTES": {
+                                        "citizenAndNonCitizenLimits": true,
+                                        "memberLimitsUpdatedInfo": false,
+                                        "overrideLimits": false
+                                    }
+                                }
+                            },
+                            "USER_REGISTRATION": {
+                                "UI_ATTRIBUTES": {
+                                    "employee_id": true,
+                                    "secure_message_user_group": false,
+                                    "isDisableEmailOnEdit": true,
+                                    "sendUiidOnUpdate":true
+                                },
+                                "REQUIRED": {
+                                    "middleName": false,
+                                    "addressLine1": true,
+                                    "addressLine2": false,
+                                    "addressLine3": false,
+                                    "workPhone": false,
+                                    "homePhone": false,
+                                    "city": true,
+                                    "state": true,
+                                    "postalCode": true
+                                }
+                            },
+                            "USER_GROUP": {
+                                "UI_ATTRIBUTES": {
+                                    "search_component": true,
+                                    "isEditUserGroup": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "PRELOGIN_MANAGEMENT": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LISTING_COMPONENT": {
+                               
+                                "TABLE_ATTRIBUTES": {
+                                    "customerSearch": [{
+                                        "label": "Salutation",
+                                        "key": "salutation",
+                                        "labelToolTip": "Salutation",
+                                        "classes": "col-1",
+                                        "colWidth": 30,
+                                        "filter": "",
+                                        "enabled": true
+                                    }, {
+                                        "label": "FullName",
+                                        "key": "fullName",
+                                        "labelToolTip": "FullName",
+                                        "classes": "col-2",
+                                        "colWidth": 30,
+                                        "filter": "",
+                                        "enabled": true
+                                    }, {
+                                        "label": "Member Name",
+                                        "key": "fullName",
+                                        "labelToolTip": "Member Name",
+                                        "classes": "col-3",
+                                        "colWidth": 40,
+                                        "filter": "",
+                                        "enabled": true
+                                    }
+                                ]
+                            }
+                        }
+                    }
+                }
+                },
+                "SECURE_MESSAGE": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LISTING_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "inbox": false,
+                                    "outbox": true,
+                                    "trash": false,
+                                    "received_from": false,
+                                    "send_to": true,
+                                    "status": false,
+                                    "assign": false,
+                                    "delete": false,
+                                    "filter": {
+                                        "search_by_user_name": true
+                                    }
+                                },
+                                "TABLE_ATTRIBUTES": {
+                                    "showCustName": true,
+                                    "inbox": [{
+                                            "label": "Message ID",
+                                            "reverse": true,
+                                            "key": "messageId",
+                                            "labelToolTip": "Message ID",
+                                            "classes": "col-11 text-left",
+                                            "colWidth": 25,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Customer ID",
+                                            "key": "senderID",
+                                            "labelToolTip": "Customer ID",
+                                            "classes": "col-13 text-left",
+                                            "colWidth": 25,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Date & Time",
+                                            "key": "dateAndTime",
+                                            "labelToolTip": "Date & Time",
+                                            "classes": "col-12 text-left",
+                                            "colWidth": 25,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Purpose",
+                                            "key": "purpose",
+                                            "labelToolTip": "Purpose",
+                                            "classes": "col-13 text-left",
+                                            "colWidth": 25,
+                                            "filter": "",
+                                            "enabled": true
+                                        }
+                                    ],
+                                    "outbox": [{
+                                            "label": "Message ID",
+                                            "reverse": true,
+                                            "key": "messageId",
+                                            "labelToolTip": "Message ID",
+                                            "classes": "col-11 text-left",
+                                            "colWidth": 25,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Customer ID",
+                                            "key": "recieverCIF",
+                                            "labelToolTip": "Customer ID",
+                                            "classes": "col-13 text-left",
+                                            "colWidth": 25,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Date & Time",
+                                            "key": "dateAndTime",
+                                            "labelToolTip": "Date & Time",
+                                            "classes": "col-12 text-left",
+                                            "colWidth": 25,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Admin Username",
+                                            "key": "sender",
+                                            "labelToolTip": "Admin Username",
+                                            "classes": "col-13 text-left",
+                                            "colWidth": 25,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Admin User ID",
+                                            "key": "senderCIF",
+                                            "labelToolTip": "Admin User ID",
+                                            "classes": "col-13 text-left",
+                                            "colWidth": 25,
+                                            "filter": "",
+                                            "enabled": true
+                                        }
+                                    ],
+                                    "trash": [{
+                                            "label": "Message ID",
+                                            "reverse": true,
+                                            "key": "messageId",
+                                            "labelToolTip": "Message ID",
+                                            "classes": "col-11 text-left",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Date & Time",
+                                            "key": "dateAndTime",
+                                            "labelToolTip": "Date & Time",
+                                            "classes": "col-12 text-left",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "From",
+                                            "key": "sender",
+                                            "labelToolTip": "From",
+                                            "classes": "col-13 text-left",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "To",
+                                            "key": "reciever",
+                                            "labelToolTip": "To",
+                                            "classes": "col-13 text-left",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Subject",
+                                            "key": "subject",
+                                            "labelToolTip": "Subject",
+                                            "classes": "col-13 text-left",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "DETAILS_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "assign": false,
+                                    "delete": false
+                                }
+                            }
+                        }
+                    }
+                },
+                "GLOBAL_LIMITS": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LISTING_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "override_global_limits": true,
+                                    "citizenAndNonCitizenLimits": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "APPLICATION_MANAGEMENT": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LISTING_COMPONENT": {
+                                "CONSTANTS": {
+                                    "FINANCING": "finance",
+                                    "MEMBERSHIP": "membership",
+                                    "INSURANCE": "insurance"
+                                },
+                                "UI_ATTRIBUTES": {
+                                    "account_initiation_request": true,
+                                    "UIID_Enabled": true,
+                                    "SEARCH": {
+                                        "account_type": false
+                                    },
+                                    "TAB": {
+                                        "amend_regular_deductions": false,
+                                        "debit_card_payments": false,
+                                        "account_applications": true,
+                                        "financing": true,
+                                        "membership": true,
+                                        "insurance": true
+                                    }
+                                }
+                            },
+                            "DETAIL_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "UIID_Enabled": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "SYSTEM_MESSAGE": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LISTING_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "message_recipient_group": false,
+                                    "rsb_specific": false
+                                },
+                                "SERVICE_ATTRIBUTES": {
+                                    "news_and_offers": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "REPORTS": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "USAGE_REPORT_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "customer_locked_users": false,
+                                    "CUSTOMER":{
+                                        "mobile_registration": false
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "LAYOUT": {
+                "HEADER": {
+                    "COMPONENT": {
+                        "MENU": [{
+                                "name": "Dashboard",
+                                "languageKey": "Dashboard",
+                                "display": false,
+                                "enabled": true,
+                                "imageIcon": "dashboard-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/dashboard"
+                                },
+                                "permissions": [
+                                    "BaNCSDigitalAdminHome"
+                                ]
+                            },
+                            {
+                                "name": "User Management",
+                                "languageKey": "User Management",
+                                "display": false,
+                                "enabled": true,
+                                "imageIcon": "usermangmt-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/user-management"
+                                },
+                                "permissions": [
+                                    "AdminUserManagement",
+                                    "CustomerUserManagement"
+                                ]
+                            },
+                            {
+                                "name": "Functional Access Profile",
+                                "languageKey": "FAP",
+                                "display": false,
+                                "enabled": true,
+                                "imageIcon": "fap-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/fap"
+                                },
+                                "permissions": [
+                                    "FunctionalAccessProfileManagement"
+                                ]
+                            },
+                            {
+                                "name": "User Group",
+                                "languageKey": "User Group",
+                                "display": false,
+                                "enabled": true,
+                                "imageIcon": "user-grp-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/user-group"
+                                },
+                                "permissions": [
+                                    "FunctionalAccessProfileManagement"
+                                ]
+                            },
+                            {
+                                "name": "Reports",
+                                "languageKey": "Reports",
+                                "display": false,
+                                "enabled": true,
+                                "imageIcon": "reports-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/report"
+                                },
+                                "permissions": [
+                                    "ReportsManagement"
+                                ]
+                            },
+                            {
+                                "name": "Secure Messages",
+                                "languageKey": "Secure Messages",
+                                "display": false,
+                                "enabled": true,
+                                "imageIcon": "secure-msg-img",
+                                "showCount": false,
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/secure-message/listing"
+                                },
+                                "permissions": [
+                                    "SecureMessageCommon"
+                                ]
+                            },
+                            {
+                                "name": "System Messages",
+                                "languageKey": "System Messages",
+                                "display": false,
+                                "enabled": true,
+                                "imageIcon": "sys-msg-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/system-message/system-message-listing"
+                                },
+                                "permissions": [
+                                    "PlatformMessageManagement"
+                                ]
+                            },
+                            {
+                                "name": "Global Limits",
+                                "languageKey": "Global Limits",
+                                "display": false,
+                                "enabled": true,
+                                "imageIcon": "global-limit-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/global-limit"
+                                },
+                                "permissions": [
+                                    "DigitalLimits"
+                                ]
+                            },
+                            {
+                                "name": "Terms & Conditions",
+                                "languageKey": "Terms & Conditions",
+                                "display": false,
+                                "enabled": true,
+                                "imageIcon": "tc-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/terms-and-conditions/terms-and-conditions-listing"
+                                },
+                                "permissions": [
+                                    "DisclosureManagement",
+                                    "DisclosureInquiry"
+                                ]
+                            },
+                            {
+                                "name": "Account Initiation Requests",
+                                "languageKey": "Account Initiation Requests",
+                                "enabled": true,
+                                "display": false,
+                                "showCount": true,
+                                "imageIcon": "app-mgmt-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/application-management"
+                                },
+                                "permissions": [
+                                    "ManageLoanAccountApplications",
+                                    "ManageInsuranceAccountApplications",
+                                    "ManageSavingAccountApplications"
+                                ]
+                            },
+                            {
+                                "name": "Prelogin Management",
+                                "languageKey": "Prelogin Management",
+                                "enabled": true,
+                                "display": false,
+                                "imageIcon": "preloginmangmt-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/prelogin-management"
+                                },
+                                "permissions": [
+                                    "BaNCSDigitalAdminHome"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            },
+            "INTERNATIONALISATION": {
+                "NUMBER_FORMAT": {
+                    "LIST": [{
+                        "FORMAT": ""
+                    }],
+                    "DEFAULT": {},
+                    "SELECTED": {}
+                },
+                "CURRENCY_FORMAT": {
+                    "LIST": [{
+                            "FORMAT": "USD",
+                            "FRACTION": 3,
+                            "SYMBOL_NEEDED": true
+                        },
+                        {
+                            "FORMAT": "EUR",
+                            "FRACTION": 2,
+                            "SYMBOL_NEEDED": true
+                        },
+                        {
+                            "FORMAT": "GBP",
+                            "FRACTION": 2,
+                            "SYMBOL_NEEDED": true
+                        },
+                        {
+                            "FORMAT": "MYR",
+                            "FRACTION": 2,
+                            "SYMBOL_NEEDED": true
+                        }
+                    ],
+                    "DEFAULT": {
+                        "FORMAT": "USD",
+                        "FRACTION": 3,
+                        "SYMBOL_NEEDED": true
+                    },
+                    "SELECTED": {
+                        "FORMAT": "MYR",
+                        "FRACTION": 2,
+                        "SYMBOL_NEEDED": true
+                    }
+                },
+                "DATE_FORMAT": {
+                    "LIST": {
+                        "MM/dd/yyyy": {
+                            "name": "MM/DD/YYYY",
+                            "key": "MM/dd/yyyy"
+                        },
+                        "dd/MM/yyyy": {
+                            "name": "DD/MM/YYYY",
+                            "key": "dd/MM/yyyy"
+                        },
+                        "dd-MMM-yyyy": {
+                            "name": "DD-MMM-YYYY",
+                            "key": "dd-MMM-yyyy"
+                        }
+                        
+                    },
+                    "DEFAULT": {
+                        "FORMAT": "MM/dd/yyyy"
+                    },
+                    "SELECTED": {
+                        "FORMAT": "dd-MMM-yyyy"
+                    }
+                },
+                "DATETIME_FORMAT": {
+                    "LIST": {
+                        "MM/dd/yyyy_h:mm:ss": {
+                            "name": "MM/DD/YYYY h:mm:ss",
+                            "key": "MM/dd/yyyy h:mm:ss"
+                        },
+                        "dd/MM/yyyy_h:mm:ss": {
+                            "name": "DD/MM/YYYY",
+                            "key": "dd/MM/yyyy"
+                        },
+                        "dd-MMM-yyyy_h:mm_a": {
+                            "name": "DD-MMM-YYYY",
+                            "key": "dd-MMM-yyyy, h:mm a"
+                        }
+                    },
+                    "DEFAULT": {
+                        "FORMAT": "dd/MM/yyyy_h:mm:ss"
+                    },
+                    "SELECTED": {
+                        "FORMAT": "dd-MMM-yyyy_h:mm_a"
+                    }
+                },
+                "TIME_FORMAT": {
+                    "LIST": [{
+                        "FORMAT": ""
+                    }],
+                    "DEFAULT": {},
+                    "SELECTED": {}
+                },
+                "LANGUAGE": {
+                    "LIST": [{
+                        "KEY": "en",
+                        "DESCRIPTION": "English"
+                    }],
+                    "DEFAULT": {
+                        "KEY": "en",
+                        "DESCRIPTION": "English"
+                    },
+                    "SELECTED": {
+                        "KEY": "en",
+                        "DESCRIPTION": "English"
+                    },
+                    "DICTIONARY": {
+                        "EN": {
+                            "AccountName": "Account Name"
+                        },
+                        "HE": {
+                            "AccountName": "HJÓÓÔÓGÓØ"
+                        }
+                    }
+                }
+            }
+        },
+        "CONSTANTS": {
+            "MODULE": {
+                "NAME": "BaNCSDigitalHome",
+                "USER_MANAGEMENT": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "USER_REGISTRATION": {
+                                "UI_CONSTANTS": {
+                                    "DEFAULT_VALUES": {
+                                        "Country": "MYS"
+                                    },
+                                    "MAXLENGTH": {
+                                        "EMPLOYEE_ID": 10
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,65 @@
+{
+    "CONFIG_MERGE_KEY": "VENDOR",
+    "LIST": [
+        {
+            "name": "UKCU",
+            "configPath": "assets/json/vendor/ukcu-vendor.json",
+            "fiIdentifier": "default_100",
+            "domainAddress": "localhost:4200"
+        },
+        {
+            "name": "KT",
+            "configPath": "assets/json/vendor/kt-vendor.json",
+            "fiIdentifier": "new_100",
+            "domainAddress": "localhost:4300"
+        },
+        {
+            "name": "USSB",
+            "configPath": "assets/json/vendor/ussb-vendor.json",
+            "fiIdentifier": "new_100",
+            "domainAddress": "localhost:4300"
+        },
+        {
+            "name": "JBL",
+            "configPath": "assets/json/vendor/jbl-vendor.json",
+            "fiIdentifier": "new_100",
+            "domainAddress": "localhost:4300"
+        },
+        {
+            "name": "RSB",
+            "configPath": "assets/json/vendor/rsb-vendor.json",
+            "fiIdentifier": "new_100",
+            "domainAddress": "localhost:4300"
+        },
+        {
+            "name": "NBB",
+            "configPath": "assets/json/vendor/nbb-vendor.json",
+            "fiIdentifier": "default_100",
+            "domainAddress": "localhost:4200"
+        },
+        {
+            "name": "LMCU",
+            "configPath": "assets/json/vendor/lmcu-vendor.json",
+            "fiIdentifier": "default_100",
+            "domainAddress": "localhost:4200"
+        },
+        {
+            "name": "SW",
+            "configPath": "assets/json/vendor/sw-vendor.json",
+            "fiIdentifier": "default_100",
+            "domainAddress": "localhost:4200"
+        },
+        {
+            "name": "CNSTR",
+            "configPath": "assets/json/vendor/cnstr-vendor.json",
+            "fiIdentifier": "default_100",
+            "domainAddress": "localhost:4200"
+        }
+    ],
+    "SELECTED": {
+        "name": "CNSTR",
+        "configPath": "assets/json/vendor/cnstr-vendor.json",
+        "fiIdentifier": "default_100",
+        "domainAddress": "localhost:4200"
+    }
+}

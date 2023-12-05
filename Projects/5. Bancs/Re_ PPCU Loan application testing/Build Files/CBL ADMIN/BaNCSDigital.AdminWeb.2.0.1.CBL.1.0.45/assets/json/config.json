@@ -1,0 +1,102 @@
+{
+    "env": "development",
+    "formTypeOverride": "",
+    "defaultFormType": "widescreen",
+    "implementation": "core",
+    "contextPath": "/BaNCSDigitalAdminWeb/",
+    "serviceContextPath":"http://172.19.97.153:7003/BaNCSDigitalAdminApp/",
+    "serviceContextPathDEFAULT": "http://172.19.112.181:8090/BaNCSDigitalAdminApp/",
+    "serviceContextPathUKCU": "http://172.19.98.38:8090/BaNCSDigitalAdminApp/",
+    "serviceContextPathLMCU": "http://172.19.98.133:8700/BaNCSDigitalUKCUAdminApp/",
+    "serviceContextPathSW": "http://172.19.112.186:8702/SWCU/BaNCSDigitalAdminApp/",
+    "serviceContextPathUSSB": "http://172.19.97.245:8090/BaNCSDigitalAdminApp/",
+    "serviceContextPathUSSB11": "http://172.19.101.35:8080/BaNCSDigitalAdminApp/",
+    "serviceContextPathKT": "http://172.19.97.153:7003/BaNCSDigitalAdminApp/",
+    "serviceContextPathKTOn": "http://10.70.2.12:8080/BaNCSDigitalAdminApp/",
+    "serviceContextPathJBL": "http://172.19.98.104:8091/BaNCSDigitalAdminApp/",
+    "serviceContextPathRSB": "http://172.19.112.181:7600/BaNCSDigitalAdminApp/",
+    "serviceContextPathRSBold": "http://172.19.101.63:8081/BaNCSDigital.Admin.1.0.1.RSB.0.0.1-SNAPSHOT/",
+    "serviceContextPathNBB": "http://172.19.98.133:8700/BaNCSDigitalAdminApp/",
+    "serviceContextPathCNSTR": "../BaNCSDigitalAdminApp/",
+
+    "formQueries": [{
+            "query": {
+                "maxWidth": 700,
+                "isMobileOS": true,
+                "hasTouch": true,
+                "orientation": "portrait"
+            },
+            "type": "phone"
+        },
+        {
+            "query": {
+                "minWidth": 701,
+                "maxWidth": 1025,
+                "isMobileOS": true
+            },
+            "type": "tab"
+        },
+        {
+            "query": {
+                "minWidth": 1026
+            },
+            "type": "widescreen"
+        }
+    ],
+
+    "deviceConfig": {
+        "phone": {
+            "config": "/ui/phone/assets/json/phone-config.json",
+            "module": "/ui/phone/assets/json/phone-module.json",
+            "menu": "/ui/phone/assets/json/phone-menu.json"
+        },
+        "tab": {
+            "config": "/ui/tab/assets/json/tab-config.json",
+            "module": "/ui/tab/assets/json/tab-module.json",
+            "menu": "/ui/tab/assets/json/tab-menu.json"
+        },
+        "widescreen": {
+            "config": "/ui/widescreen/assets/json/widescreen-config.json",
+            "menu": "/ui/widescreen/assets/json/widescreen-menu.json",
+            "module": "/ui/widescreen/assets/json/widescreen-module.json"
+        }
+    },
+    "statusCodes": {
+        "path": "assets/json/status-codes.json"
+    },
+    "configLoader": {
+        "configList": {
+            "SERVICE#STATUS_CODE": "assets/json/status-codes.json",
+            "VENDOR": "assets/json/vendor.json",
+            "SERVICE#REQUEST_MODEL": "assets/json/request-model.json",
+            "SERVICE#UIID#ADMIN": "assets/json/uiid-admin.json",
+            "SERVICE#UIID#CUSTOMER": "assets/json/uiid-customer.json",
+            "COMMUNICATION": "assets/json/communication.json",
+            "CONSTANTS": "assets/json/constants.json",
+            "PRESENTATION": "assets/json/presentation.json",
+            "ENUMSIMPL": "assets/json/enums.json",
+            "SERVICE#ERRORMAPS": "assets/json/errormaps.json",
+            "SERVICE#BUSINESS_FUNCTION_LIST": "assets/json/business-function-names.json"
+        }
+    },
+    "appGroupId": {
+        "retail": {
+            "widescreen": "1",
+            "phone": "2",
+            "tab": "3"
+        },
+        "admin": {
+            "widescreen": "201",
+            "customer": "1"
+        }
+    },
+    "applicationId": {
+        "retail": "1",
+        "admin": "Bancs"
+    },
+    "platformId": "BaNCSDigital",
+    "serviceId": "64",
+    "serviceName": "BaNCSDigitalHome",
+    "objectId": "RetailUser",
+    "channelVerion": "2.0.1.USSB.0.0.45"
+}

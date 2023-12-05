@@ -1,0 +1,241 @@
+{
+    "CONFIG_MERGE_KEY": "CONSTANTS",
+    "SERVICE": {
+        "RESPONSE_CODE": {
+            "SUCCESS": "0",
+            "GENERIC_ERROR": "90000",
+            "FAILURE": [
+                "90000"
+            ],
+            "WARNING": [
+                "12345",
+                "10001"
+            ]
+        },
+        "ENVELOPE": {
+            "APIVersion": "apiVer",
+            "appVersion": "adm.1.0.0",
+            "resource": "resrc",
+            "messageId": "0",
+            "envelopeVersion": "MessageEnvelope_1.0.0",
+            "fiIdentifier": {
+                "Id": "16",
+                "version": "Identifier_1.0.0"
+            }
+        },
+        "buildInfo": {
+            "appID": "",
+            "appGroupID": {
+                "mobile": "",
+                "internet": ""
+            },
+            "codingLanguage": "Hybrid"
+        }
+    },
+    "SETTINGS": {
+        "ENABLE_SESSION_EXPIRY": true,
+        "SESSION_TIMEOUT": 300,
+        "EXPIRY_PROMPT": 30
+    },
+    "BUSINESS": {
+        "MIN_TXN_AMOUNT": 10,
+        "MAX_TXN_AMOUNT": 100000
+    },
+    "PRESENTATION": {},
+    "CURRENCY": {
+        "LIST": {
+            "INR": {}
+        },
+        "BASE_CURRENCY": {}
+    },
+    "BUSINESSFUNCTIONID": {
+        "SAVINGS_LIST": "SavingsDepositProductApplicationCreate",
+        "CURRENT_LIST": "DemandDepositProductApplicationCreate",
+        "AMEND_REGULAR_DEDUCTION_LIST": "AmendRegularDeductionCreate",
+        "FINANCE_LIST": "LoanProductApplicationCreate",
+        "INSURANCE_LIST": "InsurancePolicyProductApplicationCreate",
+        "NOTICE_WITHDRWAL_LIST":"CreateNoticeWithdrawalImmReq",
+        "UPDATE_OCCUPATION_LIST":"UpdateOccupationonProfile",
+        "UPDATE_NAME_LIST":"UpdateNameonProfile",
+        "UPDATE_ADDRESS_LIST":"UpdateAddressonProfile",
+        "UPDATE_ACC_CLOSURE_RENEW_MATURITY_INSTRN":"UpdateAcctClosureRenewMaturityInstruction",
+        "UPDATE_ACC_CLOSURE_ZERO_BAL":"UpdateAcctClosureZeroBalance",
+        "REVOLVA_LOAN_LIST": "CreateRevolvaLoanAdvRequest",
+        "PAYROLL_SETUP_REQUEST": "CreatePayrollRegularDeduction",
+        "DIRECT_DEBIT_LIST": "CreateDirectDebitRegularDeduction"
+    },
+    "MODULE": {
+        "NAME": "BaNCSDigitalHome",
+        "USER_MANAGEMENT": {
+            "PAGE": {
+                "COMPONENT": {
+                    "USER_REGISTRATION": {
+                        "UI_CONSTANTS": {
+                            "DEFAULT_VALUES": {
+                                "Country": ""
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "IndustryList": [
+        {
+          "Code": "1100",
+          "Description": "Oil and Gas"
+        },
+        {
+          "Code": "1101",
+          "Description": "Arms, nuclear and proliferation materials"
+        },
+        {
+          "Code": "1102",
+          "Description": "Precious metals and stones"
+        },
+        {
+          "Code": "1103",
+          "Description": "Counterfeit goods and smuggling"
+        },
+        {
+          "Code": "1104",
+          "Description": "Trade of cultural, historical, and protected species, and artefacts"
+        },
+        {
+          "Code": "1105",
+          "Description": "Drugs, pharmaceuticals, and legal highs"
+        },
+        {
+          "Code": "1106",
+          "Description": "Sex industry, pornography and people trafficking"
+        },
+        {
+          "Code": "1107",
+          "Description": "Gambling"
+        },
+        {
+          "Code": "1108",
+          "Description": "Bureau de Change and money services business"
+        },
+        {
+          "Code": "1109",
+          "Description": "Unregistered charities"
+        },
+        {
+          "Code": "1110",
+          "Description": "Payroll Services"
+        },
+        {
+          "Code": "1111",
+          "Description": "Overseas Employment"
+        },
+        {
+          "Code": "1112",
+          "Description": "Accountancy, Banking and Finance"
+        },
+        {
+          "Code": "1113",
+          "Description": "Business, consulting and management"
+        },
+        {
+          "Code": "1114",
+          "Description": "Charity and voluntary work"
+        },
+        {
+          "Code": "1115",
+          "Description": "Creative arts and design"
+        },
+        {
+          "Code": "1116",
+          "Description": "Environment and agriculture"
+        },
+        {
+          "Code": "1117",
+          "Description": "Energy and Utilities"
+        },
+        {
+          "Code": "1118",
+          "Description": "Engineering and manufacturing"
+        },
+        {
+          "Code": "1119",
+          "Description": "Healthcare"
+        },
+        {
+          "Code": "1120",
+          "Description": "Hospitality and events management"
+        },
+        {
+          "Code": "1121",
+          "Description": "Information technology"
+        },
+        {
+          "Code": "1122",
+          "Description": "Law"
+        },
+        {
+          "Code": "1123",
+          "Description": "Law Enforcement and security"
+        },
+        {
+          "Code": "1124",
+          "Description": "Lesiure, sports and tourism"
+        },
+        {
+          "Code": "1125",
+          "Description": "Marketing, advertising and PR"
+        },
+        {
+          "Code": "1126",
+          "Description": "Media and Internet"
+        },
+        {
+          "Code": "1127",
+          "Description": "Property and Construction"
+        },
+        {
+          "Code": "1128",
+          "Description": "Public Services and administration"
+        },
+        {
+          "Code": "1129",
+          "Description": "Recruitment and HR"
+        },
+        {
+          "Code": "1130",
+          "Description": "Retail"
+        },
+        {
+          "Code": "1131",
+          "Description": "Sales"
+        },
+        {
+          "Code": "1132",
+          "Description": "Science and pharmaceuticals"
+        },
+        {
+          "Code": "1133",
+          "Description": "Social Care"
+        },
+        {
+          "Code": "1134",
+          "Description": "Teacher Training and education"
+        },
+        {
+          "Code": "1135",
+          "Description": "Transport and logistics"
+        },
+        {
+          "Code": "1136",
+          "Description": "Officer to Armed forces"
+        },
+        {
+          "Code": "1137",
+          "Description": "Government Official"
+        },
+        {
+          "Code": "1138",
+          "Description": "Politician"
+        }
+      ]
+}

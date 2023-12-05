@@ -1,0 +1,1324 @@
+{
+    "CONFIG_MERGE_KEY": "SERVICE#UIID#ADMIN",
+    "UIIDS": {
+        "Dashboard": {
+            "actions": {},
+            "group": {
+                "BANCSDIGITAL_ADMIN_HOME": "ADO32"
+            }
+        },
+        "User Management": {
+            "actions": {
+                "CUSTOMER_SEARCH": {
+                    "uiid": "UE51",
+                    "description": "Customer Search",
+                    "group": "CustomerInformation",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "CustomerUserInquiry",
+                        "LoginCredentialsInquiry",
+                        "ProfileInquiry",
+                        "CustomerUserInquiry",
+                        "LoginCredentialsInquiry",
+                        "ProfileInquiry",
+                        "LoginCredentialsInquiry",
+                        "LoginCredentialsInquiry",
+                        "CustomerUserInquiry"
+                    ]
+                },
+                "CUSTOMER_DETAILS": {
+                    "uiid": "UE61",
+                    "description": "Customer Details",
+                    "group": "CustomerInformation",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "RegistrationDetailsInquiry"
+                    ]
+                },
+                "CUSTOMER_ACCOUNT_INFO": {
+                    "uiid": "UCN12",
+                    "description": "Customer Account Information",
+                    "group": "CustomerInformation",
+                    "bn_group": "CustomerAccountsInquiry",
+                    "bn_group_desc": "CustomerAccountsInquiry",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "CustomerAccountsInquiry",
+                        "CustomerAccountsInquiry"
+                    ]
+                },
+                "MODIFY_HOST_SYSTEM_DETAILS": {
+                    "uiid": "OOY62",
+                    "description": "Modify Host system details  ",
+                    "group": "ModifyHostDetails",
+                    "bn_group": "UpdateHostdetails",
+                    "bn_group_desc": "UpdateHostdetails",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "UpdateHostdetails",
+                        "UpdateHostdetails"
+                    ]
+                },
+                "DEREG_CUSTOMER": {
+                    "uiid": "EU41",
+                    "description": "Deregister Customer",
+                    "group": "DeregCustomer",
+                    "bn_group": "DeregisterCustomer",
+                    "bn_group_desc": "DeregisterCustomer",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "DeregisterCustomer",
+                        "DeleteLoginCredentials",
+                        "DeleteCustomerUser",
+                        "DeleteLoginCredentials",
+                        "DeregisterCustomer"
+                    ]
+                },
+                "LOCK_CUSTOMER": {
+                    "uiid": "OU31",
+                    "description": "Lock Customer",
+                    "group": "LockCustomer",
+                    "bn_group": "LockCustomer",
+                    "bn_group_desc": "LockCustomer",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "LockCustomer",
+                        "LockCustomer"
+                    ]
+                },
+                "RESET_CUSTOMER_PASSWORD": {
+                    "uiid": "EUA81",
+                    "description": "Reset Customer Password",
+                    "group": "ResetCustPassword",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "ResetLoginPasswordCustomer"
+                    ]
+                },
+                "ADMIN_USERSEARCH_LIST_VIEW": {
+                    "uiid": "DSI62",
+                    "description": "Admin User Search List view",
+                    "group": "AdminSearch",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "LoginCredentialsInquiry",
+                        "LoginCredentialsInquiry",
+                        "AdminUserInquiry",
+                        "LoginCredentialsInquiry",
+                        "LoginCredentialsInquiry",
+                        "AdminUserInquiry",
+                        "AdminUserInquiry",
+                        "AdminUserInquiry"
+                    ]
+                },
+                "VIEW_ADMIN_REG_DETAILS": {
+                    "uiid": "IDE22",
+                    "description": "View Admin User Registration Details",
+                    "group": "ViewAdminRegDetails",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "RegistrationDetailsInquiry"
+                    ]
+                },
+                "ADMIN_USER_REG": {
+                    "uiid": "DS41",
+                    "description": "Admin User Registeration",
+                    "group": "AdminReg",
+                    "bn_group": "AdminRegistration",
+                    "bn_group_desc": "AdminRegistration",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "CreateLoginCredentials",
+                        "RegisterAdmin",
+                        "AdminRegistration"
+                    ]
+                },
+                "DEREGISTER_ADMINUSER": {
+                    "uiid": "ED02",
+                    "description": "Deregister Admin User",
+                    "group": "DeregAdmin",
+                    "bn_group": "DeregisterCustomer",
+                    "bn_group_desc": "DeregisterCustomer",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "DeleteLoginCredentials",
+                        "DeregisterAdmin",
+                        "DeleteLoginCredentials",
+                        "DeleteAdminUser",
+                        "DeregisterAdmin"
+                    ]
+                },
+                "LOCK_ADMIN_LOGIN": {
+                    "uiid": "OD61",
+                    "description": "Lock Admin Login",
+                    "group": "LockAdmin",
+                    "bn_group": "LockAdmin",
+                    "bn_group_desc": "LockAdmin",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "LockAdmin",
+                        "LockAdmin"
+                    ]
+                },
+                "RESET_ADMIN_PASSWORD": {
+                    "uiid": "EDA02",
+                    "description": "Reset Admin Password",
+                    "group": "ResetAdminPassword",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "ResetLoginPasswordAdmin"
+                    ]
+                },
+                "MODIFY_ADMINUSERREG_DETAILS": {
+                    "uiid": "ODE72",
+                    "description": "Modify Admin User Registeration Details",
+                    "group": "ModAdminRegDetails",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "UserGroupInquiry",
+                        "UserGroupInquiry",
+                        "AdminUserUpdate",
+                        "UserGroupInquiry",
+                        "AdminUserUpdate"
+                    ]
+                },
+                "CHANGE_ADMIN_PWD": {
+                    "uiid": "HDW61",
+                    "description": "Change Admin Password",
+                    "group": "ChangeAdminPassword",
+                    "bn_group": "ManageNews",
+                    "bn_group_desc": "ManageNews",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "ChangeLoginPasswordAdmin"
+                    ]
+                }
+            },
+            "group": {
+                "CustomerInformation": "UN91",
+                "ModifyHostDetails": "OOE71",
+                "DeregCustomer": "EU31",
+                "LockCustomer": "OU21",
+                "ResetCustPassword": "EUA11",
+                "AdminSearch": "DE11",
+                "ViewAdminRegDetails": "IDE91",
+                "AdminReg": "DE80",
+                "DeregAdmin": "ED01",
+                "LockAdmin": "OD90",
+                "ResetAdminPassword": "EDA21",
+                "ModAdminRegDetails": "ODE81",
+                "ChangeAdminPassword": "HDW91"
+            }
+        },
+        "Functional Access Profile Mgt": {
+            "actions": {
+                "FAP_LIST": {
+                    "uiid": "AE01",
+                    "description": "FAP Search List View",
+                    "group": "FAPInformation",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "FunctionalAccessProfileInquiry",
+                        "FunctionalAccessProfileInquiry",
+                        "FunctionalAccessProfileInquiry"
+                    ]
+                },
+                "FAP_DETAILS": {
+                    "uiid": "AE11",
+                    "description": "FAP Search Details View",
+                    "group": "FAPInformation",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "FunctionalAccessProfileInquiry",
+                        "FunctionInquiry",
+                        "FunctionalAccessProfileInquiry",
+                        "FunctionalAccessProfileInquiry"
+                    ]
+                },
+                "REVOKE_ACCESS": {
+                    "uiid": "EC31",
+                    "description": "Revoke Access",
+                    "group": "RevokeAccess",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "FunctionalAccessProfileUpdate",
+                        "FunctionInquiry"
+                    ]
+                },
+                "ASSIGN_ACCESS": {
+                    "uiid": "SC31",
+                    "description": "Assign Access",
+                    "group": "AssignAccess",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "FunctionalAccessProfileUpdate",
+                        "FunctionInquiry"
+                    ]
+                },
+                "CREATE_FAP": {
+                    "uiid": "RA01",
+                    "description": "Create FAP",
+                    "group": "CreateFAP",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "FunctionalAccessProfileCreate",
+                        "FunctionInquiry"
+                    ]
+                },
+                "MODIFY_FAP": {
+                    "uiid": "OA01",
+                    "description": "Modify FAP",
+                    "group": "ModifyFAP",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "FunctionalAccessProfileUpdate"
+                    ]
+                },
+                "DELETE_FAP": {
+                    "uiid": "EA01",
+                    "description": "Delete FAP",
+                    "group": "DeleteFAP",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "FunctionalAccessProfileDelete"
+                    ]
+                }
+            },
+            "group": {
+                "FAPInformation": "AN41",
+                "RevokeAccess": "EC21",
+                "AssignAccess": "SC21",
+                "CreateFAP": "RA90",
+                "ModifyFAP": "OA90",
+                "DeleteFAP": "EA90"
+            }
+        },
+        "User Group Management": {
+            "actions": {
+                "USER_GROUP_LIST": {
+                    "uiid": "SRE71",
+                    "description": "User Group Search List View",
+                    "group": "UserGroupInformation",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "UserGroupInquiry",
+                        "UserGroupPermissionInquiry",
+                        "UserGroupInquiry",
+                        "UserGroupInquiry"
+                    ]
+                },
+                "USER_GROUP_DETAILS": {
+                    "uiid": "SRE81",
+                    "description": "User Group Search Details View",
+                    "group": "UserGroupInformation",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "FunctionalAccessProfileInquiry",
+                        "UserGroupInquiry",
+                        "UserGroupPermissionInquiry",
+                        "FunctionalAccessProfileInquiry",
+                        "UserGroupInquiry",
+                        "FunctionalAccessProfileInquiry",
+                        "UserGroupInquiry"
+                    ]
+                },
+                "ADD_FAP_USER_GROUP": {
+                    "uiid": "DAS81",
+                    "description": "Add FAP to User group",
+                    "group": "AddFAP",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "FunctionalAccessProfileInquiry",
+                        "UserGroupPermissionUpdate",
+                        "FunctionalAccessProfileInquiry",
+                        "FunctionalAccessProfileInquiry"
+                    ]
+                },
+                "REMOVE_FAP_USER_GROUP": {
+                    "uiid": "EAS12",
+                    "description": "Remove FAP from the user group",
+                    "group": "RemoveFAP",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "FunctionalAccessProfileInquiry",
+                        "UserGroupPermissionUpdate",
+                        "FunctionalAccessProfileInquiry",
+                        "FunctionalAccessProfileInquiry"
+                    ]
+                },
+                "CREATE_GROUP": {
+                    "uiid": "RR21",
+                    "description": "Create Group",
+                    "group": "CreateGroup",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "UserGroupCreate"
+                    ]
+                },
+                "MODIFY_GROUP": {
+                    "uiid": "OR21",
+                    "description": "Modify Group",
+                    "group": "ModifyGroup",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "UserGroupUpdate"
+                    ]
+                },
+                "DELETE_GROUP": {
+                    "uiid": "ER21",
+                    "description": "Delete Group",
+                    "group": "DeleteGroup",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "UserGroupDelete",
+                        "UserGroupPermissionDelete"
+                    ]
+                }
+            },
+            "group": {
+                "UserGroupInformation": "SRN02",
+                "AddFAP": "DA60",
+                "RemoveFAP": "EP90",
+                "CreateGroup": "RR11",
+                "ModifyGroup": "OR11",
+                "DeleteGroup": "ER11"
+            }
+        },
+        "Secure Messages": {
+            "actions": {
+                "COMMON_OUTBOX": {
+                    "uiid": "IE71",
+                    "description": "View Common Outbox",
+                    "group": "CommonOutbox",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "CommonOutboxInquiry"
+                    ]
+                },
+                "COMMON_OUTBOX_DETAILS": {
+                    "uiid": "IEE52",
+                    "description": "View Common Outbox Message Details",
+                    "group": "CommonOutbox",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "CommonOutboxInquiry"
+                    ]
+                },
+                "SEARCH_COMMON_OUTBOX": {
+                    "uiid": "EET71",
+                    "description": "Search  Messages",
+                    "group": "SearchMessages",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "CommonOutboxInquiry"
+                    ]
+                },
+                "COMPOSE_MESSAGE": {
+                    "uiid": "OE51",
+                    "description": "Compose Message",
+                    "group": "ComposeMessage",
+                    "bn_group": "CustomerInquiry",
+                    "bn_group_desc": "CustomerInquiry",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "CustomerUserInquiry",
+                        "LoginCredentialsInquiry",
+                        "ProfileInquiry",
+                        "CreateMessage",
+                        "CustomerUserInquiry",
+                        "LoginCredentialsInquiry",
+                        "ProfileInquiry",
+                        "LoginCredentialsInquiry",
+                        "LoginCredentialsInquiry",
+                        "CustomerUserInquiry"
+                    ]
+                },
+                "COMPOSE_MESSAGE_CNF": {
+                    "uiid": "OEN91",
+                    "description": "Compose Message Confirm",
+                    "group": "ComposeMessage",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "ComposeMessageConfirm"
+                    ]
+                },
+                "COMMON_INBOX": {
+                    "uiid": "ON21",
+                    "description": "Common Inbox",
+                    "group": "CommonInbox",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "CommonInboxInquiry",
+                        "CommonInboxInquiry"
+                    ]
+                },
+                "COMMON_INBOX_DETAILS": {
+                    "uiid": "ONE02",
+                    "description": "View Common Inbox Message Details",
+                    "group": "CommonInbox",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "CommonInboxInquiry",
+                        "CommonInboxInquiry"
+                    ]
+                },
+                "REPLY_MESSAGE": {
+                    "uiid": "EE31",
+                    "description": "Reply to a Message",
+                    "group": "ReplyMessge"
+                },
+                "DELETE_MESSAGE": {
+                    "uiid": "EES41",
+                    "description": "Delete a Message",
+                    "group": "DeleteMessage"
+                },
+                "DELETE_MESSAGE_CNF": {
+                    "uiid": "EEN81",
+                    "description": "Delete a Message Confirm",
+                    "group": "DeleteMessage",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "DeleteMessageConfirm"
+                    ]
+                },
+                "DELETE_MESSAGE_OUTBOX": {
+                    "uiid": "EEU12",
+                    "description": "Delete Message from Outbox",
+                    "group": "CommonOutbox",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "DeleteOutboxMessage"
+                    ]
+                },
+                "DELETE_MESSAGE_OUTBOX_CNF": {
+                    "uiid": "EEUN52",
+                    "description": "Delete Message from Outbox Confirm",
+                    "group": "CommonOutbox",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "DeleteOutboxMessageConfirm"
+                    ]
+                },
+                "DELETE_MESSAGE_TRASH": {
+                    "uiid": "EESRA02",
+                    "description": "Delete Message from Trash",
+                    "group": "ViewTrash",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "DeleteTrashMessage"
+                    ]
+                },
+                "DELETE_MESSAGE_TRASH_CNF": {
+                    "uiid": "EERN42",
+                    "description": "Delete Message from Trash Confirm",
+                    "group": "ViewTrash",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "DeleteTrashMessageConfirm"
+                    ]
+                },
+                "RESTORE_TRASH": {
+                    "uiid": "ESRAS31",
+                    "description": "Restore Trash",
+                    "group": "ViewTrash",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "RestoreTrash"
+                    ]
+                },
+                "RESTORE_TRASH_CNF": {
+                    "uiid": "ERN71",
+                    "description": "Restore Trash Confirm",
+                    "group": "ViewTrash",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "RestoreTrashConfirm"
+                    ]
+                },
+                "ASSIGN_MESSAGE": {
+                    "uiid": "SSES41",
+                    "description": "Assign Message to another admin user",
+                    "group": "AssignMessage",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "AssignMessagetoAdminUser"
+                    ]
+                },
+                "VIEW_TRASH": {
+                    "uiid": "IERA01",
+                    "description": "View Trash",
+                    "group": "ViewTrash",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "ViewTrash"
+                    ]
+                }
+            },
+            "group": {
+                "CommonOutbox": "OT21",
+                "SearchMessages": "EE41",
+                "ComposeMessage": "OE41",
+                "CommonInbox": "ON11",
+                "ReplyMessage": "EE21",
+                "DeleteMessage": "EES31",
+                "AssignMessage": "SSES31",
+                "ViewTrash": "IERA90"
+            }
+        },
+        "System Messages": {
+            "actions": {
+                "VIEW_BROADCAST_MESSAGE_LIST": {
+                    "uiid": "IRE72",
+                    "description": "View Broadcast Message List",
+                    "group": "ViewBroadcastMessage",
+                    "bn_group": "SystemBroadcastMessage",
+                    "bn_group_desc": "SystemBroadcastMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "ViewSystemBroadcastMessage",
+                        "ViewSystemBroadcastMessage"
+                    ]
+                },
+                "VIEW_BROADCAST_MESSAGE_DETAILS": {
+                    "uiid": "IRE03",
+                    "description": "View Broadcast Message Details",
+                    "group": "ViewBroadcastMessage",
+                    "bn_group": "SystemBroadcastMessage",
+                    "bn_group_desc": "SystemBroadcastMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "ViewSystemBroadcastMessage",
+                        "ViewSystemBroadcastMessage"
+                    ]
+                },
+                "MODIFY_BROADCAST_MESSAGE": {
+                    "uiid": "ORE52",
+                    "description": "Modify Broadcast Message",
+                    "group": "ModifyBroadcastMessage",
+                    "bn_group": "SystemBroadcastMessage",
+                    "bn_group_desc": "SystemBroadcastMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "UpdateSystemBroadcastMessage"
+                    ]
+                },
+                "CLONE_BROADCAST_MESSAGE": {
+                    "uiid": "LRE42",
+                    "description": "Clone Broadcast Message",
+                    "group": "CloneBroadcastMessage",
+                    "bn_group": "SystemBroadcastMessage",
+                    "bn_group_desc": "SystemBroadcastMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "CreateSystemBroadcastMessage"
+                    ]
+                },
+                "DELETE_BROADCAST_MESSAGE": {
+                    "uiid": "ERE52",
+                    "description": "Delete Broadcast Message",
+                    "group": "DeleteBroadcastMessage",
+                    "bn_group": "SystemBroadcastMessage",
+                    "bn_group_desc": "SystemBroadcastMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "DeleteSystemBroadcastMessage"
+                    ]
+                },
+                "CREATE_BROADCAST_MESSAGE": {
+                    "uiid": "RRE52",
+                    "description": "Create Broadcast Message",
+                    "group": "CreateBroadcastMessage",
+                    "bn_group": "SystemBroadcastMessage",
+                    "bn_group_desc": "SystemBroadcastMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "CreateSystemBroadcastMessage"
+                    ]
+                },
+                "VIEW_OUTAGE_MESSAGE_LIST": {
+                    "uiid": "IUE02",
+                    "description": "View Outage Messages List",
+                    "group": "ViewOutageMessage",
+                    "bn_group": "OutageMessage",
+                    "bn_group_desc": "OutageMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "ViewOutageMessage"
+                    ]
+                },
+                "VIEW_OUTAGE_MESSAGE_DETAILS": {
+                    "uiid": "IUE72",
+                    "description": "View Outage Message Details",
+                    "group": "ViewOutageMessage",
+                    "bn_group": "OutageMessage",
+                    "bn_group_desc": "OutageMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "ViewOutageMessage"
+                    ]
+                },
+                "MODIFY_OUTAGE_MESSAGE": {
+                    "uiid": "OUE22",
+                    "description": "Modify Outage Message",
+                    "group": "ModifyOutageMessage",
+                    "bn_group": "OutageMessage",
+                    "bn_group_desc": "OutageMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "UpdateOutageMessage"
+                    ]
+                },
+                "DELETE_OUTAGE_MESSAGE": {
+                    "uiid": "EUE22",
+                    "description": "Delete Outage Message",
+                    "group": "DeleteOutageMessage",
+                    "bn_group": "OutageMessage",
+                    "bn_group_desc": "OutageMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "DeleteOutageMessage"
+                    ]
+                },
+                "CREATE_OUTAGE_MESSAGE": {
+                    "uiid": "RUE22",
+                    "description": "Create Outage Message",
+                    "group": "CreateOutageMessage",
+                    "bn_group": "OutageMessage",
+                    "bn_group_desc": "OutageMessage",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "CreateOutageMessage"
+                    ]
+                }
+            },
+            "group": {
+                "ViewBroadcastMessage": "IRE02",
+                "ModifyBroadcastMessage": "ORE22",
+                "CloneBroadcastMessage": "LRE12",
+                "DeleteBroadcastMessage": "ERE22",
+                "CreateBroadcastMessage": "RRE22",
+                "ViewOutageMessage": "IUE71",
+                "ModifyOutageMessage": "OUE91",
+                "DeleteOutageMessage": "EUE91",
+                "CreateOutageMessage": "RUE91"
+            }
+        },
+        "Term and Conditions": {
+            "actions": {
+                "VIEW_TERMS_CONDITIONS": {
+                    "uiid": "IEO12",
+                    "description": "Terms and Conditions List view",
+                    "group": "ViewTermsConditions",
+                    "bn_group": "DisclosureManagement",
+                    "bn_group_desc": "DisclosureManagement",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "ViewDisclosure"
+                    ]
+                },
+                "ADD_TERMS_CONDITIONS": {
+                    "uiid": "DEO02",
+                    "description": "Add Terms and Conditions",
+                    "group": "AddTermsConditions",
+                    "bn_group": "DisclosureManagement",
+                    "bn_group_desc": "DisclosureManagement",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "UpdateDisclosure"
+                    ]
+                }
+            },
+            "group": {
+                "ViewTermsConditions": "IEO91",
+                "AddTermsConditions": "DEO81"
+            }
+        },
+        "Device Management": {
+            "actions": {
+                "VIEW_REGISTERED_DEVICES": {
+                    "uiid": "IEE32",
+                    "description": "View Registered Devices",
+                    "group": "ViewRegisteredDevice",
+                    "bn_group": "DeviceManagement",
+                    "bn_group_desc": "DeviceManagement",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "DeviceRegistrationInquiry"
+                    ]
+                },
+                "ACTIVATE_DEVICE": {
+                    "uiid": "CE51",
+                    "description": "Activate a Device",
+                    "group": "ActivateDevice",
+                    "bn_group": "DeviceManagement",
+                    "bn_group_desc": "DeviceManagement",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "DeviceRegistrationUpdate"
+                    ]
+                },
+                "BLOCK_DEVICE": {
+                    "uiid": "LE21",
+                    "description": "Block a Device",
+                    "group": "BlockDevice",
+                    "bn_group": "DeviceManagement",
+                    "bn_group_desc": "DeviceManagement",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "DeviceRegistrationUpdate"
+                    ]
+                },
+                "DEREGISTER_DEVICE": {
+                    "uiid": "EE71",
+                    "description": "Deregister a Device",
+                    "group": "DeregisterDevice",
+                    "bn_group": "DeviceManagement",
+                    "bn_group_desc": "DeviceManagement",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "DeregisterDevice"
+                    ]
+                }
+            },
+            "group": {
+                "ViewRegisteredDevice": "IEE02",
+                "ActivateDevice": "CE41",
+                "BlockDevice": "LE11",
+                "DeregisterDevice": "EE61"
+            }
+        },
+        "Security Questions Management": {
+            "actions": {
+                "CREATE_SECURITY_QUESTIONS": {
+                    "uiid": "REU52",
+                    "description": "Create Security Questions",
+                    "group": "CreateSecurityQuestions"
+                },
+                "CREATE_SECURITY_QUESTIONS_CNF": {
+                    "uiid": "REUN92",
+                    "description": "Create Security Questions Confirm",
+                    "group": "CreateSecurityQuestions"
+                },
+                "EDIT_SECURITY_QUESTIONS": {
+                    "uiid": "DEU32",
+                    "description": "Edit Security Questions",
+                    "group": "EditSecurityQuestions"
+                },
+                "EDIT_SECURITY_QUESTIONS_CNF": {
+                    "uiid": "DEUN72",
+                    "description": "Edit Security Questions Confirm",
+                    "group": "EditSecurityQuestions",
+                    "bn_group": "ActivateQnA",
+                    "bn_group_desc": "ActivateQnA",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ActivateQnA"
+                    ]
+                },
+                "DELETE_SECURITY_QUESTIONS": {
+                    "uiid": "EEU52",
+                    "description": "Delete Security Questions",
+                    "group": "DeleteSecurityQuestions"
+                },
+                "DELETE_SECURITY_QUESTIONS_CNF": {
+                    "uiid": "EEUN92",
+                    "description": "Delete Security Questions Confirm",
+                    "group": "DeleteSecurityQuestions",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "UnlockQnA",
+                        "ActivateQnA"
+                    ]
+                },
+                "UNLOCK_SECURITY_QUESTIONS": {
+                    "uiid": "NEU52",
+                    "description": "Unlock Security Questions",
+                    "group": "UnlockSecurityQuestions"
+                },
+                "UNLOCK_SECURITY_QUESTIONS_CNF": {
+                    "uiid": "NEUN92",
+                    "description": "Unlock Security Questions Confirm",
+                    "group": "UnlockSecurityQuestions",
+                    "bn_group": "SecureMessageCommon ",
+                    "bn_group_desc": "SecureMessageCommon ",
+                    "bn_parent_group": "CustomerUserManagement ",
+                    "bn_function": [
+                        "UnlockQnA"
+                    ]
+                },
+                "ACTIVATE_SECURITY_QUESTIONS": {
+                    "uiid": "CEU72",
+                    "description": "Activate Security Questions",
+                    "group": "ActivateSecurityQuestions"
+                },
+                "ACTIVATE_SECURITY_QUESTIONS_CNF": {
+                    "uiid": "CEUN13",
+                    "description": "Activate Security Questions Confirm",
+                    "group": "ActivateSecurityQuestions",
+                    "bn_group": "ActivateQnA",
+                    "bn_group_desc": "ActivateQnA",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ActivateQnA"
+                    ]
+                }
+            },
+            "group": {
+                "CreateSecurityQuestions": "REU32",
+                "EditSecurityQuestions": "DEU12",
+                "DeleteSecurityQuestions": "EEU32",
+                "UnlockSecurityQuestions": "NEU32",
+                "ActivateSecurityQuestions": "CEU52"
+            }
+        },
+        "Service Requests Management": {
+            "actions": {
+                "VIEW_REG_DEDUCTIONS_LIST": {
+                    "uiid": "IEEI42",
+                    "description": "Search and View List of AMend  Regular Deductions Requests",
+                    "group": "AmendRegularDeductionRequests",
+                    "bn_group": "ManageAmendRegularDeduction",
+                    "bn_group_desc": "ManageAmendRegularDeduction",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "SearchandViewAmendRegularDeduction"
+                    ]
+                },
+                "VIEW_REG_DEDUCTIONS_DETAILS": {
+                    "uiid": "IEEE72",
+                    "description": "View Details of Amend Regular Deduction Requests",
+                    "group": "AmendRegularDeductionRequests",
+                    "bn_group": "ManageAmendRegularDeduction",
+                    "bn_group_desc": "ManageAmendRegularDeduction",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewAmendRegularDeductionDetails"
+                    ]
+                },
+                "APPROVE_REG_DEDUCTION": {
+                    "uiid": "PEE12",
+                    "description": "Approve Amend Regular Deduction Requests",
+                    "group": "AmendRegularDeductionRequests",
+                    "bn_group": "ManageAmendRegularDeduction",
+                    "bn_group_desc": "ManageAmendRegularDeduction",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ApproveAmendRegularDeduction"
+                    ]
+                },
+                "REJECT_REG_DEDUCTION": {
+                    "uiid": "EEE02",
+                    "description": "Reject Amend Regular Deduction Requests",
+                    "group": "AmendRegularDeductionRequests",
+                    "bn_group": "ManageAmendRegularDeduction",
+                    "bn_group_desc": "ManageAmendRegularDeduction",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "RejectAmendRegularDeduction"
+                    ]
+                },
+                "VIEW_DEBITCARD_DEPOSITS_LIST": {
+                    "uiid": "IEEI82",
+                    "description": "View List of Debitcard Deposits",
+                    "group": "DebitcardDeposits"
+                },
+                "DOWNLOAD_DEBITCARD_DEPOSITS_LIST": {
+                    "uiid": "OEEI23",
+                    "description": "Download List of Debitcard Deposits",
+                    "group": "DebitcardDeposits",
+                    "bn_group": "ManageDebitCardDeposits",
+                    "bn_group_desc": "ManageDebitCardDeposits",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewDebitCardDepositsList"
+                    ]
+                },
+                "VIEW_DEBITCARD_DEPOSITS_DETAILS": {
+                    "uiid": "IEEE13",
+                    "description": "View Details of Debitcard Deposits",
+                    "group": "DebitcardDeposits",
+                    "bn_group": "ManageDebitCardDeposits",
+                    "bn_group_desc": "ManageDebitCardDeposits",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewDebitCardDepositsDetails"
+                    ]
+                },
+                "REPROCESS_DEBITCARD_DEPOSIT": {
+                    "uiid": "AEE12",
+                    "description": "Reprocess Debitcard Deposit",
+                    "group": "DebitcardDeposits",
+                    "bn_group": "ManageDebitCardDeposits",
+                    "bn_group_desc": "ManageDebitCardDeposits",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ReprocessDebitCardDeposit"
+                    ]
+                },
+                "VIEW_ACCOUNT_APPLICATIONS_LIST": {
+                    "uiid": "ICPI03",
+                    "description": "Search and View List of New Account Applications",
+                    "group": "NewAccountApplicationServiceRequests",
+                    "bn_group": "ManageAccountApplications",
+                    "bn_group_desc": "ManageAccountApplications",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "SearchandViewNewAccountApplicationsList"
+                    ]
+                },
+                "VIEW_ACCOUNT_APPLICATIONS_DETAILS": {
+                    "uiid": "ICPE33",
+                    "description": "View Details of New Account Applications",
+                    "group": "NewAccountApplicationServiceRequests",
+                    "bn_group": "ManageAccountApplications",
+                    "bn_group_desc": "ManageAccountApplications",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewApplicationDetails "
+                    ]
+                },
+                "DOWNLOAD_ACCOUNT_APPLICATION": {
+                    "uiid": "OCP72",
+                    "description": "Download New Account Application",
+                    "group": "NewAccountApplicationServiceRequests"
+                },
+                "APPROVE_ACCOUNT_APPLICATION": {
+                    "uiid": "PCP72",
+                    "description": "Approve Account Application",
+                    "group": "NewAccountApplicationServiceRequests",
+                    "bn_group": "ManageAccountApplications",
+                    "bn_group_desc": "ManageAccountApplications",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ApproveAccountApplication"
+                    ]
+                },
+                "REJECT_ACCOUNT_APPLICATION": {
+                    "uiid": "ECP62",
+                    "description": "Reject Account Application",
+                    "group": "NewAccountApplicationServiceRequests",
+                    "bn_group": "ManageAccountApplications",
+                    "bn_group_desc": "ManageAccountApplications",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "RejectAccountApplication"
+                    ]
+                }
+            },
+            "group": {
+                "AmendRegularDeductionRequests": "MEEE92",
+                "DebitcardDeposits": "EEP71",
+                "NewAccountApplicationServiceRequests": "ECPEE63"
+            }
+        },
+        "Offers and News": {
+            "actions": {
+                "VIEW_OFFERS": {
+                    "uiid": "IFF11",
+                    "description": "View Offers",
+                    "group": "OfferManagement",
+                    "bn_group": "ManageOffers",
+                    "bn_group_desc": "ManageOffers",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "ViewOffersList"
+                    ]
+                },
+                "VIEW_NEWS": {
+                    "uiid": "IEW90",
+                    "description": "View News",
+                    "group": "NewsManagement",
+                    "bn_group": "ManageNews",
+                    "bn_group_desc": "ManageNews",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "ViewNewsList"
+                    ]
+                },
+                "MODIFY_OFFER": {
+                    "uiid": "OFF21",
+                    "description": "Modify Offer",
+                    "group": "OfferManagement",
+                    "bn_group": "ManageOffers",
+                    "bn_group_desc": "ManageOffers",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "ModifySpecificOffer"
+                    ]
+                },
+                "MODIFY_NEWS": {
+                    "uiid": "OEW11",
+                    "description": "Modify News",
+                    "group": "NewsManagement",
+                    "bn_group": "ManageNews",
+                    "bn_group_desc": "ManageNews",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "ModifySpecificNews"
+                    ]
+                },
+                "DELETE_OFFERS": {
+                    "uiid": "EFF31",
+                    "description": "Delete Offers",
+                    "group": "OfferManagement",
+                    "bn_group": "ManageOffers",
+                    "bn_group_desc": "ManageOffers",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "DeleteOffers"
+                    ]
+                },
+                "DELETE_NEWS": {
+                    "uiid": "EEW11",
+                    "description": "Delete News",
+                    "group": "NewsManagement",
+                    "bn_group": "ManageNews",
+                    "bn_group_desc": "ManageNews",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "DeleteNews"
+                    ]
+                },
+                "CREATE_OFFER": {
+                    "uiid": "RFF21",
+                    "description": "Create Offer",
+                    "group": "OfferManagement",
+                    "bn_group": "ManageOffers",
+                    "bn_group_desc": "ManageOffers",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "CreateOffer"
+                    ]
+                },
+                "CREATE_NEWS": {
+                    "uiid": "REW11",
+                    "description": "Create News",
+                    "group": "NewsManagement",
+                    "bn_group": "ManageNews",
+                    "bn_group_desc": "ManageNews",
+                    "bn_parent_group": "PlatformMessageManagement ",
+                    "bn_function": [
+                        "CreateNews"
+                    ]
+                }
+            },
+            "group": {
+                "OfferManagement": "FAN51",
+                "NewsManagement": "EAN41"
+            }
+        },
+        "Reporting": {
+            "actions": {
+                "VIEW_USAGE_REPORT": {
+                    "uiid": "ISAEP81",
+                    "description": "View Usage Report",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewUsageReport"
+                    ]
+                },
+                "DOWNLOAD_USAGE_REPORT": {
+                    "uiid": "OSAEP12",
+                    "description": "Download Usage Report",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewUsageReport"
+                    ]
+                },
+                "SEARCH_USAGE_REPORT": {
+                    "uiid": "ESAEP91",
+                    "description": "Search Usage Report",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "SearchUsageReport"
+                    ]
+                },
+                "VIEW_TXN_SUMMARY_REPORT": {
+                    "uiid": "IXUEP32",
+                    "description": "View Transaction Summary Report",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewTransactionSummaryReport"
+                    ]
+                },
+                "SEARCH_TXN_SUMMARY_REPORT": {
+                    "uiid": "EXUEP52",
+                    "description": "Search Transaction Summary Report",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "SearchTransactionSummaryReport"
+                    ]
+                },
+                "DOWNLOAD_TXN_SUMMARY_REPORT": {
+                    "uiid": "OXUEP72",
+                    "description": "Download Transaction Summary Report",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewTransactionSummaryReport"
+                    ]
+                },
+                "VIEW_TXN_SUMMARY_REPORT_DETAILS": {
+                    "uiid": "IXUEPE13",
+                    "description": "View Transaction Summary Report Details",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewTransactionSummaryReportDetails"
+                    ]
+                },
+                "DOWNLOAD_TXN_SUMMARY_REPORT_DETAILS": {
+                    "uiid": "OXUEPE53",
+                    "description": "Download Transaction Summary Report Details",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewTransactionSummaryReportDetails"
+                    ]
+                },
+                "VIEW_USER_REPORT": {
+                    "uiid": "ISEEP61",
+                    "description": "View User Report",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewUserReport"
+                    ]
+                },
+                "SEARCH_USER_REPORT": {
+                    "uiid": "ESEEP81",
+                    "description": "Search User Report",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "SearchUserReport"
+                    ]
+                },
+                "DOWNLOAD_USER_REPORT": {
+                    "uiid": "OSEEP22",
+                    "description": "Download User Report",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewUserReport"
+                    ]
+                },
+                "VIEW_ACTIVITY_LOG_REPORT": {
+                    "uiid": "ICOEP42",
+                    "description": "View Activity Log Report",
+                    "group": "Report",
+                    "bn_group": "ReportsManagement ",
+                    "bn_group_desc": "ReportsManagement ",
+                    "bn_parent_group": "AdminQnAManagement",
+                    "bn_function": [
+                        "ViewActivityLogReport"
+                    ]
+                }
+            },
+            "group": {
+                "Report": "epo60"
+            }
+        }
+    }
+}

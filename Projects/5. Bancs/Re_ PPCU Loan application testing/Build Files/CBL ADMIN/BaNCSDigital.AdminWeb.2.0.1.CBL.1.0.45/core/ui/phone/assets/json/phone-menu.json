@@ -1,0 +1,40 @@
+{
+    "menu": [
+      {
+        "name": "Services",
+        "languageKey": "Services",
+        "enabled": true,
+        "navigation": {
+          "enabled": false,
+          "internal": true,
+          "link": "#Services"
+        },
+        "subMenu": {
+          "enabled": true,
+          "direction": "right",
+          "section": [{
+            "name": "left",
+            "subSection": [{
+              "name": "TrackApplications",
+              "languageKey": "Track Applications",
+              "navigation": {
+                "enabled": true,
+                "internal": true,
+                "link": "#FundsTransfer"
+              },
+              "menuList": [{
+                "name": "CASAApplication",
+                "languageKey": "Open Account Application",
+                "navigation": {
+                  "enabled": true,
+                  "internal": true,
+                  "link": "/app/core/widescreen/view/services/track-application/track-application-landing"
+                }
+              }]
+            }]
+          }]
+        }
+      }
+    ]
+  }
+  

@@ -1,0 +1,55 @@
+{
+    "CONFIG_MERGE_KEY": "SERVICE#ERRORMAPS",
+    "fundTransfer": {
+        "42010": "toDrop",
+        "42020": "fromDrop",
+        "42040": "toDrop",
+        "42050": "amount",
+        "42060": [
+            {
+                "type": "future_dated",
+                "field": "initiation_date"
+            },
+            {
+                "type": "standing_order",
+                "field": "transfer_start_date"
+            }
+        ],
+        "42070": "amount",
+        "42100": "amount",
+        "42110": "amount",
+        "42180": "amount",
+        "42200": "amount",
+        "42210": "fromDrop",
+        "42220": "fromDrop",
+        "42230": "toDrop",
+        "42240": "toDrop",
+        "42250": "amount",
+        "42260": "fromDrop",
+        "42310": [
+            {
+                "type": "future_dated",
+                "field": "initiation_date"
+            },
+            {
+                "type": "standing_order",
+                "field": "transfer_start_date"
+            }
+        ],
+        "42340": "frequency",
+        "42350": "frequency",
+        "42360":{
+            "type": "standing_order",
+            "field": "transfer_start_date"
+        },
+        "42370": {
+            "type": "standing_order",
+            "field": "transfer_end_date"
+        },
+        "42645": "amount"
+    },
+    "payee":{
+        "30034":"accountNumber",
+        "30024":"sortCode"
+    }
+}

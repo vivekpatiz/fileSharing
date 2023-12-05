@@ -1,0 +1,608 @@
+{
+    "widescreen": {
+        "theme": {
+            "base": "widescreen-default"
+        }
+    },
+    "master": {
+        "PRESENTATION": {
+            "MODULE": {
+                "LOGIN": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LOGIN_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "new_user_registration": false,
+                                    "username": true,
+                                    "password": true,
+                                    "forgot_password": true
+                                }
+                            },
+                            "ACTION_PENDING_FROM_USER": {
+                                "UI_ATTRIBUTES": {
+                                    "enableCheckSecQnAStatus": true,
+                                    "minChar": 3,
+                                    "maxChar": 32,
+                                    "enableSpacenPwdPolicy": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "DASHBOARD": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "DASHBOARD_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "secure_message": false,
+                                    "broadcast_message": true,
+                                    "outage_message": true,
+                                    "news": false,
+                                    "offers": false,
+                                    "pending_applications": false,
+                                    "user_type_count": false,
+                                    "show_admin_count": true,
+                                    "show_employee_count": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "FORGOT_PASSWORD": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "FORGOT_PASSWORD_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "username": true,
+                                    "email_id": true,
+                                    "security_answer": true,
+                                    "new_password": true,
+                                    "confirm_password": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "USER_MANAGEMENT": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LISTING_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "dob": true,
+                                    "gender": true,
+                                    "channelRegistrationStatus": true,
+                                    "adminDeregister": true,
+                                    "customerDeregister": true,
+                                    "resetCustomerQnA": true,
+                                    "unLockCustomerQnA": true,
+                                    "unLockMemQn": true,
+                                    "resetTransactionPwd": true,
+                                    "resetCustomerPassword": true,
+                                    "resetAdminQnA": true,
+                                    "customerBlock": true,
+                                    "adminBlock": true,
+                                    "customerConnectStatus": true,
+                                    "customerActivationDate": true,
+                                    "transactionPwd": true,
+                                    "userSearch": {
+                                        "customerUserId": true,
+                                        "customerName": false,
+                                        "adminEmptySearch": true,
+                                        "customerMemberId": true,
+                                        "adminName": true,
+                                        "adminUserId": true,
+                                        "allowUserIDSepcChar": true
+                                    }
+                                },
+                                "TABLE_ATTRIBUTES": {
+                                    "customerSearch": [
+                                        {
+                                            "label": "User ID",
+                                            "reverse": true,
+                                            "key": "memberName",
+                                            "iconClass" : "um-list-user-image",
+                                            "labelToolTip": "User ID",
+                                            "classes": "col-11",
+                                            "colWidth": 30,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Member Name",
+                                            "key": "fullName",
+                                            "labelToolTip": "Member Name",
+                                            "classes": "col-3",
+                                            "colWidth": 40,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Status",
+                                            "key": "statusDescription",
+                                            "labelToolTip": "Status",
+                                            "classes": "col-2",
+                                            "colWidth": 30,
+                                            "filter": "",
+                                            "enabled": true
+                                        }   
+                                    ],
+                                    "customerSearchContent": [
+                                        {
+                                            "label": "User ID",
+                                            "reverse": true,
+                                            "key": "memberName",
+                                            "labelToolTip": "User ID",
+                                            "classes": "col-11",
+                                            "colWidth": 26.5,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Member Name",
+                                            "key": "fullName",
+                                            "labelToolTip": "Member Name",
+                                            "classes": "col-3",
+                                            "colWidth": 40,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Status",
+                                            "key": "statusDescription",
+                                            "labelToolTip": "Status",
+                                            "classes": "col-2",
+                                            "colWidth": 30,
+                                            "filter": "",
+                                            "enabled": true
+                                        }   
+                                    ],
+                                    "adminSearch": [
+                                        {
+                                            "label": "User ID",
+                                            "reverse": true,
+                                            "key": "adminLoginId",
+                                            "iconClass" : "um-list-user-image",
+                                            "labelToolTip": "User ID",
+                                            "classes": "col-11",
+                                            "colWidth": 17,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Member Name",
+                                            "key": "fullName",
+                                            "labelToolTip": "Member Name",
+                                            "classes": "col-3",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "User Group",
+                                            "key": "userGroupName",
+                                            "labelToolTip": "User Group",
+                                            "classes": "col-3",
+                                            "colWidth": 40,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Status",
+                                            "key": "statusDescription",
+                                            "labelToolTip": "Status",
+                                            "classes": "col-2",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        }
+                                    ] ,
+                                    "adminSearchContent": [
+                                        {
+                                            "label": "User ID",
+                                            "reverse": true,
+                                            "key": "adminLoginId",
+                                            "labelToolTip": "User ID",
+                                            "classes": "col-11",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Member Name",
+                                            "key": "fullName",
+                                            "labelToolTip": "Member Name",
+                                            "classes": "col-3",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "User Group",
+                                            "key": "userGroupName",
+                                            "labelToolTip": "User Group",
+                                            "classes": "col-3",
+                                            "colWidth": 40,
+                                            "filter": "",
+                                            "enabled": true
+                                        },
+                                        {
+                                            "label": "Status",
+                                            "key": "statusDescription",
+                                            "labelToolTip": "Status",
+                                            "classes": "col-2",
+                                            "colWidth": 20,
+                                            "filter": "",
+                                            "enabled": true
+                                        }
+                                    ]
+                                }
+                            },
+                            "DETAILS_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "dob": true,
+                                    "gender": true,
+                                    "preferedName": true,
+                                    "channelRegistrationStatus": true,
+                                    "view_status_history": true,
+                                    "admin_view_status_history": true,
+                                    "view_account_activity": true,
+                                    "customer_limit_management_modify": true,
+                                    "customer_limit_modified_info": true,
+                                    "adminDeregister": true,
+                                    "customerDeregister": true,
+                                    "resetCustomerQnA": true,
+                                    "unLockCustomerQnA": true,
+                                    "unLockMemQn": true,
+                                    "resetAdminQnA": true,
+                                    "resetTransactionPwd": true,
+                                    "resetCustomerPassword": true,
+                                    "customerBlock": true,
+                                    "adminBlock": true,
+                                    "customerConnectStatus": true,
+                                    "customerActivationDate": true,
+                                    "transactionPwd": true,
+                                    "tabs": {
+                                        "customer_limit_management": true,
+                                        "channel_reg_status": true
+                                    }
+                                },
+                                "CUSTOMER_LIMITS": {
+                                    "UI_ATTRIBUTES": {
+                                        "citizenAndNonCitizenLimits": false,
+                                        "memberLimitsUpdatedInfo": true,
+                                        "overrideLimits": true
+                                    }
+                                }
+                            },
+                            "USER_REGISTRATION": {
+                                "UI_ATTRIBUTES": {
+                                    "employee_id": false,
+                                    "secure_message_user_group": false,
+                                    "isDisableEmailOnEdit": false,
+                                    "accessible_user_grp": true,
+                                    "firstTimeLoginPwdChangeConfirm": true,
+                                    "employeeStatus": true,
+                                    "phoneNoLengthValidation": true,
+                                    "sendUiidOnUpdate": true,
+                                    "postalCdLengthValidation": true,
+                                    "prevBtn": true,
+                                    "rsbValidation": true
+                                },
+                                "REQUIRED": {
+                                    "middleName": false,
+                                    "addressLine1": false,
+                                    "addressLine2": false,
+                                    "addressLine3": false,
+                                    "workPhone": false,
+                                    "homePhone": false,
+                                    "city": false,
+                                    "state": false,
+                                    "postalCode": false
+                                }
+                            },
+                            "USER_GROUP": {
+                                "UI_ATTRIBUTES": {
+                                    "search_component": false,
+                                    "isEditUserGroup": false
+                                }
+                            }
+                        }
+                    }
+                },
+                "GLOBAL_LIMITS": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LISTING_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "override_global_limits": true,
+                                    "citizenAndNonCitizenLimits": false,
+                                    "rsbOverrideLimit": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "SYSTEM_MESSAGE": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "LISTING_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "message_recipient_group": true,
+                                    "rsb_specific": true
+                                },
+                                "SERVICE_ATTRIBUTES": {
+                                    "news_and_offers": true
+                                }
+                            }
+                        }
+                    }
+                },
+                "REPORTS": {
+                    "PAGE": {
+                        "COMPONENT": {
+                            "USAGE_REPORT_COMPONENT": {
+                                "UI_ATTRIBUTES": {
+                                    "customer_locked_users": true,
+                                    "CUSTOMER": {
+                                        "rsb_active_status": true
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "LAYOUT": {
+                "HEADER": {
+                    "COMPONENT": {
+                        "MENU": [
+                            {
+                                "name": "Dashboard",
+                                "languageKey": "Dashboard",
+                                "enabled": true,
+                                "display": false,
+                                "imageIcon": "dashboard-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/dashboard"
+                                },
+                                "permissions": [
+                                    "BaNCSDigitalAdminHome"
+                                ]
+                            },
+                            {
+                                "name": "User Management",
+                                "languageKey": "User Management",
+                                "enabled": true,
+                                "display": false,
+                                "imageIcon": "usermangmt-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/user-management"
+                                },
+                                "permissions": [
+                                    "AdminUserManagement",
+                                    "CustomerUserManagement"
+                                ]
+                            },
+                            {
+                                "name": "Reports",
+                                "languageKey": "Reports",
+                                "enabled": true,
+                                "display": false,
+                                "imageIcon": "reports-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/report"
+                                },
+                                "permissions": [
+                                    "ReportsManagement"
+                                ]
+                            },
+                            {
+                                "name": "System Messages",
+                                "languageKey": "System Messages",
+                                "display": false,
+                                "enabled": true,
+                                "imageIcon": "sys-msg-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/system-message/system-message-listing"
+                                },
+                                "permissions": [
+                                    "PlatformMessageManagement",
+                                    "BaNCSDigitalAdminHome"
+                                ]
+                            },
+                            {
+                                "name": "Global Limits",
+                                "languageKey": "Global Limits",
+                                "enabled": true,
+                                "display": false,
+                                "imageIcon": "global-limit-img",
+                                "navigation": {
+                                    "enabled": true,
+                                    "internal": true,
+                                    "link": "/widescreen/view/global-limit"
+                                },
+                                "permissions": [
+                                    "DigitalLimits",
+                                    "BaNCSDigitalAdminHome"
+                                ]
+                            }
+                        ],
+                        "UI_ATTRIBUTES": {
+                            "privacy_notice": true
+                        }
+                    }
+                }
+            },
+            "INTERNATIONALISATION": {
+                "NUMBER_FORMAT": {
+                    "LIST": [
+                        {
+                            "FORMAT": ""
+                        }
+                    ],
+                    "DEFAULT": {},
+                    "SELECTED": {}
+                },
+                "CURRENCY_FORMAT": {
+                    "LIST": [
+                        {
+                            "FORMAT": "USD",
+                            "FRACTION": 3,
+                            "SYMBOL_NEEDED": true
+                        },
+                        {
+                            "FORMAT": "EUR",
+                            "FRACTION": 2,
+                            "SYMBOL_NEEDED": true
+                        },
+                        {
+                            "FORMAT": "GBP",
+                            "FRACTION": 2,
+                            "SYMBOL_NEEDED": true
+                        },
+                        {
+                            "FORMAT": "MYR",
+                            "FRACTION": 2,
+                            "SYMBOL_NEEDED": true
+                        }
+                    ],
+                    "DEFAULT": {
+                        "FORMAT": "USD",
+                        "FRACTION": 3,
+                        "SYMBOL_NEEDED": true
+                    },
+                    "SELECTED": {
+                        "FORMAT": "INR",
+                        "FRACTION": 2,
+                        "SYMBOL_NEEDED": true
+                    }
+                },
+                "DATE_FORMAT": {
+                    "LIST": {
+                        "MM/dd/yyyy": {
+                            "name": "MM/DD/YYYY",
+                            "key": "MM/dd/yyyy"
+                        },
+                        "dd/MM/yyyy": {
+                            "name": "DD/MM/YYYY",
+                            "key": "dd/MM/yyyy"
+                        },
+                        "dd-MMM-yyyy": {
+                            "name": "DD-MMM-YYYY",
+                            "key": "dd-MMM-yyyy"
+                        },
+                        "MMM/dd/yyyy": {
+                            "name": "MMM/DD/YYYY",
+                            "key": "MMM/dd/yyyy"
+                        }
+                    },
+                    "DEFAULT": {
+                        "FORMAT": "MM/dd/yyyy"
+                    },
+                    "SELECTED": {
+                        "FORMAT": "MMM/dd/yyyy"
+                    }
+                },
+                "DATETIME_FORMAT": {
+                    "LIST": {
+                        "MM/dd/yyyy_h:mm:ss": {
+                            "name": "MM/DD/YYYY h:mm:ss",
+                            "key": "MM/dd/yyyy h:mm:ss"
+                        },
+                        "dd/MM/yyyy_h:mm:ss": {
+                            "name": "DD/MM/YYYY",
+                            "key": "dd/MM/yyyy"
+                        },
+                        "MMM/dd/yyyy_h:mm_a": {
+                            "name": "MMM/DD/YYYY",
+                            "key": "MMM/dd/yyyy, h:mm a"
+                        }
+                    },
+                    "DEFAULT": {
+                        "FORMAT": "MM/dd/yyyy_h:mm:ss"
+                    },
+                    "SELECTED": {
+                        "FORMAT": "MMM/dd/yyyy_h:mm_a"
+                    }
+                },
+                "TIME_FORMAT": {
+                    "LIST": [
+                        {
+                            "FORMAT": ""
+                        }
+                    ],
+                    "DEFAULT": {},
+                    "SELECTED": {}
+                },
+                "LANGUAGE": {
+                    "LIST": [
+                        {
+                            "KEY": "en",
+                            "DESCRIPTION": "English"
+                        }
+                    ],
+                    "DEFAULT": {
+                        "KEY": "en",
+                        "DESCRIPTION": "English"
+                    },
+                    "SELECTED": {
+                        "KEY": "en",
+                        "DESCRIPTION": "English"
+                    },
+                    "DICTIONARY": {
+                        "EN": {
+                            "AccountName": "Account Name"
+                        },
+                        "HE": {
+                            "AccountName": "HJÓÓÔÓGÓØ"
+                        }
+                    }
+                }
+            }
+        },
+        "CONSTANTS": {
+            "MODULE": [
+                {
+                    "NAME": "BaNCSDigitalHome",
+                    "USER_MANAGEMENT": {
+                        "PAGE": {
+                            "COMPONENT": {
+                                "USER_REGISTRATION": {
+                                    "UI_CONSTANTS": {
+                                        "DEFAULT_VALUES": {
+                                            "Country": "IND"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                {
+                    "NAME": "BaNCSDigitalAdminHome",
+                    "USER_MANAGEMENT": {
+                        "PAGE": {
+                            "COMPONENT": {
+                                "USER_REGISTRATION": {
+                                    "UI_CONSTANTS": {
+                                        "DEFAULT_VALUES": {
+                                            "Country": "IND"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

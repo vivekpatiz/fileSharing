@@ -1,0 +1,142 @@
+{
+    "CONFIG_MERGE_KEY": "SERVICE#BUSINESS_FUNCTION_LIST",
+    "BUSINESS_FUNCTION_NAMES": {
+
+    "ResetLoginPasswordAdmin": {
+        "module": "User Management",
+        "description": "Reset Credentials \""
+        
+    },
+    "BlockCustomer": {
+        "module": "User Management",
+        "description": "Block Customer \""
+        
+    },
+    "UnblockCustomer": {
+        "module": "User Management",
+        "description": "Unblock Customer \""
+        
+    },
+    "AdminUserUpdateConfirm": {
+        "module": "User Management",
+        "description": "Block/Unblock Admin \""
+        
+    },
+    "AdminUserUpdate": {
+        "module": "User Management",
+        "description": "Block/Unblock Admin \""
+        
+    },
+    "AdminRegistrationUpdate": {
+        "module": "User Management",
+        "description": "Reset Admin User Credentials \""
+        
+    },
+    "DeleteLoginCredentials": {
+        "module": "User Management",
+        "description": "Admin User Deregister \""
+        
+    },
+    "CreateLoginCredentials": {
+        "module": "User Management",
+        "description": "Admin User Registration \""
+        
+    },
+    "ReplytoSecureMessage": {
+        "module": "Secure Message",
+        "description": "Secure Message Reply"
+        
+    },
+    "AssignMessagetoAdminUser": {
+        "module": "Secure Message",
+        "description": "Assign Secure Message"
+        
+    },
+    "CreateMessage": {
+        "module": "Secure Message",
+        "description": "Secure Message Create"
+        
+    },
+    "ComposeMessageConfirm": {
+        "module": "Secure Message",
+        "description": "Compose Message"
+        
+    },
+    "DeleteSecureMessage": {
+        "module": "Secure Message",
+        "description": "Delete Secure Message"
+        
+    },
+    "DeleteMessageConfirm": {
+        "module": "Secure Message",
+        "description": "Delete Secure Message"
+        
+    },
+    "DeleteMessagefromTrash": {
+        "module": "Secure Message",
+        "description": "Delete Secure Message from Trash"
+        
+    },
+    "DeleteTrashMessageConfirm": {
+        "module": "Secure Message",
+        "description": "Delete Secure Message from Trash"
+        
+    },
+    "RestoreTrash": {
+        "module": "Secure Message",
+        "description": "Restore Secure Message from Trash"
+        
+    },
+    "RestoreTrashConfirm": {
+        "module": "Secure Message",
+        "description": "Restore Secure Message from Trash"
+        
+    },
+    "CreateSystemBroadcastMessage": {
+        "module": "Broadcast Message",
+        "description": "Create System Broadcast Message"
+        
+    },
+    "DeleteSystemBroadcastMessage": {
+        "module": "Broadcast Message",
+        "description": "Delete Systme Broadcast Message"
+        
+    },
+    "FunctionalAccessProfileCreate": {
+        "module": "FAP",
+        "description": "FAP Create \""
+        
+    },
+    "FunctionalAccessProfileUpdate": {
+        "module": "FAP",
+        "description": "FAP Update \""
+        
+    },
+    "FunctionalAccessProfileDelete": {
+        "module": "FAP",
+        "description": "FAP Delete \""
+        
+    },
+    "UserGroupCreate": {
+        "module": "User Group",
+        "description": "User Group Create \""
+        
+    },
+    "ModifyUserGroupDetails": {
+        "module": "User Group",
+        "description": "User Group Update \""
+        
+    },
+    "UserGroupDelete": {
+        "module": "User Group",
+        "description": "User Group Delete \""
+        
+    },
+    "UserGroupPermissionUpdate": {
+        "module": "User Group",
+        "description": "User Group Update \""
+        
+    }
+     
+}
+}

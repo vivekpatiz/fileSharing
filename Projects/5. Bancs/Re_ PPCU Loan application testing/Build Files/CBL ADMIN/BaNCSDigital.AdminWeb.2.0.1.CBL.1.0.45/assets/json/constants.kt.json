@@ -1,0 +1,74 @@
+{
+    "CONFIG_MERGE_KEY": "CONSTANTS",
+    "SERVICE": {
+        "RESPONSE_CODE": {
+            "SUCCESS": "0",
+            "GENERIC_ERROR": "90000",
+            "FAILURE": [
+                "90000"
+            ],
+            "WARNING": [
+                "12345",
+                "10001"
+            ]
+        },
+        "ENVELOPE": {
+            "APIVersion": "apiVer",
+            "appVersion": "adm.1.0.0",
+            "resource": "resrc",
+            "messageId": "0",
+            "envelopeVersion": "MessageEnvelope_1.0.0",
+            "fiIdentifier": {
+                "Id": "1",
+                "version": "Identifier_1.0.0"
+            }
+        },
+        "buildInfo": {
+            "appID": "",
+            "appGroupID": {
+                "mobile": "",
+                "internet": ""
+            },
+            "codingLanguage": "Hybrid"
+        }
+    },
+    "SETTINGS": {
+        "ENABLE_SESSION_EXPIRY": false,
+        "SESSION_TIMEOUT": 300,
+        "EXPIRY_PROMPT": 30
+    },
+    "BUSINESS": {
+        "MIN_TXN_AMOUNT": 10,
+        "MAX_TXN_AMOUNT": 100000
+    },
+    "PRESENTATION": {},
+    "CURRENCY": {
+        "LIST": {
+            "INR": {}
+        },
+        "BASE_CURRENCY": {}
+    },
+    "BUSINESSFUNCTIONID": {
+        "SAVINGS_LIST": "SavingsDepositProductApplicationCreate",
+        "CURRENT_LIST": "DemandDepositProductApplicationCreate",
+        "AMEND_REGULAR_DEDUCTION_LIST": "AmendRegularDeductionCreate",
+        "FINANCE_LIST": "LoanProductApplicationCreate",
+        "INSURANCE_LIST": "InsurancePolicyProductApplicationCreate"
+    },
+    "MODULE": {
+        "NAME": "BaNCSDigitalHome",
+        "USER_MANAGEMENT": {
+            "PAGE": {
+                "COMPONENT": {
+                    "USER_REGISTRATION": {
+                        "UI_CONSTANTS": {
+                            "DEFAULT_VALUES": {
+                                "Country": ""
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

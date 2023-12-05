@@ -1,0 +1,124 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+//Flex - Vendor Prefixing --> starts here
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin test() {
+  border: 5px solid blue;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;  
+  -moz-box-ordinal-group: $val;     
+  -ms-flex-order: $val;     
+  -webkit-order: $val;  
+  order: $val;
+}
+
+//Flex - Vendor Prefixing --> ends here
+
+
+//calc plugin
+@mixin calc($property, $expression) {
+  #{$property}: -moz-calc(#{$expression});
+  #{$property}: -webkit-calc(#{$expression});
+  #{$property}: calc(#{$expression});
+}
+
+//Mixin for Animations and keyframes --> starts here
+//Reference --> http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }  
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }  
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};      
+}
+
+//Mixin for animation --> ends here
+
+//Mixin for Transitions --> starts here
+//Reference --> http://zerosixthree.se/8-sass-mixins-you-must-have-in-your-toolbox/
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+//Mixin for Transitions --> ends here
+
+// Mixin for Transform --> Starts here
+@mixin transform($args...) {
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+// Mixin for Transform --> Ends here
+
+//Mixin for opacity Vendor prefixing --> starts here
+
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity=$opacity-ie); //IE8
+}
+
+//Mixin for opacity Vendor prefixing --> ends here
+
+//font-size generator mixin
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+  }
+
+@mixin respond-to($media) {
+  @if $media == phone {
+    @media only screen and (max-width: $break-small) { @content; }
+  }
+  @else if $media == tablet {
+    @media only screen and (min-width: $break-small + 1) and (max-width: $break-large - 1) { @content; }
+  }
+  @else if $media == wide-screen {
+    @media only screen and (min-width: $break-large) { @content; }
+  }
+}

@@ -1,0 +1,4589 @@
+{
+    "CONFIG_MERGE_KEY": "SERVICE#REQUEST_MODEL",
+    "DATA_ENTITY": {
+        "loginRequest": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0",
+                    "isArchetype": true
+                }
+            },
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0",
+                "verificationType": {
+                    "Code": "TRADITIONALPASSWORD"
+                },
+                "password": {
+                    "version": "Secret_1.0.0",
+                    "salt": {
+                        "version": "Binary_1.0.0"
+                    },
+                    "digestType": {
+                        "Code": "MD_1"
+                    },
+                    "encryptionType": {
+                        "Code": "ET_1"
+                    }
+                },
+                "verificationDataStatus": {
+                    "Code": "1"
+                }
+            },
+            "credentialScope": {
+                "Code": "LOGIN"
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0"
+                }
+            ]
+        },
+        "LogoutRequest": {
+            "version": "LoginUserCredentials_1.0.0",
+            "isArchetype": true
+        },
+        "ValidatePassword": {
+            "version": "LoginUserCredentials_1.0.0",
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0",
+                "password": {
+                    "version": "Secret_1.0.0",
+                    "salt": {
+                        "version": "Binary_1.0.0"
+                    },
+                    "digestType": {
+                        "Code": "MD_1"
+                    },
+                    "encryptionType": {
+                        "Code": "ET_1"
+                    }
+                }
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0"
+                }
+            ]
+        },
+        "RecordControl": {
+            "version": "RecordControl_1.0.0"
+        },
+        "AdminUser": {
+            "version": "AdminUser_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0"
+            },
+            "isArchetype": true
+        },
+        "CustomerUser": {
+            "version": "CustomerUser_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0"
+            },
+            "isArchetype": true
+        },
+        "PersonCustomer": {
+            "version": "PersonCustomer_1.0.0",
+            "name": {
+                "version": "PersonName_1.0.0",
+                "isArchetype": true
+            },
+            "profilePhoto": {
+                "version": "Image_1.0.0",
+                "isArchetype": true,
+                "binaryData": {
+                    "version": "Binary_1.0.0",
+                    "isArchetype": true
+                }
+            },
+            "isArchetype": true
+        },
+        "PersonCustomerRequest": {
+            "isArchetype ": true,
+            "name": {
+                "isArchetype": true,
+                "version": "PersonName_1.0.0"
+            },
+            "profilePhoto": {
+                "binaryData": {
+                    "isArchetype": true,
+                    "version": "Binary_1.0.0"
+                },
+                "isArchetype": true,
+                "version": "Image_1.0.0"
+            },
+            "version": "PersonCustomer_1.0.0"
+        },
+        "LoggedInUserDetails": {
+            "isArchetype": true,
+            "version": "AdminUser_1.0.0"
+        },
+        "userGroupPermissions": {
+            "isArchetype": true,
+            "version": "UserGroupPermission_1.0.0"
+        },
+        "SecureMessageInboxRequest": {
+            "version": "DigiCorrespondence_1.0.0"
+        },
+        "SecureMessageEmptyTrashRequest": {
+            "version": "DigiCorrespondence_1.0.0",
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "status": {}
+            }
+        },
+        "SecureMessageInboxDetailRequest": {
+            "version": "DigiCorrespondence_1.0.0",
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "conversationId": {
+                    "version": "Identifier_1.0.0"
+                },
+                "from": {
+                    "version": "DigiCorrespondent_1.0.0",
+                    "user": {
+                        "version": "AdminUser_1.0.0",
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    }
+                },
+                "id": {
+                    "version": "Identifier_1.0.0"
+                }
+            }
+        },
+        "SecureMessageOutboxRequest": {
+            "version": "DigiCorrespondence_1.0.0"
+        },
+        "SecureMessageOutboxDetailRequest": {
+            "version": "DigiCorrespondence_1.0.0",
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "conversationId": {
+                    "version": "Identifier_1.0.0"
+                },
+                "id": {
+                    "version": "Identifier_1.0.0"
+                },
+                "to": [
+                    {
+                        "version": "DigiCorrespondent_1.0.0",
+                        "user": {
+                            "version": "AdminUser_1.0.0",
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "SecureMessageTrashRequest": {
+            "version": "DigiCorrespondence_1.0.0"
+        },
+        "SecureMessageTrashDetailRequest": {
+            "version": "DigiCorrespondence_1.0.0",
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "conversationId": {
+                    "version": "Identifier_1.0.0"
+                },
+                "id": {
+                    "version": "Identifier_1.0.0"
+                }
+            }
+        },
+        "SecureMessageConfirmCompose": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "DigiCorrespondence_1.0.0",
+                    "body": [
+                        {
+                            "version": "DigiCorrespondenceBody_1.0.0",
+                            "content": {
+                                "version": "TextContent_1.0.0"
+                            }
+                        }
+                    ],
+                    "header": {
+                        "version": "DigiCorrespondenceHeader_1.0.0",
+                        "from": {
+                            "version": "DigiCorrespondent_1.0.0",
+                            "user": {
+                                "version": "AdminUser_1.0.0"
+                            }
+                        },
+                        "to": [
+                            {
+                                "version": "DigiCorrespondent_1.0.0",
+                                "user": {
+                                    "version": "CustomerUser_1.0.0",
+                                    "customerHostMap": {
+                                        "1": {
+                                            "version": "PersonCustomer_1.0.0",
+                                            "nameList": [
+                                                {
+                                                    "version": "PersonName_1.0.0"
+                                                }
+                                            ]
+                                        }
+                                    },
+                                    "identifier": {
+                                        "version": "Identifier_1.0.0"
+                                    }
+                                }
+                            }
+                        ],
+                        "subject": {
+                            "version": "DigiCorrespondenceSubject_1.0.0"
+                        }
+                    }
+                }
+            ]
+        },
+        "SecureMessageCompose": {
+            "version": "DigiCorrespondence_1.0.0",
+            "body": [
+                {
+                    "version": "DigiCorrespondenceBody_1.0.0",
+                    "content": {
+                        "version": "TextContent_1.0.0"
+                    }
+                }
+            ],
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "from": {
+                    "version": "DigiCorrespondent_1.0.0",
+                    "user": {
+                        "version": "AdminUser_1.0.0"
+                    }
+                },
+                "to": [
+                    {
+                        "version": "DigiCorrespondent_1.0.0",
+                        "user": {
+                            "version": "CustomerUser_1.0.0",
+                            "customerHostMap": {
+                                "1": {
+                                    "version": "PersonCustomer_1.0.0",
+                                    "nameList": [
+                                        {
+                                            "version": "PersonName_1.0.0"
+                                        }
+                                    ]
+                                }
+                            },
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            }
+                        }
+                    }
+                ],
+                "subject": {
+                    "version": "DigiCorrespondenceSubject_1.0.0"
+                }
+            }
+        },
+        "SecureMessageReplyRequest": {
+            "version": "DigiCorrespondence_1.0.0",
+            "body": [
+                {
+                    "version": "DigiCorrespondenceBody_1.0.0",
+                    "content": {
+                        "version": "TextContent_1.0.0"
+                    },
+                    "id": {
+                        "version": "Identifier_1.0.0"
+                    }
+                }
+            ],
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "conversationId": {
+                    "version": "Identifier_1.0.0"
+                },
+                "from": {
+                    "version": "DigiCorrespondent_1.0.0",
+                    "user": {
+                        "version": "AdminUser_1.0.0",
+                        "name": {
+                            "version": "PersonName_1.0.0"
+                        },
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    },
+                    "userGroup": {
+                        "version": "UserGroup_1.0.0",
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    }
+                },
+                "to": [
+                    {
+                        "version": "DigiCorrespondent_1.0.0",
+                        "user": {
+                            "version": "CustomerUser_1.0.0",
+                            "customerHostMap": {
+                                "1": {
+                                    "version": "PersonCustomer_1.0.0",
+                                    "nameList": [
+                                        {
+                                            "version": "PersonName_1.0.0"
+                                        }
+                                    ]
+                                }
+                            },
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            }
+                        }
+                    }
+                ],
+                "subject": {
+                    "version": "DigiCorrespondenceSubject_1.0.0"
+                }
+            }
+        },
+        "SecureMessageComposeAdmin": {
+            "version": "DigiCorrespondence_1.0.0",
+            "body": [
+                {
+                    "version": "DigiCorrespondenceBody_1.0.0",
+                    "content": {
+                        "version": "TextContent_1.0.0"
+                    }
+                }
+            ],
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "from": {
+                    "version": "DigiCorrespondent_1.0.0",
+                    "user": {
+                        "version": "AdminUser_1.0.0"
+                    }
+                },
+                "to": [
+                    {
+                        "version": "DigiCorrespondent_1.0.0",
+                        "user": {
+                            "version": "AdminUser_1.0.0",
+                            "name": {
+                                "version": "PersonName_1.0.0"
+                            },
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            }
+                        }
+                    }
+                ],
+                "subject": {
+                    "version": "DigiCorrespondenceSubject_1.0.0",
+                    "topic": {
+                        "version": "DigiCorrespondenceTopic_1.0.0",
+                        "id": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    }
+                }
+            }
+        },
+        "SecureMessageComposeAdminConfirm": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "DigiCorrespondence_1.0.0",
+                    "body": [
+                        {
+                            "version": "DigiCorrespondenceBody_1.0.0",
+                            "content": {
+                                "version": "TextContent_1.0.0"
+                            }
+                        }
+                    ],
+                    "header": {
+                        "version": "DigiCorrespondenceHeader_1.0.0",
+                        "from": {
+                            "version": "DigiCorrespondent_1.0.0",
+                            "user": {
+                                "version": "AdminUser_1.0.0"
+                            }
+                        },
+                        "to": [
+                            {
+                                "version": "DigiCorrespondent_1.0.0",
+                                "user": {
+                                    "version": "AdminUser_1.0.0",
+                                    "name": {
+                                        "version": "PersonName_1.0.0"
+                                    },
+                                    "identifier": {
+                                        "version": "Identifier_1.0.0"
+                                    }
+                                }
+                            }
+                        ],
+                        "subject": {
+                            "version": "DigiCorrespondenceSubject_1.0.0"
+                        }
+                    }
+                }
+            ]
+        },
+        "SecureMessageConfirmRead": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "DigiCorrespondence_1.0.0",
+                    "header": {
+                        "version": "DigiCorrespondenceHeader_1.0.0",
+                        "id": {
+                            "version": "Identifier_1.0.0"
+                        },
+                        "status": {
+                            "Description": "READ",
+                            "Code": "2"
+                        }
+                    }
+                }
+            ]
+        },
+        "SecureMessageTrashMailRequest": {
+            "version": "DigiCorrespondence_1.0.0",
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "id": {
+                    "version": "Identifier_1.0.0"
+                },
+                "status": ""
+            }
+        },
+        "SecureMessageAssignMailRequest": {
+            "version": "DigiCorrespondence_1.0.0",
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "conversationId": {
+                    "version": "Identifier_1.0.0"
+                },
+                "from": {
+                    "version": "DigiCorrespondent_1.0.0",
+                    "user": {
+                        "version": "CustomerUser_1.0.0",
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    }
+                },
+                "id": {
+                    "version": "Identifier_1.0.0"
+                },
+                "status": "",
+                "to": [
+                    {
+                        "version": "DigiCorrespondent_1.0.0",
+                        "user": {
+                            "version": "AdminUser_1.0.0",
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            }
+                        }
+                    }
+                ]
+            }
+        },
+        "SecureMessageConfirmRequest": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": []
+        },
+        "SecureMessageRead": {
+            "version": "DigiCorrespondence_1.0.0",
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "id": {
+                    "version": "Identifier_1.0.0"
+                },
+                "status": {
+                    "Description": "READ",
+                    "Code": "2"
+                }
+            }
+        },
+        "SecureMessageInboxCountRequest": {
+            "version": "DigiCorrespondence_1.0.0",
+            "header": {
+                "version": "DigiCorrespondenceHeader_1.0.0",
+                "from": {
+                    "version": "DigiCorrespondent_1.0.0",
+                    "user": {
+                        "version": "AdminUser_1.0.0"
+                    }
+                },
+                "status": {
+                    "Description": "New",
+                    "Code": "1"
+                }
+            }
+        },
+        "UserDigitalServiceRelationship": {
+            "version": "UserDigitalServiceRelationship_1.0.0",
+            "user": {
+                "version": "CustomerUser_1.0.0",
+                "isArchetype": true,
+                "identifier": {
+                    "version": "Identifier_1.0.0"
+                }
+            },
+            "service": {
+                "version": "Service_1.0.0",
+                "id": {
+                    "version": "Identifier_1.0.0"
+                }
+            },
+            "status": {
+                "version": "UserServiceRelationshipStatus_1.0.0"
+            }
+        },
+        "UserDigitalServiceRelationshipAdmin": {
+            "version": "UserDigitalServiceRelationship_1.0.0",
+            "user": {
+                "version": "AdminUser_1.0.0",
+                "isArchetype": true,
+                "identifier": {
+                    "version": "Identifier_1.0.0"
+                }
+            },
+            "service": {
+                "version": "Service_1.0.0",
+                "id": {
+                    "version": "Identifier_1.0.0"
+                }
+            },
+            "status": {
+                "version": "UserServiceRelationshipStatus_1.0.0"
+            }
+        },
+        "ApplicationMgmtListRequest": {
+            "initiator": {
+                "userId": {
+                    "version": "UserIdentifier_1.0.0"
+                },
+                "version": "Performer_1.0.0"
+            },
+            "version": "Task_1.0.0"
+        },
+        "DirectDebitRequest": {
+            "version": "UserActivity_1.0.0",
+            "isArchetype": true,
+            "user": {
+                "version": "CustomerUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "name": "",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0",
+                        "ID": ""
+                    }
+                }
+            },
+            "source": {
+                "code": "INTERNETBANKING"
+            }
+        },
+        "CustomerTransactionReportAll": {
+            "version": "UserActivity_1.0.0",
+            "isArchetype": true
+        },
+        "DirectDebitRequestWithoutId": {
+            "version": "UserActivity_1.0.0",
+            "source": {
+                "code": "INTERNETBANKING"
+            }
+        },
+        "DebitCardDepositRequest": {
+            "version": "CardReceiveTransfer_1.0.0",
+            "status": {
+                "Code": ""
+            }
+        },
+        "LoanApplicationListRequest": {
+            "version": "UserActivity_1.0.0",
+            "isArchetype": true,
+            "user": {
+                "version": "CustomerUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0"
+                }
+            },
+            "source": {
+                "CDE": "INTERNETBANKING"
+            }
+        },
+        "CustomerUserStatusHistoryReport": {
+            "version": "UserActivity_1.0.0",
+            "isArchetype": true,
+            "user": {
+                "version": "CustomerUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "name": "",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0",
+                        "ID": ""
+                    }
+                }
+            },
+            "source": {
+                "code": "INTERNETBANKING"
+            }
+        },
+        "AdminUserStatusHistoryReport": {
+            "version": "UserActivity_1.0.0",
+            "isArchetype": true,
+            "user": {
+                "version": "AdminUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0",
+                        "ID": ""
+                    }
+                }
+            },
+            "source": {
+                "code": "INTERNETBANKING"
+            }
+        },
+        "TransactionReport": {
+            "version": "UserActivity_1.0.0",
+            "isArchetype": true,
+            "user": {
+                "version": "CustomerUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0",
+                        "ID": ""
+                    }
+                }
+            },
+            "source": {
+                "code": "INTERNETBANKING"
+            }
+        },
+        "TransactionReportAdmin": {
+            "version": "UserActivity_1.0.0",
+            "isArchetype": true,
+            "user": {
+                "version": "AdminUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0",
+                        "ID": "3000137535"
+                    }
+                }
+            },
+            "source": {
+                "code": "INTERNETBANKING"
+            }
+        },
+        "UserStatusHistoryReportBkup": {
+            "version": "UserActivity_1.0.0",
+            "isArchetype": true,
+            "user": {
+                "version": "CustomerUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0",
+                        "ID": "3000137535"
+                    }
+                }
+            },
+            "source": {
+                "code": "INTERNETBANKING"
+            }
+        },
+        "ApplicationMgmtDetailsRequest": {
+            "version": "Task_1.0.0",
+            "taskId": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            }
+        },
+        "AmendValidationDetailsRequest": {
+            "version": "TermDepositProductApplication_1.0.0",
+            "hostApplicationId": "",
+            "customerInformation": {
+                "version": "PersonCustomer_1.0.0",
+                "identifier": {
+                    "version": "CustomerIdentifier_1.0.0",
+                    "customerIdentifiers": {
+                        "CUSTID": ""
+                    }
+                }
+            }
+        },
+        "DebitCardDepositDetailsRequest": {
+            "version": "CardReceiveTransfer_1.0.0",
+            "referenceDataList": [
+                {
+                    "version": "ReferenceData_1.0.0",
+                    "type": {
+                        "CDE": "TRANSACTIONID"
+                    },
+                    "identifier": ""
+                }
+            ]
+        },
+        "TransactionUserCredentials": {
+            "version": "TransactionUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0",
+                    "userStatusDetail": {
+                        "version": "UserStatusDetail_1.0.0"
+                    }
+                }
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0",
+                    "type": {
+                        "version": "EnumEntity_1.0.0"
+                    }
+                }
+            ]
+        },
+        "LoginUserCredentialsMemQnA": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0"
+                },
+                "name": ""
+            },
+            "primaryVerificationData": {
+                "version": "QnAVerificationData_1.0.0"
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0",
+                    "type": {
+                        "version": "EnumEntity_1.0.0"
+                    }
+                }
+            ]
+        },
+        "LoginUserCredentialsLogin": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0",
+                    "userStatus": {
+                        "Code": "1",
+                        "Description": "ACTIVE"
+                    }
+                },
+                "name": ""
+            },
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0",
+                "verificationDataStatus": {
+                    "Code": "1",
+                    "Description": "ACTIVE"
+                }
+            },
+            "additionalVerificationDataList": [
+                {
+                    "version": "QnAVerificationData_1.0.0"
+                }
+            ],
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0",
+                    "type": {
+                        "version": "EnumEntity_1.0.0"
+                    }
+                }
+            ]
+        },
+        "QnAVerificationData": {
+            "version": "QnAVerificationData_1.0.0"
+        },
+        "OTPVerificationData": {
+            "version": "OTPVerificationData_1.0.0"
+        },
+        "TraditionalPasswordVerificationData": {
+            "version": "TraditionalPasswordVerificationData_1.0.0"
+        },
+        "ApplicationMgmtAcceptOrRejectRequest": {
+            "taskId": {
+                "ID": "",
+                "version": "Identifier_1.0.0"
+            },
+            "isArchetype": false,
+            "remarks": "Approve action",
+            "version": "Task_1.0.0"
+        },
+        "DebitCardDepositAcceptOrRejectRequest": {
+            "version": "CardReceiveTransfer_1.0.0",
+            "referenceDataList": [
+                {
+                    "version": "ReferenceData_1.0.0",
+                    "type": {
+                        "CDE": "TRANSACTIONID"
+                    },
+                    "identifier": ""
+                }
+            ],
+            "status": {
+                "Code": ""
+            },
+            "remarks": ""
+        },
+        "AmmendAcceptOrRejectRequest": {
+            "version": "Task_1.0.0",
+            "actionType": {
+                "version": "EnumEntity_1.0.0",
+                "Code": ""
+            },
+            "taskId": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            },
+            "remarks": ""
+        }, 
+        "AmmendAcceptOrRejectNoteRequest":{
+            
+            "version": "Note_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            },
+            "noteType": "",
+            "longText": "",
+            "objectIdentifierList": [
+                {
+                    "version": "Identifier_1.0.0",
+                    "ID": ""
+                }
+            ],
+            "description": "",
+            "noteUse": "CIF"
+            
+        },       
+        "MessagePayload": {
+            "version": "MessagePayload_1.0.0"
+        },
+        "UpdateMessagePayload": {
+            "version": "UpdateMessagePayload_1.0.0"
+        },
+        "AdminLoginUserCredentials": {
+            "version": "LoginUserCredentials_1.0.0",
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0"
+                }
+            ],
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0"
+            },
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0",
+                    "userStatusDetail": {
+                        "version": "UserStatusDetail_1.0.0",
+                        "effectiveDate": {
+                            "version": "DateTime_1.0.0"
+                        }
+                    }
+                },
+                "statusDetail": {
+                    "version": "VerificationIDStatusDetail_1.0.0"
+                }
+            }
+        },
+        "CustomerLoginUserCredentials": {
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0"
+            },
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0",
+                    "userStatusDetail": {
+                        "version": "UserStatusDetail_1.0.0"
+                    }
+                },
+                "version": "StringVerificationIdentifier_1.0.0"
+            }
+        },
+        "AdminDeRegister": {
+            "version": "UserDigitalServiceRelationship_1.0.0",
+            "user": {
+                "version": "AdminUser_1.0.0",
+                "isArchetype": true,
+                "identifier": {
+                    "version": "Identifier_1.0.0"
+                }
+            },
+            "status": {
+                "version": "UserServiceRelationshipStatus_1.0.0"
+            },
+            "service": {
+                "version": "Service_1.0.0",
+                "id": {
+                    "version": "Identifier_1.0.0"
+                }
+            }
+        },
+        "ReportsUsage": {
+            "UserDigitalServiceRelationship": {
+                "version": "UserDigitalServiceRelationship_1.0.0"
+            },
+            "LoginUserCredentials": {
+                "primaryVerificationData": {
+                    "version": "TraditionalPasswordVerificationData_1.0.0"
+                },
+                "version": "LoginUserCredentials_1.0.0"
+            },
+            "UserSession": {
+                "version": "UserSession_1.0.0"
+            }
+        },
+        "LoginUserCredentials": {
+            "version": "LoginUserCredentials_1.0.0"
+        },
+        "AggregatedMessageComponent": {
+            "version": "AggregatedMessageComponent_1.0.0",
+            "messageId": "",
+            "sequenceNumber": "",
+            "message": {
+                "version": "MessagePayload_1.0.0",
+                "category": [],
+                "operation": "INQ",
+                "dataEntity": []
+            }
+        },
+        "RegularDeductionPaymentSplit": {
+            "version": "Task_1.0.0",
+            "initiator": {
+                "version": "Performer_1.0.0",
+                "userId": {
+                    "version": "UserIdentifier_1.0.0",
+                    "ID": "726"
+                }
+            }
+        },
+        "RegularDeductionPaymentSplitDetails": {
+            "version": "Task_1.0.0",
+            "taskId": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            }
+        },
+        "RDCValidationList": {
+            "version": "TermDepositProductApplication_1.0.0",
+            "hostApplicationId": "",
+            "comments": "RDC",
+            "operation": "INQ"
+        },
+        "PortfolioMonitoringDisable":{
+            "version": "TermDepositProductApplication_1.0.0",
+            "hostApplicationId": "",
+            "applicationWorkflow": {
+                "version": "ApplicationWorkflow_1.0.0",
+                "identifier": {
+                    "version": "Identifier_1.0.0",
+                    "ID": ""
+                }
+            }
+        },
+        "RDCUpdateDecision": {
+            "version": "TermDepositProductApplication_1.0.0",
+            "hostApplicationId": "",
+            "identifier": {
+                "ID": "",
+                "version": "Identifier_1.0.0"
+            },
+            "applicationWorkflow": {
+                "version": "ApplicationWorkflow_1.0.0",
+                "identifier": {
+                    "version": "Identifier_1.0.0",
+                    "ID": ""
+                },
+                "currentWFScreen": ""
+            },
+            "applicationRelationship": [],
+            "operation": "UPD"
+        },
+        "RDCBatchComplete": {
+            "version": "TermDepositProductApplication_1.0.0",
+            "hostApplicationId": "",
+            "identifier": {
+                "ID": "",
+                "version": "Identifier_1.0.0"
+            },
+            "applicationWorkflow": {
+                "version": "ApplicationWorkflow_1.0.0",
+                "identifier": {
+                    "version": "Identifier_1.0.0",
+                    "ID": ""
+                }
+            },
+            "operation": "UPD"
+        },
+        "ReportsUserSession": {
+            "version": "UserSession_1.0.0",
+            "user": {
+                "version": "CustomerUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0",
+                        "ID": ""
+                    }
+                }
+            }
+        },
+        "ReportsUserActivity": {
+            "version": "UserActivity_1.0.0",
+            "user": {
+                "version": "CustomerUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0",
+                        "ID": ""
+                    }
+                }
+            },
+            "source": {
+                "version": "EnumEntity_1.0.0",
+                "Code": "INTERNETBANKING"
+            }
+        },
+        "CreateUserCRTRequest": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0"
+                }
+            },
+            "additionalVerificationDataList": [],
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0"
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0",
+                    "type": {
+                        "version": "EnumEntity_1.0.0"
+                    }
+                }
+            ],
+            "credentialScope": {
+                "version": "EnumEntity_1.0.0"
+            }
+        },
+        "ResetMemPasswordRequest": {
+            "version": "EntityUpdateDetails_1.0.0",
+            "updatedEntity": {
+                "version": "LoginUserCredentials_1.0.0",
+                "verificationIdentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0",
+                        "userStatus": {
+                            "version": "EnumEntity_1.0.0",
+                            "Code": "ACTIVE"
+                        }
+                    }
+                },
+                "primaryVerificationData": {
+                    "version": "QnAVerificationData_1.0.0",
+                    "isArchetype": true
+                },
+                "domainAddresses": [
+                    {
+                        "version": "DomainAddress_1.0.0",
+                        "name": "RETAILCUSTOMER",
+                        "appGroupId": "1",
+                        "platformId": "BaNCSDigital",
+                        "applicationId": ""
+                    },
+                    {
+                        "version": "DomainAddress_1.0.0",
+                        "appGroupId": "2",
+                        "platformId": "BaNCSDigital",
+                        "applicationId": ""
+                    }
+                ],
+                "credentialScope": {
+                    "Code": "LOGIN"
+                }
+            },
+            "updateOperationList": {
+                "version": "UpdateOperationList_1.0.0",
+                "updateOperationList": [
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    }
+                ]
+            }
+        },
+        "GlobalTransactionLimitRequest": {
+            "version": "FI_1.0.0"
+        },
+        "CreateCustomerLimitListRequest": {
+            "version": "CustomerUser_1.0.0",
+            "identifier": {
+                "version": "UserIdentifier_1.0.0"
+            }
+        },
+        "CreateCustomerUserRequest": {
+            "version": "CustomerUser_1.0.0",
+            "isArchetype": true
+        },
+        "CreateAdminUserRequest": {
+            "version": "AdminUser_1.0.0",
+            "isArchetype": true
+        },
+        "CreateBankUserRequest": {
+            "version": "UserDigitalServiceRelationship_1.0.0",
+            "service": {
+                "version": "Service_1.0.0",
+                "id": {
+                    "version": "Identifier_1.0.0"
+                }
+            },
+            "user": {
+                "version": "AdminUser_1.0.0",
+                "employeeReference": {
+                    "version": "EmployeeReference_1.0.0",
+                    "employeeKeys": {
+                        "version": "EmployeeKeys_1.0.0",
+                        "employeeIdentifier": {
+                            "version": "EmployeeIdentifier_1.0.0"
+                        }
+                    },
+                    "employee": {
+                        "version": "Employee_1.0.0",
+                        "branch": {
+                            "version": "FILocation_1.0.0",
+                            "fiLocationIdentifier": {
+                                "version": "FILocationIdentifier_1.0.0",
+                                "identifiers": {}
+                            }
+                        },
+                        "contactList": [
+                            {
+                                "version": "PostalContact_1.0.0",
+                                "address": {
+                                    "version": "Address_1.0.0",
+                                    "city": {
+                                        "version": "City_1.0.0",
+                                        "countyDistrict": {
+                                            "version": "CountyDistrict_1.0.0",
+                                            "stateProvince": {
+                                                "version": "StateProvince_1.0.0",
+                                                "country": {
+                                                    "version": "Country_1.0.0",
+                                                    "code": {
+                                                        "version": "EnumEntity_1.0.0"
+                                                    }
+                                                }
+                                            }
+                                        },
+                                        "stateProvince": {
+                                            "version": "StateProvince_1.0.0",
+                                            "country": {
+                                                "version": "Country_1.0.0",
+                                                "code": {
+                                                    "version": "EnumEntity_1.0.0"
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            {
+                                "version": "EmailContact_1.0.0",
+                                "email": {
+                                    "version": "Email_1.0.0"
+                                }
+                            },
+                            {
+                                "version": "PhoneContact_1.0.0",
+                                "phone": {
+                                    "version": "Phone_1.0.0",
+                                    "number": {
+                                        "version": "PhoneNumber_1.0.0"
+                                    },
+                                    "type": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            },
+                            {
+                                "version": "PhoneContact_1.0.0",
+                                "phone": {
+                                    "version": "Phone_1.0.0",
+                                    "number": {
+                                        "version": "PhoneNumber_1.0.0"
+                                    },
+                                    "type": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            },
+                            {
+                                "version": "PhoneContact_1.0.0",
+                                "phone": {
+                                    "version": "Phone_1.0.0",
+                                    "number": {
+                                        "version": "PhoneNumber_1.0.0"
+                                    },
+                                    "type": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            }
+                        ]
+                    }
+                },
+                "name": {
+                    "version": "PersonName_1.0.0"
+                },
+                "identifier": {
+                    "version": "Identifier_1.0.0"
+                },
+                "userGroups": [
+                    {
+                        "version": "UserGroup_1.0.0",
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    }
+                ]
+            }
+        },
+        "userGroup": {
+            "version": "UserGroup_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0"
+            }
+        },
+        "SystemMessageConfirmRequest": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "SystemMessage_1.0.0",
+                    "referenceDataList": [],
+                    "activePeriod": {
+                        "version": "TimeFrame_1.0.0",
+                        "startDate": {
+                            "version": "DateTime_1.0.0"
+                        },
+                        "endDate": {
+                            "version": "DateTime_1.0.0"
+                        }
+                    },
+                    "createdBy": "",
+                    "supportedUserInteractions": [
+                        {
+                            "version": "UserInteraction_1.0.0"
+                        }
+                    ],
+                    "message": {
+                        "version": "TextContent_1.0.0",
+                        "text": ""
+                    },
+                    "identifier": {
+                        "ID": "",
+                        "version": "Identifier_1.0.0"
+                    },
+                    "applicableFor": [
+                        {
+                            "version": "DomainAddress_1.0.0",
+                            "appGroupId": "1",
+                            "platformId": "BaNCSDigital",
+                            "applicationId": ""
+                        },
+                        {
+                            "version": "DomainAddress_1.0.0",
+                            "appGroupId": "2",
+                            "platformId": "BaNCSDigital",
+                            "applicationId": ""
+                        }
+                    ],
+                    "exposureInterval": 1,
+                    "status": {
+                        "version": "SystemMessageStatus_1.0.0",
+                        "statusCode": {
+                            "Code": "1",
+                            "Description": "Active"
+                        }
+                    },
+                    "resourceList": {
+                        "version": "ResourceList_1.0.0",
+                        "resource": [
+                            {
+                                "version": "Resource_1.0.0",
+                                "name": " "
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "SystemMessageCreateRequest": {
+            "version": "SystemMessage_1.0.0",
+            "referenceDataList": [],
+            "activePeriod": {
+                "version": "TimeFrame_1.0.0",
+                "startDate": {
+                    "version": "DateTime_1.0.0"
+                },
+                "endDate": {
+                    "version": "DateTime_1.0.0"
+                }
+            },
+            "identifier": {
+                "version": "Identifier_1.0.0"
+            },
+            "supportedUserInteractions": [
+                {
+                    "version": "UserInteraction_1.0.0"
+                }
+            ],
+            "message": {
+                "version": "TextContent_1.0.0",
+                "text": "New message system message"
+            },
+            "applicableFor": [
+                {
+                    "version": "DomainAddress_1.0.0",
+                    "appGroupId": "1",
+                    "platformId": "BaNCSDigital",
+                    "applicationId": ""
+                },
+                {
+                    "version": "DomainAddress_1.0.0",
+                    "appGroupId": "2",
+                    "platformId": "BaNCSDigital",
+                    "applicationId": ""
+                }
+            ],
+            "status": {
+                "version": "SystemMessageStatus_1.0.0",
+                "statusCode": {
+                    "version": "EnumEntity_1.0.0",
+                    "Code": "1",
+                    "Description": "Active"
+                }
+            },
+            "resourceList": {
+                "version": "ResourceList_1.0.0",
+                "resource": [
+                    {
+                        "version": "Resource_1.0.0",
+                        "name": " "
+                    }
+                ]
+            }
+        },
+        "SystemMessageReferenceDataList": {
+            "version": "ReferenceData_1.0.0",
+            "identifier": "",
+            "type": {
+                "Code": "USERGROUP",
+                "Description": "UserGroup"
+            }
+        },
+        "SystemMessageInqRequest": {
+            "version": "SystemMessage_1.0.0",
+            "isArchetype": true
+        },
+        "UserSessionRequest": {
+            "version": "UserSession_1.0.0",
+            "user": {
+                "version": "CustomerUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0"
+                }
+            }
+        },
+        "SystemMessageDeleteCnfRequest": {
+            "dataEntity": [
+                {
+                    "identifier": {
+                        "ID": "",
+                        "version": "Identifier_1.0.0"
+                    },
+                    "status": {
+                        "description": "Not required",
+                        "statusCode": {
+                            "CDE": "DELETED",
+                            "DESC": "Deleted"
+                        },
+                        "version": "SystemMessageStatus_1.0.0"
+                    },
+                    "version": "SystemMessage_1.0.0"
+                }
+            ],
+            "version": "MessagePayload_1.0.0"
+        },
+        "SystemMessageDeleteRequest": {
+            "identifier": {
+                "ID": "",
+                "version": "Identifier_1.0.0"
+            },
+            "status": {
+                "description": "Not required",
+                "statusCode": {
+                    "CDE": "DELETED",
+                    "DESC": "Deleted"
+                },
+                "version": "SystemMessageStatus_1.0.0"
+            },
+            "version": "SystemMessage_1.0.0"
+        },
+        "ModifyUserUPDRequest": {
+            "version": "AdminUser_1.0.0",
+            "employeeReference": {
+                "version": "EmployeeReference_1.0.0",
+                "employee": {
+                    "version": "Employee_1.0.0",
+                    "employeeStatus": {
+                        "version": "EmployeeStatus_1.0.0",
+                        "status": {
+                            "version": "EnumEntity_1.0.0",
+                            "Code": "ACTIVE"
+                        }
+                    },
+                    "contactList": [
+                        {
+                            "version": "PhoneContact_1.0.0",
+                            "phone": {
+                                "version": "Phone_1.0.0",
+                                "number": {
+                                    "version": "PhoneNumber_1.0.0"
+                                },
+                                "type": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "contactIdentifier": {
+                                "version": "ContactIdentifier_1.0.0"
+                            }
+                        },
+                        {
+                            "version": "PhoneContact_1.0.0",
+                            "phone": {
+                                "version": "Phone_1.0.0",
+                                "number": {
+                                    "version": "PhoneNumber_1.0.0"
+                                },
+                                "type": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "contactIdentifier": {
+                                "version": "ContactIdentifier_1.0.0"
+                            }
+                        },
+                        {
+                            "version": "PhoneContact_1.0.0",
+                            "phone": {
+                                "version": "Phone_1.0.0",
+                                "number": {
+                                    "version": "PhoneNumber_1.0.0"
+                                },
+                                "type": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "contactIdentifier": {
+                                "version": "ContactIdentifier_1.0.0"
+                            }
+                        },
+                        {
+                            "version": "EmailContact_1.0.0",
+                            "email": {
+                                "version": "Email_1.0.0"
+                            },
+                            "contactIdentifier": {
+                                "version": "ContactIdentifier_1.0.0"
+                            }
+                        },
+                        {
+                            "version": "PostalContact_1.0.0",
+                            "address": {
+                                "version": "Address_1.0.0",
+                                "city": {
+                                    "version": "City_1.0.0",
+                                    "countyDistrict": {
+                                        "version": "CountyDistrict_1.0.0",
+                                        "stateProvince": {
+                                            "version": "StateProvince_1.0.0",
+                                            "country": {
+                                                "version": "Country_1.0.0",
+                                                "code": {
+                                                    "version": "EnumEntity_1.0.0"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    "stateProvince": {
+                                        "version": "StateProvince_1.0.0",
+                                        "country": {
+                                            "version": "Country_1.0.0",
+                                            "code": {
+                                                "version": "EnumEntity_1.0.0"
+                                            }
+                                        }
+                                    }
+                                }
+                            },
+                            "contactIdentifier": {
+                                "version": "ContactIdentifier_1.0.0"
+                            }
+                        }
+                    ]
+                }
+            },
+            "name": {
+                "version": "PersonName_1.0.0"
+            },
+            "identifier": {
+                "version": "Identifier_1.0.0"
+            },
+            "userGroups": [
+                {
+                    "version": "UserGroup_1.0.0",
+                    "name": "SuperAdmin"
+                }
+            ]
+        },
+        "ApplicationMgmtCountRequest": {
+            "version": "Task_1.0.0"
+        },
+        "UnitInformationRequest": {
+            "version": "FIFILocationRelationship_1.0.0"
+        },
+        "customerLimitModifyRequest": {
+            "version": "EntityUpdateDetails_1.0.0",
+            "updatedEntity": {
+                "version": "CustomerUser_1.0.0",
+                "userTransactionLimitList": [
+                    {
+                        "version": "UserTransactionLimits_1.0.0",
+                        "transactionTypeDetails": {
+                            "version": "TransactionTypeDetails_1.0.0",
+                            "typeValue": {
+                                "version": "EnumEntity_1.0.0"
+                            }
+                        },
+                        "limitDetails": [
+                            {
+                                "version": "LimitDetails_1.0.0",
+                                "amount": {
+                                    "version": "CurrencyAmount_1.0.0",
+                                    "amount": {
+                                        "version": "Amount_1.0.0"
+                                    }
+                                },
+                                "limitType": {
+                                    "version": "EnumEntity_1.0.0"
+                                },
+                                "aggregationLevel": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            {
+                                "version": "LimitDetails_1.0.0",
+                                "amount": {
+                                    "version": "CurrencyAmount_1.0.0",
+                                    "amount": {
+                                        "version": "Amount_1.0.0"
+                                    }
+                                },
+                                "limitType": {
+                                    "version": "EnumEntity_1.0.0"
+                                },
+                                "aggregationLevel": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            {
+                                "version": "LimitDetails_1.0.0",
+                                "amount": {
+                                    "version": "CurrencyAmount_1.0.0",
+                                    "amount": {
+                                        "version": "Amount_1.0.0"
+                                    }
+                                },
+                                "limitType": {
+                                    "version": "EnumEntity_1.0.0"
+                                },
+                                "aggregationLevel": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            }
+                        ]
+                    }
+                ],
+                "identifier": {
+                    "version": "UserIdentifier_1.0.0"
+                }
+            },
+            "updateOperationList": {
+                "version": "UpdateOperationList_1.0.0",
+                "updateOperationList": [
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    }
+                ]
+            }
+        },
+        "customerLimitModifyConfirmRequest": {
+            "version": "UpdateMessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "EntityUpdateDetails_1.0.0",
+                    "updatedEntity": {
+                        "version": "CustomerUser_1.0.0",
+                        "userTransactionLimitList": [
+                            {
+                                "version": "UserTransactionLimits_1.0.0",
+                                "transactionTypeDetails": {
+                                    "version": "TransactionTypeDetails_1.0.0",
+                                    "typeValue": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                },
+                                "limitDetails": [
+                                    {
+                                        "version": "LimitDetails_1.0.0",
+                                        "amount": {
+                                            "version": "CurrencyAmount_1.0.0",
+                                            "amount": {
+                                                "version": "Amount_1.0.0"
+                                            }
+                                        },
+                                        "limitType": {
+                                            "version": "EnumEntity_1.0.0"
+                                        },
+                                        "aggregationLevel": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    {
+                                        "version": "LimitDetails_1.0.0",
+                                        "amount": {
+                                            "version": "CurrencyAmount_1.0.0",
+                                            "amount": {
+                                                "version": "Amount_1.0.0"
+                                            }
+                                        },
+                                        "limitType": {
+                                            "version": "EnumEntity_1.0.0"
+                                        },
+                                        "aggregationLevel": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    {
+                                        "version": "LimitDetails_1.0.0",
+                                        "amount": {
+                                            "version": "CurrencyAmount_1.0.0",
+                                            "amount": {
+                                                "version": "Amount_1.0.0"
+                                            }
+                                        },
+                                        "limitType": {
+                                            "version": "EnumEntity_1.0.0"
+                                        },
+                                        "aggregationLevel": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    }
+                                ]
+                            }
+                        ],
+                        "identifier": {
+                            "version": "UserIdentifier_1.0.0"
+                        }
+                    },
+                    "updateOperationList": {
+                        "version": "UpdateOperationList_1.0.0",
+                        "updateOperationList": [
+                            {
+                                "version": "UpdateOperation_1.0.0"
+                            },
+                            {
+                                "version": "UpdateOperation_1.0.0"
+                            },
+                            {
+                                "version": "UpdateOperation_1.0.0"
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "emailIdUpdateRequest": {
+            "version": "EntityUpdateDetails_1.0.0",
+            "updatedEntity": {
+                "version": "PersonCustomer_1.0.0",
+                "identifier": {
+                    "version": "CustomerIdentifier_1.0.0",
+                    "identifier": {
+                        "version": "Identifier_1.0.0"
+                    },
+                    "customerIdentifiers": {
+                        "CUSTID": ""
+                    }
+                },
+                "contactList": [
+                    {
+                        "version": "EmailContact_1.0.0",
+                        "email": {
+                            "version": "Email_1.0.0",
+                            "Id": "",
+                            "type": {
+                                "CDE": "PERSON",
+                                "DSC": "Personal"
+                            }
+                        },
+                        "resourceLocator": {
+                            "version": "URL_1.0.0",
+                            "value": "UpdateLoginID"
+                        }
+                    }
+                ]
+            },
+            "updateOperationList": {
+                "version": "UpdateOperationList_1.0.0",
+                "updateOperationList": [
+                    {
+                        "version": "UpdateOperation_1.0.0",
+                        "attributePath": "ContactList[0]/Email/Address",
+                        "updateType": "MOD"
+                    }
+                ]
+            }
+        },
+        "loginIDUpdateRequest": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0",
+                    "objectId": "",
+                    "userStatus": {
+                        "CDE": "ACTIVE"
+                    },
+                    "id": ""
+                },
+                "name": ""
+            },
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0",
+                "isArchetype": true
+            },
+            "credentialScope": {
+                "CDE": "LOGIN"
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0",
+                    "type": {
+                        "CDE": "DomainType1"
+                    },
+                    "platformId": "Retail",
+                    "applicationId": "1",
+                    "appGroupId": "1"
+                }
+            ]
+        },
+        "UserDigitalRelAsPending": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "UserDigitalServiceRelationship_1.0.0",
+                    "user": {
+                        "version": "CustomerUser_1.0.0",
+                        "isArchetype": true,
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    },
+                    "status": {
+                        "version": "UserServiceRelationshipStatus_1.0.0"
+                    },
+                    "service": {
+                        "version": "Service_1.0.0",
+                        "id": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    }
+                }
+            ]
+        },
+        "UserDigitalRelAsPendingAdmin": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "UserDigitalServiceRelationship_1.0.0",
+                    "user": {
+                        "version": "AdminUser_1.0.0",
+                        "isArchetype": true,
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    },
+                    "status": {
+                        "version": "UserServiceRelationshipStatus_1.0.0"
+                    },
+                    "service": {
+                        "version": "Service_1.0.0",
+                        "id": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    }
+                }
+            ]
+        },
+        "PayloadReport": {
+            "version": "PayloadReport_1.0.0",
+            "reportId": {
+                "version": "Identifier_1.0.0"
+            }
+        },
+        "DashboardUsersCountRequest": {
+            "version": "UserDigitalServiceRelationship_1.0.0"
+        },
+        "memberLimitUpdaetdByInfoRequest": {
+            "version": "UserActivity_1.0.0",
+            "principalUser": {
+                "version": "CustomerUser_1.0.0",
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0"
+                    }
+                }
+            },
+            "source": {
+                "Code": "1"
+            }
+        },
+        "firstTimePwdChangeConfirmRequest": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "LoginUserCredentials_1.0.0",
+                    "verificationIdentifier": {
+                        "version": "StringVerificationIdentifier_1.0.0",
+                        "userIdentifier": {
+                            "version": "UserIdentifier_1.0.0"
+                        }
+                    },
+                    "primaryVerificationData": {
+                        "version": "TraditionalPasswordVerificationData_1.0.0",
+                        "password": {
+                            "version": "Secret_1.0.0"
+                        },
+                        "verificationType": {
+                            "version": "EnumEntity_1.0.0",
+                            "Code": "TRADITIONALPASSWORD"
+                        },
+                        "verificationDataStatus": {
+                            "version": "EnumEntity_1.0.0",
+                            "Code": "1"
+                        }
+                    }
+                }
+            ]
+        },
+        "firstTimePwdChangeRequest": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0"
+                }
+            },
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0",
+                "password": {
+                    "version": "Secret_1.0.0"
+                },
+                "verificationType": {
+                    "version": "EnumEntity_1.0.0",
+                    "Code": "TRADITIONALPASSWORD"
+                },
+                "verificationDataStatus": {
+                    "version": "EnumEntity_1.0.0",
+                    "Code": "1"
+                }
+            }
+        },
+        "lastTimeLogin": {
+            "source": {
+                "Code": "",
+                "displayValue": ""
+            },
+            "type": {
+                "Code": ""
+            },
+            "version": "UserActivity_1.0.0"
+        },
+        "UserGroupSearch": {
+            "identifier": {
+                "version": "Identifier_1.0.0"
+            },
+            "version": "UserGroup_1.0.0"
+        },
+        "CustomerUserGroupPopulateInquiry": {
+            "identifier": {
+                "version": "Identifier_1.0.0"
+            },
+            "version": "UserGroup_1.0.0"
+        },
+        "BusinessUserGroupInquiry": {
+            "version": "UserGroup_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0"
+            }
+        },
+        "BusinessUserLoginIdInquiry": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0"
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0"
+                }
+            ]
+        },
+        "PrimaryBusinessCustomerUserCreate": {
+            "additionalVerificationDataList": [
+                {
+                    "customerIdentity": {
+                        "version": "CustomerIdentifier_1.0.0"
+                    },
+                    "version": "CustomerIdentityVerificationData_1.0.0"
+                },
+                {
+                    "emailID": {
+                        "version": "Secret_1.0.0"
+                    },
+                    "version": "EmailIDVerificationData_1.0.0"
+                }
+            ],
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0"
+                },
+                {
+                    "version": "DomainAddress_1.0.0"
+                }
+            ],
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0"
+            },
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0",
+                    "isArchetype": true
+                },
+                "version": "StringVerificationIdentifier_1.0.0"
+            }
+        },
+        "PrimaryBusinessCustomerUserRegister": {
+            "service": {
+                "id": {
+                    "version": "Identifier_1.0.0"
+                },
+                "version": "Service_1.0.0"
+            },
+            "user": {
+                "hostDetailsList": [
+                    {
+                        "host": {
+                            "version": "Host_1.0.0"
+                        },
+                        "version": "UserHostDetails_1.0.0"
+                    }
+                ],
+                "identifier": {
+                    "version": "Identifier_1.0.0"
+                },
+                "userGroups": [
+                    {
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        },
+                        "version": "UserGroup_1.0.0"
+                    },
+                    {
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        },
+                        "version": "UserGroup_1.0.0"
+                    }
+                ],
+                "version": "CustomerUser_1.0.0",
+                "isArchetype": true
+            },
+            "version": "UserDigitalServiceRelationship_1.0.0"
+        },
+        "CustomerUserGroupUpdate": {
+            "updatedEntity": {
+                "identifier": {
+                    "version": "Identifier_1.0.0"
+                },
+                "userGroups": [
+                    {
+                        "version": "UserGroup_1.0.0"
+                    }
+                ],
+                "version": "CustomerUser_1.0.0"
+            },
+            "updateOperationList": {
+                "updateOperationList": [
+                    {
+                        "attributePath": "UsrGrups/Name",
+                        "updateType": "MOD",
+                        "version": "UpdateOperation_1.0.0"
+                    }
+                ],
+                "version": "UpdateOperationList_1.0.0"
+            },
+            "version": "EntityUpdateDetails_1.0.0"
+        },
+        "LoginUserCredentialsEnquiry": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0"
+                }
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0"
+                }
+            ]
+        },
+        "LoginCredentialsEncryptionReq": {
+            "isArchetype": true,
+            "version": "AuthenticationConfiguration_1.0.0"
+        },
+        "actionPendingFromUserRequest": {
+            "version": "UserDigitalServiceRelationship_1.0.0",
+            "service": {
+                "version": "Service_1.0.0",
+                "id": {
+                    "version": "Identifier_1.0.0"
+                }
+            },
+            "user": {
+                "version": "AdminUser_1.0.0",
+                "identifier": {
+                    "version": "Identifier_1.0.0"
+                }
+            }
+        },
+        "activateUserRequest": {
+            "version": "UserDigitalServiceRelationship_1.0.0",
+            "service": {
+                "version": "Service_1.0.0",
+                "id": {
+                    "version": "Identifier_1.0.0"
+                }
+            },
+            "user": {
+                "version": "AdminUser_1.0.0",
+                "identifier": {
+                    "version": "Identifier_1.0.0"
+                }
+            },
+            "status": {
+                "version": "UserServiceRelationshipStatus_1.0.0",
+                "statusCode": {
+                    "version": "EnumEntity_1.0.0"
+                }
+            }
+        },
+        "activateUserConfirmRequest": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "UserDigitalServiceRelationship_1.0.0",
+                    "service": {
+                        "version": "Service_1.0.0",
+                        "id": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    },
+                    "user": {
+                        "version": "AdminUser_1.0.0",
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    },
+                    "status": {
+                        "version": "UserServiceRelationshipStatus_1.0.0",
+                        "statusCode": {
+                            "version": "EnumEntity_1.0.0"
+                        }
+                    }
+                }
+            ]
+        },
+        "UserGroupCreateOrDelete": {
+            "description": "",
+            "identifier": {
+                "version": "Identifier_1.0.0"
+            },
+            "name": "",
+            "status": {
+                "statusCode": {
+                    "CDE": "1",
+                    "DESC": "Active"
+                },
+                "statusModifiedReason": "",
+                "version": "UserGroupStatus_1.0.0"
+            },
+            "userType": {
+                "version": "EnumEntity_1.0.0"
+            },
+            "version": "UserGroup_1.0.0"
+        },
+        "FAPSearch": {
+            "version": "AccessGroup_1.0.0"
+        },
+        "FAPDetails": {
+            "version": "AccessGroup_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            },
+            "appGroupId": "",
+            "name": "",
+            "description": "",
+            "userType": {}
+        },
+        "ResourceList": {
+            "version": "ResourceList_1.0.0"
+        },
+        "FAPAssignOrUnAssignBusFun": {
+            "version": "AccessGroup_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            },
+            "accessPermissions": []
+        },
+        "FAPAccessPermission": {
+            "version": "AccessPermissions_1.0.0",
+            "resource": {
+                "version": "Resource_1.0.0",
+                "identifier": {
+                    "version": "Identifier_1.0.0",
+                    "ID": ""
+                },
+                "name": ""
+            },
+            "permissionList": [
+                {
+                    "version": "EnumEntity_1.0.0",
+                    "Code": "YES"
+                }
+            ]
+        },
+        "FAPCreate": {
+            "version": "AccessGroup_1.0.0",
+            "accessPermissions": [],
+            "appGroupId": "",
+            "identifier": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            },
+            "name": "",
+            "description": "",
+            "userType": {}
+        },
+        "FAPDelete": {
+            "version": "AccessGroup_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            },
+            "appGroupId": "",
+            "name": "",
+            "userType": {},
+            "status": {
+                "version": "AccessGroupStatus_1.0.0",
+                "memo": ""
+            }
+        },
+        "changeLoginPwdQnAnsList": {
+            "version": "QuestionAnswer_1.0.0"
+        },
+        "UserPermissionRequest": {
+            "userGroup": {
+                "description": "",
+                "identifier": {
+                    "ID": "",
+                    "version": "Identifier_1.0.0"
+                },
+                "name": "",
+                "status": {
+                    "statusCode": {
+                        "CDE": "1",
+                        "DESC": "Active"
+                    },
+                    "version": "UserGroupStatus_1.0.0"
+                },
+                "userType": {
+                    "version": "EnumEntity_1.0.0"
+                },
+                "version": "UserGroup_1.0.0"
+            },
+            "version": "UserGroupPermission_1.0.0"
+        },
+        "ChangeSecurityQnUpdate": {
+            "domainAddresses": [
+                {
+                    "type": {
+                        "version": "EnumEntity_1.0.0"
+                    },
+                    "version": "DomainAddress_1.0.0"
+                }
+            ],
+            "primaryVerificationData": {
+                "QnAList": [
+                    {
+                        "answerList": {
+                            "answer": [
+                                {
+                                    "secret": {
+                                        "version": "Secret_1.0.0"
+                                    },
+                                    "version": "Answer_1.0.0"
+                                }
+                            ],
+                            "version": "AnswerList_1.0.0"
+                        },
+                        "question": {
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            },
+                            "usage": {
+                                "version": "EnumEntity_1.0.0"
+                            },
+                            "version": "Question_1.0.0"
+                        },
+                        "version": "QuestionAnswer_1.0.0"
+                    },
+                    {
+                        "answerList": {
+                            "answer": [
+                                {
+                                    "secret": {
+                                        "version": "Secret_1.0.0"
+                                    },
+                                    "version": "Answer_1.0.0"
+                                }
+                            ],
+                            "version": "AnswerList_1.0.0"
+                        },
+                        "question": {
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            },
+                            "usage": {
+                                "version": "EnumEntity_1.0.0"
+                            },
+                            "version": "Question_1.0.0"
+                        },
+                        "version": "QuestionAnswer_1.0.0"
+                    },
+                    {
+                        "answerList": {
+                            "answer": [
+                                {
+                                    "secret": {
+                                        "version": "Secret_1.0.0"
+                                    },
+                                    "version": "Answer_1.0.0"
+                                }
+                            ],
+                            "version": "AnswerList_1.0.0"
+                        },
+                        "question": {
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            },
+                            "usage": {
+                                "version": "EnumEntity_1.0.0"
+                            },
+                            "version": "Question_1.0.0"
+                        },
+                        "version": "QuestionAnswer_1.0.0"
+                    },
+                    {
+                        "answerList": {
+                            "answer": [
+                                {
+                                    "secret": {
+                                        "version": "Secret_1.0.0"
+                                    },
+                                    "version": "Answer_1.0.0"
+                                }
+                            ],
+                            "version": "AnswerList_1.0.0"
+                        },
+                        "question": {
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            },
+                            "usage": {
+                                "version": "EnumEntity_1.0.0"
+                            },
+                            "version": "Question_1.0.0"
+                        },
+                        "version": "QuestionAnswer_1.0.0"
+                    },
+                    {
+                        "answerList": {
+                            "answer": [
+                                {
+                                    "secret": {
+                                        "version": "Secret_1.0.0"
+                                    },
+                                    "version": "Answer_1.0.0"
+                                }
+                            ],
+                            "version": "AnswerList_1.0.0"
+                        },
+                        "question": {
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            },
+                            "usage": {
+                                "version": "EnumEntity_1.0.0"
+                            },
+                            "version": "Question_1.0.0"
+                        },
+                        "version": "QuestionAnswer_1.0.0"
+                    }
+                ],
+                "version": "QnAVerificationData_1.0.0"
+            },
+            "verificationIdentifier": {
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0"
+                },
+                "version": "StringVerificationIdentifier_1.0.0"
+            },
+            "version": "TransactionUserCredentials_1.0.0"
+        },
+        "ChangeSecurityQnConfirm": {
+            "dataEntity": [
+                {
+                    "domainAddresses": [
+                        {
+                            "type": {
+                                "version": "EnumEntity_1.0.0"
+                            },
+                            "version": "DomainAddress_1.0.0"
+                        }
+                    ],
+                    "primaryVerificationData": {
+                        "QnAList": [
+                            {
+                                "answerList": {
+                                    "answer": [
+                                        {
+                                            "secret": {
+                                                "version": "Secret_1.0.0"
+                                            },
+                                            "version": "Answer_1.0.0"
+                                        }
+                                    ],
+                                    "version": "AnswerList_1.0.0"
+                                },
+                                "question": {
+                                    "identifier": {
+                                        "version": "Identifier_1.0.0"
+                                    },
+                                    "usage": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "version": "Question_1.0.0"
+                                },
+                                "version": "QuestionAnswer_1.0.0"
+                            },
+                            {
+                                "answerList": {
+                                    "answer": [
+                                        {
+                                            "secret": {
+                                                "version": "Secret_1.0.0"
+                                            },
+                                            "version": "Answer_1.0.0"
+                                        }
+                                    ],
+                                    "version": "AnswerList_1.0.0"
+                                },
+                                "question": {
+                                    "identifier": {
+                                        "version": "Identifier_1.0.0"
+                                    },
+                                    "usage": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "version": "Question_1.0.0"
+                                },
+                                "version": "QuestionAnswer_1.0.0"
+                            },
+                            {
+                                "answerList": {
+                                    "answer": [
+                                        {
+                                            "secret": {
+                                                "version": "Secret_1.0.0"
+                                            },
+                                            "version": "Answer_1.0.0"
+                                        }
+                                    ],
+                                    "version": "AnswerList_1.0.0"
+                                },
+                                "question": {
+                                    "identifier": {
+                                        "version": "Identifier_1.0.0"
+                                    },
+                                    "usage": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "version": "Question_1.0.0"
+                                },
+                                "version": "QuestionAnswer_1.0.0"
+                            },
+                            {
+                                "answerList": {
+                                    "answer": [
+                                        {
+                                            "secret": {
+                                                "version": "Secret_1.0.0"
+                                            },
+                                            "version": "Answer_1.0.0"
+                                        }
+                                    ],
+                                    "version": "AnswerList_1.0.0"
+                                },
+                                "question": {
+                                    "identifier": {
+                                        "version": "Identifier_1.0.0"
+                                    },
+                                    "usage": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "version": "Question_1.0.0"
+                                },
+                                "version": "QuestionAnswer_1.0.0"
+                            },
+                            {
+                                "answerList": {
+                                    "answer": [
+                                        {
+                                            "secret": {
+                                                "version": "Secret_1.0.0"
+                                            },
+                                            "version": "Answer_1.0.0"
+                                        }
+                                    ],
+                                    "version": "AnswerList_1.0.0"
+                                },
+                                "question": {
+                                    "identifier": {
+                                        "version": "Identifier_1.0.0"
+                                    },
+                                    "usage": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "version": "Question_1.0.0"
+                                },
+                                "version": "QuestionAnswer_1.0.0"
+                            }
+                        ],
+                        "version": "QnAVerificationData_1.0.0"
+                    },
+                    "verificationIdentifier": {
+                        "userIdentifier": {
+                            "version": "UserIdentifier_1.0.0"
+                        },
+                        "version": "StringVerificationIdentifier_1.0.0"
+                    },
+                    "version": "TransactionUserCredentials_1.0.0"
+                }
+            ],
+            "version": "MessagePayload_1.0.0"
+        },
+        "UserGroupAssignOrUnAssignRequest": {
+            "accessGroup": {
+                "accessGroup": [],
+                "version": "AccessGroupList_1.0.0"
+            },
+            "userGroup": {
+                "description": "",
+                "identifier": {
+                    "ID": "",
+                    "version": "Identifier_1.0.0"
+                },
+                "name": "",
+                "userType": {
+                    "version": "EnumEntity_1.0.0"
+                },
+                "version": "UserGroup_1.0.0"
+            },
+            "version": "UserGroupPermission_1.0.0"
+        },
+        "UserGroupAssignOrUnAssignFap": {
+            "appGroupId": "",
+            "description": "",
+            "identifier": {
+                "ID": "",
+                "version": "Identifier_1.0.0"
+            },
+            "name": "",
+            "userType": {
+                "version": "EnumEntity_1.0.0"
+            },
+            "version": "AccessGroup_1.0.0"
+        },
+        "TermsAndPrivacyCnfRequest": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "UserDigitalServiceRelationship_1.0.0",
+                    "service": {
+                        "version": "Service_1.0.0",
+                        "id": {
+                            "version": "Identifier_1.0.0"
+                        }
+                    },
+                    "user": {
+                        "version": "AdminUser_1.0.0",
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        },
+                        "verificationidentifier": {
+                            "version": "StringVerificationIdentifier_1.0.0",
+                            "userIdentifier": {
+                                "version": "UserIdentifier_1.0.0",
+                                "userStatus": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            }
+                        }
+                    },
+                    "status": {
+                        "version": "UserServiceRelationshipStatus_1.0.0",
+                        "statusCode": {}
+                    },
+                    "disclosureDataList": [
+                        {
+                            "version": "DisclosureData_1.0.0",
+                            "disclosureId": {
+                                "version": "Identifier_1.0.0"
+                            },
+                            "disclosureType": {
+                                "version": "EnumEntity_1.0.0"
+                            }
+                        },
+                        {
+                            "version": "DisclosureData_1.0.0",
+                            "disclosureId": {
+                                "version": "Identifier_1.0.0"
+                            },
+                            "disclosureType": {
+                                "version": "EnumEntity_1.0.0"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "AcceptTermsPrivacyRequest": {
+            "version": "UserDigitalServiceRelationship_1.0.0",
+            "service": {
+                "version": "Service_1.0.0",
+                "name": "BaNCSDigitalAdminHome",
+                "id": {
+                    "version": "Identifier_1.0.0",
+                    "ID": "107"
+                }
+            },
+            "appGroupId": "201",
+            "user": {
+                "version": "AdminUser_1.0.0",
+                "identifier": {
+                    "version": "Identifier_1.0.0",
+                    "ID": ""
+                },
+                "verificationidentifier": {
+                    "version": "StringVerificationIdentifier_1.0.0",
+                    "name": "",
+                    "userIdentifier": {
+                        "version": "UserIdentifier_1.0.0",
+                        "userStatus": {
+                            "version": "EnumEntity_1.0.0",
+                            "Code": "1"
+                        },
+                        "objectId": ""
+                    }
+                }
+            },
+            "status": {
+                "version": "UserServiceRelationshipStatus_1.0.0",
+                "statusCode": {}
+            },
+            "disclosureDataList": [
+                {
+                    "version": "DisclosureData_1.0.0",
+                    "disclosureId": {
+                        "version": "Identifier_1.0.0"
+                    },
+                    "disclosureType": {
+                        "version": "EnumEntity_1.0.0",
+                        "Code": "1",
+                        "Description": "TermsAndConditions"
+                    }
+                },
+                {
+                    "version": "DisclosureData_1.0.0",
+                    "disclosureId": {
+                        "version": "Identifier_1.0.0"
+                    },
+                    "disclosureType": {
+                        "version": "EnumEntity_1.0.0",
+                        "Code": "2",
+                        "Description": "PrivacyNotice"
+                    }
+                }
+            ]
+        },
+        "UserGroupModify": {
+            "description": "",
+            "identifier": {
+                "version": "Identifier_1.0.0"
+            },
+            "name": "",
+            "userType": {
+                "version": "EnumEntity_1.0.0"
+            },
+            "version": "UserGroup_1.0.0"
+        },
+        "CreateUserCRTRequestAdditionalVerificationEmail": {
+            "version": "EmailIDVerificationData_1.0.0",
+            "emailID": {
+                "version": "Secret_1.0.0"
+            }
+        },
+        "CreateUserCRTRequestAdditionalVerificationEmpID": {
+            "version": "EmployeeIdentityVerificationData_1.0.0",
+            "employeeIdentifier": {
+                "version": "EmployeeIdentifier_1.0.0"
+            },
+            "verificationType": {
+                "version": "EnumEntity_1.0.0",
+                "Code": "EMPLOYEEIDENTIFIER"
+            },
+            "verificationDataStatus": {
+                "version": "EnumEntity_1.0.0",
+                "Code": "1"
+            }
+        },
+        "DashboardCountService": {
+            "AllUsersCount": {
+                "version": "UserDigitalServiceRelationship_1.0.0"
+            },
+            "ActiveUserGroupCount": {
+                "version": "UserGroup_1.0.0"
+            },
+            "ActiveFapCount": {
+                "version": "AccessGroup_1.0.0"
+            }
+        },
+        "OutageMessageDeleteRequest": {
+            "identifier": {
+                "ID": "",
+                "version": "Identifier_1.0.0"
+            },
+            "status": {
+                "description": "Not required",
+                "statusCode": {
+                    "CDE": "DELETED",
+                    "DESC": "Deleted"
+                },
+                "version": "SystemOutageStatus_1.0.0"
+            },
+            "version": "SystemOutage_1.0.0"
+        },
+        "OutageMessageInqRequest": {
+            "version": "SystemOutage_1.0.0",
+            "isArchetype": true
+        },
+        "CreateOutageMessage": {
+            "activePeriod": {
+                "endDate": {
+                    "version": "DateTime_1.0.0"
+                },
+                "startDate": {
+                    "version": "DateTime_1.0.0"
+                },
+                "version": "TimeFrame_1.0.0"
+            },
+            "applicableFor": [
+                {
+                    "appGroupId": "1",
+                    "applicationId": "",
+                    "platformId": "BaNCSDigital",
+                    "version": "DomainAddress_1.0.0"
+                },
+                {
+                    "appGroupId": "2",
+                    "applicationId": "",
+                    "platformId": "BaNCSDigital",
+                    "version": "DomainAddress_1.0.0"
+                }
+            ],
+            "identifier": {
+                "ID": "",
+                "version": "Identifier_1.0.0"
+            },
+            "resourceList": {
+                "resource": [
+                    {
+                        "identifier": {
+                            "ID": "64",
+                            "version": "Identifier_1.0.0"
+                        },
+                        "name": "",
+                        "version": "Resource_1.0.0"
+                    }
+                ],
+                "version": "ResourceList_1.0.0"
+            },
+            "status": {
+                "statusCode": {
+                    "version": "EnumEntity_1.0.0"
+                },
+                "version": "SystemOutageStatus_1.0.0"
+            },
+            "userMessage": "",
+            "version": "SystemOutage_1.0.0"
+        },
+        "ModifyGlobalLimitRequest": {
+            "version": "EntityUpdateDetails_1.0.0",
+            "updatedEntity": {
+                "version": "FI_1.0.0",
+                "transactionLimits": {
+                    "version": "InstitutionTransactionLimitList_1.0.0",
+                    "list": [
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ],
+                            "overridable": false
+                        },
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ],
+                            "overridable": false
+                        }
+                    ]
+                }
+            },
+            "updateOperationList": {
+                "version": "UpdateOperationList_1.0.0",
+                "updateOperationList": [
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    }
+                ]
+            }
+        },
+        "ModifyTransactionLimitRequest": {
+            "version": "EntityUpdateDetails_1.0.0",
+            "updatedEntity": {
+                "version": "FI_1.0.0",
+                "transactionLimits": {
+                    "version": "InstitutionTransactionLimitList_1.0.0",
+                    "list": [
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "updateOperationList": {
+                "version": "UpdateOperationList_1.0.0",
+                "updateOperationList": [
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    }
+                ]
+            }
+        },
+        "ModifyTransactionLimitRequestforRSB": {
+            "version": "EntityUpdateDetails_1.0.0",
+            "updatedEntity": {
+                "version": "FI_1.0.0",
+                "transactionLimits": {
+                    "version": "InstitutionTransactionLimitList_1.0.0",
+                    "list": [
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "version": "InstitutionTransactionLimit_1.0.0",
+                            "transactionTypeDetails": {
+                                "version": "TransactionTypeDetails_1.0.0",
+                                "typeValue": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            },
+                            "limitDetails": [
+                                {
+                                    "version": "LimitDetails_1.0.0",
+                                    "amount": {
+                                        "version": "CurrencyAmount_1.0.0",
+                                        "amount": {
+                                            "version": "Amount_1.0.0"
+                                        },
+                                        "code": {
+                                            "version": "EnumEntity_1.0.0"
+                                        }
+                                    },
+                                    "limitType": {
+                                        "version": "EnumEntity_1.0.0"
+                                    },
+                                    "aggregationLevel": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            "updateOperationList": {
+                "version": "UpdateOperationList_1.0.0",
+                "updateOperationList": [
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    },
+                    {
+                        "version": "UpdateOperation_1.0.0"
+                    }
+                ]
+            }
+        },
+        "ChangeLgnPwdCnfRequest": {
+            "dataEntity": [
+                {
+                    "version": "LoginUserCredentials_1.0.0",
+                    "verificationIdentifier": {
+                        "version": "StringVerificationIdentifier_1.0.0",
+                        "userIdentifier": {
+                            "version": "UserIdentifier_1.0.0"
+                        }
+                    },
+                    "primaryVerificationData": {
+                        "version": "TraditionalPasswordVerificationData_1.0.0",
+                        "password": {
+                            "version": "Secret_1.0.0",
+                            "salt": {
+                                "version": "Binary_1.0.0"
+                            },
+                            "digestType": {
+                                "Code": "MD_1"
+                            },
+                            "encryptionType": {
+                                "Code": "ET_1"
+                            }
+                        }
+                    },
+                    "domainAddresses": [
+                        {
+                            "version": "DomainAddress_1.0.0"
+                        }
+                    ]
+                }
+            ],
+            "version": "MessagePayload_1.0.0"
+        },
+        "ChangeLgnPwdUpdRequest": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0"
+                }
+            },
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0",
+                "password": {
+                    "version": "Secret_1.0.0",
+                    "salt": {
+                        "version": "Binary_1.0.0"
+                    }
+                }
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0"
+                }
+            ]
+        },
+        "TnCListing": {
+            "version": "Disclosure_1.0.0",
+            "isArchetype": true
+        },
+        "AddTnC": {
+            "version": "Disclosure_1.0.0",
+            "disclosureVersion": "1.0.0",
+            "name": "",
+            "content": [
+                {
+                    "version": "TextContent_1.0.0"
+                }
+            ],
+            "id": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            },
+            "status": {
+                "version": "DisclosureStatus_1.0.0",
+                "description": "",
+                "effectiveDate": {
+                    "version": "DateTime_1.0.0"
+                },
+                "statusCode": {
+                    "version": "EnumEntity_1.0.0"
+                }
+            },
+            "resourceList": {
+                "version": "ResourceList_1.0.0",
+                "resource": [
+                    {
+                        "version": "Resource_1.0.0",
+                        "identifier": {
+                            "version": "Identifier_1.0.0",
+                            "ID": "64"
+                        },
+                        "domainAddress": {
+                            "version": "DomainAddress_1.0.0",
+                            "appGroupId": "1",
+                            "platformId": "BaNCSDigital",
+                            "applicationId": ""
+                        }
+                    },
+                    {
+                        "version": "Resource_1.0.0",
+                        "identifier": {
+                            "version": "Identifier_1.0.0",
+                            "ID": "64"
+                        },
+                        "domainAddress": {
+                            "version": "DomainAddress_1.0.0",
+                            "appGroupId": "2",
+                            "platformId": "BaNCSDigital",
+                            "applicationId": ""
+                        }
+                    }
+                ]
+            }
+        },
+        "AdminReqListing": {
+            "version": "Task_1.0.0",
+            "initiator": {
+                "userId": {
+                    "version": "UserIdentifier_1.0.0"
+                },
+                "version": "Performer_1.0.0"
+            },
+            "EmptyMsg": false
+        },
+        "AdminReqDetails": {
+            "version": "Task_1.0.0",
+            "isArchetype": false,
+            "taskId": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            }
+        },
+        "AdminReqApprvRejectionRequest": {
+            "version": "Task_1.0.0",
+            "isArchetype": false,
+            "taskId": {
+                "version": "Identifier_1.0.0",
+                "ID": ""
+            },
+            "actionType": {
+                "CDE": ""
+            },
+            "remarks": ""
+        },
+        "AccountListRequest": {
+            "version": "CustomerAccountRelationship_1.0.0",
+            "isArchetype": true,
+            "identifier": {
+                "version": "Identifier_1.0.0",
+                "isArchetype": true
+            },
+            "customer": {
+                "version": "PersonCustomer_1.0.0",
+                "name": {
+                    "version": "PersonName_1.0.0"
+                },
+                "identifier": {
+                    "version": "CustomerIdentifier_1.0.0",
+                    "identifier": {
+                        "version": "Identifier_1.0.0"
+                    },
+                    "customerIdentifiers": {
+                        "CUSTID": ""
+                    }
+                }
+            }
+        },
+        "deviceInfoRequest": {
+            "user": {
+                "identifier": {
+                    "version": "Identifier_1.0.0"
+                },
+                "version": "CustomerUser_1.0.0"
+            },
+            "version": "UserServiceRelationship_1.0.0"
+        },
+        "IdentifyUserRequest": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0"
+                }
+            },
+            "primaryVerificationData": {
+                "version": "EmailIDVerificationData_1.0.0",
+                "emailID": {
+                    "version": "Secret_1.0.0"
+                }
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0"
+                }
+            ]
+        },
+        "SecurityQnARequest": {
+            "version": "TransactionUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0"
+            },
+            "primaryVerificationData": {
+                "version": "QnAVerificationData_1.0.0"
+            }
+        },
+        "ChangeLoginPasswordUpdate": {
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0"
+                }
+            ],
+            "primaryVerificationData": {
+                "QnAList": [
+                    {
+                        "answerList": {
+                            "answer": [
+                                {
+                                    "identifier": {
+                                        "version": "Identifier_1.0.0"
+                                    },
+                                    "secret": {
+                                        "digestType": {
+                                            "version": "EnumEntity_1.0.0"
+                                        },
+                                        "encryptionType": {
+                                            "version": "EnumEntity_1.0.0"
+                                        },
+                                        "salt": {
+                                            "version": "Binary_1.0.0"
+                                        },
+                                        "version": "Secret_1.0.0"
+                                    },
+                                    "version": "Answer_1.0.0"
+                                }
+                            ],
+                            "version": "AnswerList_1.0.0"
+                        },
+                        "identifier": {
+                            "version": "Identifier_1.0.0"
+                        },
+                        "question": {
+                            "identifier": {
+                                "version": "Identifier_1.0.0"
+                            },
+                            "type": {
+                                "version": "EnumEntity_1.0.0"
+                            },
+                            "usage": {
+                                "version": "EnumEntity_1.0.0"
+                            },
+                            "version": "Question_1.0.0"
+                        },
+                        "version": "QuestionAnswer_1.0.0"
+                    }
+                ],
+                "version": "QnAVerificationData_1.0.0"
+            },
+            "transactionPayload": {
+                "dataEntity": [
+                    {
+                        "credentialScope": {
+                            "version": "EnumEntity_1.0.0"
+                        },
+                        "domainAddresses": [
+                            {
+                                "type": {
+                                    "version": "EnumEntity_1.0.0"
+                                },
+                                "version": "DomainAddress_1.0.0"
+                            }
+                        ],
+                        "primaryVerificationData": {
+                            "password": {
+                                "salt": {
+                                    "version": "Binary_1.0.0"
+                                },
+                                "version": "Secret_1.0.0"
+                            },
+                            "version": "TraditionalPasswordVerificationData_1.0.0"
+                        },
+                        "verificationIdentifier": {
+                            "userIdentifier": {
+                                "userStatus": {
+                                    "version": "EnumEntity_1.0.0"
+                                },
+                                "version": "UserIdentifier_1.0.0"
+                            },
+                            "version": "StringVerificationIdentifier_1.0.0"
+                        },
+                        "version": "LoginUserCredentials_1.0.0"
+                    }
+                ],
+                "version": "MessagePayload_1.0.0"
+            },
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0"
+            },
+            "version": "TransactionUserCredentials_1.0.0"
+        },
+        "LockAdminUserConfirmRequest": {
+            "version": "MessagePayload_1.0.0",
+            "dataEntity": [
+                {
+                    "version": "LoginUserCredentials_1.0.0",
+                    "verificationIdentifier": {
+                        "version": "StringVerificationIdentifier_1.0.0",
+                        "userIdentifier": {
+                            "version": "UserIdentifier_1.0.0"
+                        },
+                        "statusDetail": {
+                            "version": "VerificationIDStatusDetail_1.0.0"
+                        }
+                    },
+                    "primaryVerificationData": {
+                        "version": "TraditionalPasswordVerificationData_1.0.0"
+                    },
+                    "domainAddresses": [
+                        {
+                            "version": "DomainAddress_1.0.0"
+                        }
+                    ]
+                }
+            ]
+        },
+        "LockAdminUserRequest": {
+            "version": "LoginUserCredentials_1.0.0",
+            "verificationIdentifier": {
+                "version": "StringVerificationIdentifier_1.0.0",
+                "userIdentifier": {
+                    "version": "UserIdentifier_1.0.0"
+                },
+                "statusDetail": {
+                    "version": "VerificationIDStatusDetail_1.0.0"
+                }
+            },
+            "primaryVerificationData": {
+                "version": "TraditionalPasswordVerificationData_1.0.0"
+            },
+            "domainAddresses": [
+                {
+                    "version": "DomainAddress_1.0.0"
+                }
+            ]
+        },
+        "UploadLoanAgreementRequest": {
+            "version": "LoanProductApplication_1.0.0",
+            "hostApplicationId": "",
+            "onlineAcceptanceRequired": true,
+            "document": [],
+            "customerInformation": {
+                "version": "PersonCustomer_1.0.0",
+                "identifier": {
+                    "version": "CustomerIdentifier_1.0.0",
+                    "customerIdentifiers": {
+                        "CUSTID": ""
+                    }
+                }
+            },
+            "status": {
+                "CDE": "RECEIVED",
+                "DSC": "Received"
+            }
+        },
+        "OverrideLoanAgreementRequest": {
+            "version": "LoanProductApplication_1.0.0",
+            "hostApplicationId": "",
+            "onlineAcceptanceRequired": true,
+            "document": [],
+            "referenceData": [
+                {
+                    "version": "ReferenceData_1.0.0",
+                    "iorIdAvailable": false,
+                    "identifier": "",
+                    "type": {
+                        "CDE": "LOGINID",
+                        "DSC": "LoginId"
+                    }
+                }
+            ],
+            "customerInformation": {
+                "version": "PersonCustomer_1.0.0",
+                "identifier": {
+                    "version": "CustomerIdentifier_1.0.0",
+                    "customerIdentifiers": {
+                        "CUSTID": ""
+                    }
+                }
+            },
+            "status": {
+                "CDE": "RECEIVED",
+                "DSC": "Received"
+            }
+        },
+        "AcceptLoanAgreementRequest": {
+            "version": "LoanProductApplication_1.0.0",
+            "hostApplicationId": "",
+            "onlineAcceptanceRequired": true,
+            "submissionDate": {
+                "version": "DateTime_1.0.0"
+            },
+            "referenceData": [
+                {
+                    "version": "ReferenceData_1.0.0",
+                    "iorIdAvailable": false,
+                    "identifier": "",
+                    "type": {
+                        "CDE": "LOGINID",
+                        "DSC": "LoginId"
+                    }
+                }
+            ],
+            "instructionsList": [
+                {
+                    "version": "AccountDebitInstruction_1.0.0",
+                    "debitInstructionAccountReference": {
+                        "version": "AccountReference_1.0.0",
+                        "account": {
+                            "version": "LoanAccount_1.0.0",
+                            "branch": {
+                                "version": "FILocation_1.0.0",
+                                "fiIdentifier": {
+                                    "version": "FIIdentifier_1.0.0",
+                                    "finIdentifier": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                }
+                            },
+                            "identifier": {
+                                "version": "AccountIdentifier_1.0.0",
+                                "accountIdentifiers": {
+                                    "version": "EnumEntity_1.0.0"
+                                }
+                            }
+                        }
+                    },
+                    "instructionType": {
+                        "version": "EnumEntity_1.0.0",
+                        "CDE": "DEBIT",
+                        "DSC": "Debit"
+                    }
+                },
+                {
+                    "version": "AccountDebitInstruction_1.0.0",
+                    "debitInstructionAccountReference": {
+                        "version": "AccountReference_1.0.0",
+                        "account": {
+                            "version": "SavingsDepositAccount_1.0.0",
+                            "branch": {
+                                "version": "FILocation_1.0.0",
+                                "fiLocationIdentifier": {
+                                    "version": "FILocationIdentifier_1.0.0",
+                                    "identifiers": {
+                                        "version": "EnumEntity_1.0.0"
+                                    }
+                                },
+                                "fiIdentifier": {
+                                    "version": "FIIdentifier_1.0.0",
+                                    "identifier": {
+                                        "version": "Identifier_1.0.0"
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "instructionType": {
+                        "version": "EnumEntity_1.0.0",
+                        "CDE": "DEBIT",
+                        "DSC": "Debit"
+                    }
+                }
+            ],
+            "customerInformation": {
+                "version": "PersonCustomer_1.0.0",
+                "identifier": {
+                    "version": "CustomerIdentifier_1.0.0",
+                    "customerIdentifiers": {
+                        "CUSTID": ""
+                    }
+                }
+            },
+            "status": {
+                "CDE": "",
+                "DSC": ""
+            }
+        },
+        "documentReq1": {
+            "version": "Document_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0",
+                "Id": ""
+            },
+            "name": "",
+            "type": {
+                "CDE": "3",
+                "DSC": "LoanAgreementDocument"
+            },
+            "content": [
+                {
+                    "version": "Image_1.0.0",
+                    "binaryData": {
+                        "version": "Binary_1.0.0",
+                        "data": ""
+                    },
+                    "mimeType": {}
+                }
+            ]
+        },
+        "documentReq2": {
+            "version": "Document_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0",
+                "Id": ""
+            },
+            "name": "",
+            "type": {
+                "CDE": "3",
+                "DSC": "LoanAgreementDocument"
+            },
+            "content": [
+                {
+                    "version": "Image_1.0.0",
+                    "binaryData": {
+                        "version": "Binary_1.0.0",
+                        "data": ""
+                    },
+                    "mimeType": {}
+                }
+            ]
+        },
+        "documentReq3": {
+            "version": "Document_1.0.0",
+            "identifier": {
+                "version": "Identifier_1.0.0",
+                "Id": ""
+            },
+            "name": "",
+            "type": {
+                "CDE": "3",
+                "DSC": "LoanAgreementDocument"
+            },
+            "content": [
+                {
+                    "version": "Image_1.0.0",
+                    "binaryData": {
+                        "version": "Binary_1.0.0",
+                        "data": ""
+                    },
+                    "mimeType": {}
+                }
+            ]
+        },
+        "LoanAgreementListinq": {
+            "version": "LoanProductApplication_1.0.0"
+        },
+        "STPINQRequest":{
+            "version": "Configuration_1.0.0",
+            "nameSpace": "IS_STP_FLAG_ENABLED",
+            "type": {
+                "version": "EnumEntity_1.0.0",
+                "Code": "APPLICATIONPARAMETER",
+                "Description": "ApplicationParameter"
+            }
+        },
+        "STPUpdateRequest": {
+            "version": "Configuration_1.0.0",
+            "nameSpace": "IS_STP_FLAG_ENABLED",
+            "type": {
+                "version": "EnumEntity_1.0.0",
+                "Code": "APPLICATIONPARAMETER",
+                "Description": "ApplicationParameter"
+            },
+            "value": {
+                "version": "ConfigurationParameterList_1.0.0",
+                "values": [
+                    {
+                        "version": "ConfigurationParameter_1.0.0",
+                        "value": ""
+                    }
+                ]
+            }
+        }
+    },
+    "FILTERS": {
+        "OrFilter": {
+            "version": "ORFilter_1.0.0"
+        },
+        "AndFilter": {
+            "version": "ANDFilter_1.0.0"
+        },
+        "UserGroupNameFilter": {
+            "version": "UserGroupNameFilter_1.0.0"
+        },
+        "UserNameFilter": {
+            "version": "UserNameFilter_1.0.0"
+        },
+        "UserLoginIdFilter": {
+            "version": "UserLoginIdFilter_1.0.0"
+        },
+        "ApplicationDocumentFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "UserLoginIdFilter_1.0.0",
+                    "value": "",
+                    "operator": "EQUAL"
+                },
+                {
+                    "version": "UserActivityApplicationIdFilter_1.0.0",
+                    "value": "",
+                    "operator": "EQUAL"
+                }
+            ]
+        },
+        "UserLoggedInFilter": {
+            "version": "UserLoggedInFilter_1.0.0"
+        },
+        "UserTypeFilter": {
+            "version": "UserTypeFilter_1.0.0"
+        },
+        "UserTypeFilterUser":{
+            "version": "UserTypeFilter_1.0.0",
+            "UserType":{
+                "CDE":""
+            }
+        },
+        "PersonNameFilter": {
+            "version": "PersonNameFilter_1.0.0"
+        },
+        "PhoneContactFilter": {
+            "version": "PhoneContactFilter_1.0.0"
+        },
+        "CustomerIdentifierFilter": {
+            "version": "CustomerIdentifierFilter_1.0.0"
+        },
+        "IssuedIdentificationFilter": {
+            "version": "IssuedIdentificationFilter_1.0.0"
+        },
+        "EmployeeIdFilter": {
+            "version": "EmployeeIdFilter_1.0.0"
+        },
+        "DigiCorrespondenceCorsIdFilter": {
+            "version": "DigiCorrespondenceCorsIdFilter_1.0.0"
+        },
+        "DigiCorrespondenceSubjectFilter": {
+            "version": "DigiCorrespondenceSubjectFilter_1.0.0"
+        },
+        "DigiCorrespondenceSenderNameFilter": {
+            "version": "DigiCorrespondenceSenderNameFilter_1.0.0"
+        },
+        "DigiCorrespondenceReceiverNameFilter": {
+            "version": "DigiCorrespondenceReceiverNameFilter_1.0.0"
+        },
+        "DigiCorrespondenceSenderIdFilter": {
+            "version": "DigiCorrespondenceSenderIdFilter_1.0.0"
+        },
+        "DigiCorrespondenceReceiverIdFilter": {
+            "version": "DigiCorrespondenceReceiverIdFilter_1.0.0"
+        },
+        "DigiCorrespondenceDateTimeFilter": {
+            "version": "DigiCorrespondenceDateTimeFilter_1.0.0",
+            "value": {
+                "version": "DateTime_1.0.0"
+            }
+        },
+        "DigiCorrespondenceAssignFilter": {
+            "version": "DigiCorrespondenceAssignFilter_1.0.0"
+        },
+        "ApplicationMgmtListFilter": {
+            "version": "ORFilter_1.0.0",
+            "filters": [
+                {
+                    "resource": {
+                        "domainAddress": {
+                            "applicationId": "Bancs",
+                            "platformId": "Retail",
+                            "type": {
+                                "Code": "FUNCTION",
+                                "version": "EnumEntity_1.0.0"
+                            },
+                            "version": "DomainAddress_1.0.0"
+                        },
+                        "version": "Resource_1.0.0"
+                    },
+                    "version": "TaskListFilter_1.0.0"
+                },
+                {
+                    "operator": "EQUAL",
+                    "value": {
+                        "Code": "1"
+                    },
+                    "version": "TaskStatusFilter_1.0.0"
+                }
+            ]
+        },
+        "DebitCardTransactionFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "UserIdentifierFilter_1.0.0",
+                    "value": "",
+                    "operator": "EQUAL"
+                }
+            ]
+        },
+        "CurrentAccountApplicationMgmtListFilter": {
+            "version": "ORFilter_1.0.0",
+            "filters": [
+                {
+                    "resource": {
+                        "domainAddress": {
+                            "applicationId": "Bancs",
+                            "name": "",
+                            "platformId": "Retail",
+                            "type": {
+                                "Code": "FUNCTION"
+                            },
+                            "version": "DomainAddress_1.0.0"
+                        },
+                        "version": "Resource_1.0.0"
+                    },
+                    "version": "TaskListFilter_1.0.0"
+                }
+            ]
+        },
+        "BusinessCifFilter": {
+            "version": "ORFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "CustomerIdentifierFilter_1.0.0"
+                }
+            ]
+        },
+        "BusinessSecureMsgCifFilter": {
+            "version": "CustomerIdentifierFilter_1.0.0"
+        },
+        "UserActivityTypeFilter": {
+            "version": "UserActivityTypeFilter_1.0.0",
+            "Value": {
+                "Code": ""
+            },
+            "operator": "EQUAL"
+        },
+        "UserActivityPayeeTypeFilter": {
+            "version": "UserActivityPayeeTypeFilter_1.0.0"
+        },
+        "customerLimitsUpdateInfoFilter": {
+            "version": "UserActivityTypeFilter_1.0.0"
+        },
+        "StatusHistoryReportFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "UserActivityStartDateTimeFilter_1.0.0",
+                    "value": {
+                        "version": "DateTime_1.0.0"
+                    },
+                    "operator": "GREATERTHANOREQUAL"
+                },
+                {
+                    "version": "UserActivityEndDateTimeFilter_1.0.0",
+                    "value": {
+                        "version": "DateTime_1.0.0"
+                    },
+                    "operator": "LESSTHANOREQUAL"
+                },
+                {
+                    "version": "UserFilter_1.0.0",
+                    "Value": {
+                        "Code": ""
+                    },
+                    "operator": "EQUAL"
+                },
+                {
+                    "filters": [],
+                    "version": "ORFilter_1.0.0"
+                }
+            ]
+        },
+        "userActivityStatusHistoryFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "filters": [],
+                    "version": "ORFilter_1.0.0"
+                }
+            ]
+        },
+        "UserFilter": {
+            "version": "UserFilter_1.0.0",
+            "value": {
+                "CDE": "",
+                "DSC": ""
+            },
+            "operator": "EQUAL"
+        },
+        "CustomerUserGroupPopulateInquiryFilters": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "UserGroupUserTypeFilter_1.0.0",
+                    "operator": "EQUAL"
+                }
+            ]
+        },
+        "BusinessUserGroupInquiryFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "UserGroupUserTypeFilter_1.0.0",
+                    "operator": "EQUAL"
+                }
+            ]
+        },
+        "TransactionReportFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "UserActivityStartDateTimeFilter_1.0.0",
+                    "value": {
+                        "version": "DateTime_1.0.0"
+                    },
+                    "operator": "GREATERTHANOREQUAL"
+                },
+                {
+                    "version": "UserActivityEndDateTimeFilter_1.0.0",
+                    "value": {
+                        "version": "DateTime_1.0.0"
+                    },
+                    "operator": "LESSTHANOREQUAL"
+                },
+                {
+                    "version": "AppGroupIdFilter_1.0.0",
+                    "value": "1",
+                    "operator": "EQUAL"
+                },
+                {
+                    "filters": [],
+                    "version": "ORFilter_1.0.0"
+                }
+            ]
+        },
+        "UserActivityStartDateTimeFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "UserActivityStartDateTimeFilter_1.0.0",
+                    "value": {
+                        "version": "DateTime_1.0.0",
+                        "month": "",
+                        "year": "",
+                        "day": ""
+                    },
+                    "operator": "GREATERTHANOREQUAL"
+                },
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "AppGroupIdFilter_1.0.0",
+                            "Value": "",
+                            "operator": "EQUAL"
+                        }
+                    ]
+                }
+            ]
+        },
+        "UsageReportFilters": {
+            "userDigitalSRFilter": {
+                "appGroupNameFilter": {
+                    "version": "AppGrpNameFilter_1.0.0",
+                    "value": "Customer",
+                    "operator": "EQUAL"
+                },
+                "statusCodeFilter": {
+                    "version": "UserServiceRelationshipStatusCodeFilter_1.0.0",
+                    "value": {
+                        "Code": "1"
+                    },
+                    "operator": "EQUAL"
+                }
+            },
+            "loginUserFilter": {
+                "userStatusFilter": {
+                    "version": "UserStatusFilter_1.0.0",
+                    "value": {
+                        "Code": "3"
+                    },
+                    "operator": "EQUAL"
+                },
+                "verificationDataStatusFilter": {
+                    "version": "VerificationDataStatusFilter_1.0.0",
+                    "value": {
+                        "Code": "3"
+                    },
+                    "operator": "EQUAL"
+                }
+            },
+            "userSessionFilter": {
+                "sessionStatusFilter": {
+                    "version": "SessionStatusCodeFilter_1.0.0",
+                    "value": {
+                        "Code": "ACTIVE"
+                    },
+                    "operator": "EQUAL"
+                }
+            }
+        },
+        "RegularDeductionPaymentSplitFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "TaskListFilter_1.0.0",
+                            "resource": {
+                                "version": "Resource_1.0.0",
+                                "domainAddress": {
+                                    "version": "DomainAddress_1.0.0",
+                                    "name": "361",
+                                    "platformId": "Retail",
+                                    "type": {
+                                        "version": "EnumEntity_1.0.0",
+                                        "Code": "FUNCTION"
+                                    },
+                                    "applicationId": "Bancs"
+                                }
+                            }
+                        },
+                        {
+                            "version": "TaskStatusFilter_1.0.0",
+                            "value": {
+                                "version": "EnumEntity_1.0.0",
+                                "Code": "1"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "ReportsUserSessionFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "UserActivityTypeFilter_1.0.0",
+                    "value": {
+                        "Code": "LOGIN"
+                    },
+                    "operator": "EQUAL"
+                },
+                {
+                    "version": "UserActivityTypeFilter_1.0.0",
+                    "value": {
+                        "Code": "LOGOUT"
+                    },
+                    "operator": "EQUAL"
+                },
+                {
+                    "version": "UserActivityStartDateTimeFilter_1.0.0",
+                    "value": {
+                        "version": "DateTime_1.0.0",
+                        "month": 3,
+                        "year": 2018,
+                        "day": 29
+                    },
+                    "operator": "GREATERTHANOREQUAL"
+                },
+                {
+                    "version": "UserActivityEndDateTimeFilter_1.0.0",
+                    "value": {
+                        "version": "DateTime_1.0.0",
+                        "month": 5,
+                        "year": 2019,
+                        "day": 9
+                    },
+                    "operator": "GREATERTHANOREQUAL"
+                }
+            ]
+        },
+        "ReportsUserActivityFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "UserActivitySessionIdFilter_1.0.0",
+                    "value": "",
+                    "operator": "EQUAL"
+                }
+            ]
+        },
+        "SecureMessageReplyFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "operator": "EQUAL",
+                    "value": "",
+                    "version": "DigiCorrespondenceCorsIdFilter_1.0.0"
+                }
+            ]
+        },
+        "GlobalLimitTransactionLimitListFilter": {
+            "version": "LimitScopeTypeFilter_1.0.0"
+        },
+        "CustomerTransactionLimitListFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "UserIdentifierFilter_1.0.0"
+                }
+            ]
+        },
+        "SystemMessageFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "value": "",
+                    "version": "FunctionNameFilter_1.0.0"
+                },
+                {
+                    "value": "",
+                    "version": "FunctionNameFilter_1.0.0"
+                }
+            ]
+        },
+        "OffersAndNewsFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "value": "",
+                    "version": "FunctionNameFilter_1.0.0"
+                }
+            ]
+        },
+        "MessageListUserGrpFilter": {
+            "filters": [
+                {
+                    "value": "",
+                    "version": "UserGroupIdFilter_1.0.0",
+                    "operator": ""
+                }
+            ],
+            "version": "ANDFilter_1.0.0"
+        },
+        "UserGroupSearchFilter": {
+            "filters": [
+                {
+                    "version": "UserGroupUserTypeFilter_1.0.0"
+                },
+                {
+                    "value": "",
+                    "version": "UserGroupNameFilter_1.0.0"
+                }
+            ],
+            "version": "ANDFilter_1.0.0"
+        },
+        "QuestionAnswerListFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "QuestionStatusFilter_1.0.0",
+                    "value": {
+                        "Code": "1"
+                    },
+                    "operator": "EQUAL"
+                },
+                {
+                    "version": "QuestionUsageFilter_1.0.0",
+                    "value": {
+                        "Code": "2"
+                    },
+                    "operator": "EQUAL"
+                }
+            ]
+        },
+        "FAPSearchFilter": {
+            "filters": [
+                {
+                    "value": "",
+                    "version": "AccessGroupNameFilter_1.0.0"
+                },
+                {
+                    "version": "AccessGroupUserTypeFilter_1.0.0",
+                    "value": {
+                        "Code": ""
+                    }
+                }
+            ],
+            "version": "ANDFilter_1.0.0"
+        },
+        "FapStatusFilter": {
+            "filters": [
+                {
+                    "version": "FAPStatusFilter_1.0.0"
+                }
+            ],
+            "version": "ANDFilter_1.0.0"
+        },
+        "UserGroupStatusFilter": {
+            "filters": [
+                {
+                    "version": "UserGroupStatusFilter_1.0.0"
+                }
+            ],
+            "version": "ANDFilter_1.0.0"
+        },
+        "SystemOutageStatusFilter": {
+            "filters": [
+                {
+                    "version": "SystemOutageStatusFilter_1.0.0"
+                }
+            ],
+            "version": "ANDFilter_1.0.0"
+        },
+        "SystemOutageDateTimeFilter": {
+            "filters": [
+                {
+                    "version": "SystemOutageDateTimeFilter_1.0.0",
+                    "value": {
+                        "version": "DateTime_1.0.0"
+                    }
+                }
+            ],
+            "version": "ANDFilter_1.0.0"
+        },
+        "SystemBroadcastStatusFilter": {
+            "filters": [
+                {
+                    "version": "SystemMessageStatusFilter_1.0.0"
+                }
+            ],
+            "version": "ANDFilter_1.0.0"
+        },
+        "SystemBroadcastDateTimeFilter": {
+            "filters": [
+                {
+                    "version": "SystemMessageDateTimeFilter_1.0.0",
+                    "value": {
+                        "version": "DateTime_1.0.0"
+                    }
+                }
+            ],
+            "version": "ANDFilter_1.0.0"
+        },
+        "TnCAppGroupNameFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "DisclosureAppGroupNameFilter_1.0.0"
+                }
+            ]
+        },
+        "AdminReqTaskStatusFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "TaskStatusFilter_1.0.0",
+                            "operator": "EQUAL",
+                            "value": {
+                                "Code": "1"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "AdminReqHistoryTaskStatusANDDateTimeFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "TaskStatusFilter_1.0.0",
+                            "value": {
+                                "Code": "2"
+                            },
+                            "operator": "EQUAL"
+                        },
+                        {
+                            "version": "TaskStatusFilter_1.0.0",
+                            "value": {
+                                "Code": "5"
+                            },
+                            "operator": "EQUAL"
+                        }
+                    ]
+                },
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "TaskDateTimeFilter_1.0.0",
+                            "value": {
+                                "version": "DateTime_1.0.0"
+                            },
+                            "operator": "EQUAL"
+                        }
+                    ]
+                }
+            ]
+        },
+        "AdminReqAcceptCountReq": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "TaskStatusFilter_1.0.0",
+                            "value": {
+                                "Code": "2"
+                            },
+                            "operator": "EQUAL"
+                        }
+                    ]
+                },
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "TaskDateTimeFilter_1.0.0",
+                            "value": {
+                                "version": "DateTime_1.0.0"
+                            },
+                            "operator": "EQUAL"
+                        }
+                    ]
+                }
+            ]
+        },
+        "AdminReqRejectCountReq": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "TaskStatusFilter_1.0.0",
+                            "value": {
+                                "Code": "5"
+                            },
+                            "operator": "EQUAL"
+                        }
+                    ]
+                },
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "TaskDateTimeFilter_1.0.0",
+                            "value": {
+                                "version": "DateTime_1.0.0"
+                            },
+                            "operator": "EQUAL"
+                        }
+                    ]
+                }
+            ]
+        },
+        "AdminReqTaskDateTimeFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "TaskDateTimeFilter_1.0.0",
+                            "operator": "EQUAL",
+                            "value": {
+                                "version": "DateTime_1.0.0"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "AdminReqHistoryTaskStatusFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "ORFilter_1.0.0",
+                    "filters": [
+                        {
+                            "version": "TaskStatusFilter_1.0.0",
+                            "operator": "EQUAL",
+                            "value": {
+                                "Code": "2"
+                            }
+                        },
+                        {
+                            "version": "TaskStatusFilter_1.0.0",
+                            "operator": "EQUAL",
+                            "value": {
+                                "Code": "5"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        "SystemMessageAppGroupNameFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "SystemMessageAppGroupNameFilter_1.0.0"
+                }
+            ]
+        },
+        "SystemOutageAppGroupNameFilter": {
+            "version": "ANDFilter_1.0.0",
+            "filters": [
+                {
+                    "version": "SystemOutageAppGroupNameFilter_1.0.0"
+                }
+            ]
+        },
+        "LoanAgreementCustomerIDFilter": {
+            "version": "LoanAgreementCustomerIdFilter_1.0.0",
+            "value": "",
+            "operator": "EQUAL"
+        },
+        "LoanAgreementOnlineAcceptanceFilter": {
+            "version": "LoanAgreementOnlineAcceptanceFilter_1.0.0",
+            "value": "",
+            "operator": "EQUAL"
+        },
+        "LoanAgreementStatusFilter": {
+            "version": "LoanAgreementStatusFilter_1.0.0",
+            "status": {
+                "version": "EnumEntity_1.0.0"
+            },
+            "operator": "EQUAL"
+        }
+    }
+}

@@ -1,0 +1,25 @@
+{
+  "CONFIG_MERGE_KEY": "SERVICE#STATUS_CODE",
+  "NETWORK": {
+    "0": {
+      "action": "ALERT",
+      "descriptionKey": "0",
+      "severity": "FATAL"
+    },
+    "-1": {
+      "action": "ALERT",
+      "descriptionKey": "0",
+      "severity": "FATAL"
+    },
+    "400-499": {
+      "action": "ALERT",
+      "descriptionKey": "404",
+      "severity": "FATAL"
+    },
+    "500-599": {
+      "action": "ALERT_THEN_REDIRECT",
+      "descriptionKey": "503",
+      "severity": "FATAL"
+    }
+  }
+}

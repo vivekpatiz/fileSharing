@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    background-color: #eaeaea;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .page-wrapper {
+        font-family: Helvetica,Helvetica,Arial,"Lucida Grande",sans-serif;
+        background-color: #eaeaea;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        }
+        
+    .static-content-wrapper {
+        background-color: #fff;
+        color: #222;
+        display: flex;
+        flex-direction: column;
+        margin: 20px 40px 20px 60px;
+        min-height: 485px;
+        height: auto;
+        }
+    
+    .static-main-header{
+        background-color: white;
+        display: flex;
+        height: 100px;
+        padding: 0px 60px;
+    }
+    .login-header-rsb-logo {
+        background-image: url(RSB_IB_Logo.png);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 63px;
+        padding: 10px;
+        margin: 10px;
+    
+        }
+        
+        .static-content-body {
+        width: 97.15%;
+        padding: 20px;
+        font-size: 16px;
+        color: #000;
+        list-style-type: none;
+        text-align: justify;
+        }
+        
+        .static-content-title {
+        padding: 20px 0;
+        border-bottom: 1px solid #222;
+        margin: 0 20px;
+        font-weight: 700;
+        color: #000;
+        font-size: 22px;
+        }
+        .spacing-btw{
+            padding-bottom: 10px;
+        }
+        .spacing-btw-lines{
+            padding-bottom: 5px;
+        }
+        .sub-heading{
+            font-size:18px;
+            font-weight: 600;
+            text-align: start;
+        }
+        .spacing-top{
+            padding-top: 10px;
+        }
+        .content-heading{
+            font-size:16px;
+            font-weight: 600;
+            text-align: start;
+        }
+        .inner-list{
+            list-style-type: disc;
+            padding-left: 25px;
+        }

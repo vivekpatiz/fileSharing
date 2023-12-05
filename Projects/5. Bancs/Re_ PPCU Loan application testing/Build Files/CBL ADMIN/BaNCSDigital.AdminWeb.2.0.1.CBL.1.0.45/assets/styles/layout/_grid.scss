@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// This file contains styles for grid layout.
+// -----------------------------------------------------------------------------
+//-- grid containers
+.grid-container {
+    @include flexbox(); //Refer _mixins.scss
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+}
+
+.grid-column {
+    @extend .grid-container;
+    flex-direction: row;
+}
+
+.grid-column-reverse {
+    @extend .grid-container;
+    flex-direction: row-reverse;
+}
+
+.grid-row {
+    @extend .grid-container;
+    flex-direction: column;
+}
+
+.grid-row-reverse {
+    @extend .grid-container;
+    flex-direction: column-reverse;
+}
